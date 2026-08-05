@@ -1,0 +1,16 @@
+{
+  "name": "KJ Augusta Rentals",
+  "short_name": "KJ Rentals",
+  "description": "Private riverfront vacation rental on the Savannah River in Augusta, Georgia.",
+  "start_url": "/KJ-Augusta-Rentals/",
+  "display": "standalone",
+  "background_color": "#F5EFE6",
+  "theme_color": "#121412",
+  "icons": [
+    {
+      "src": "/KJ-Augusta-Rentals/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
