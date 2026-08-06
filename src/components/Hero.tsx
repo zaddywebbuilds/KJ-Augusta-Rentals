@@ -15,7 +15,7 @@ export default function Hero() {
     <section className="relative min-h-screen lg:h-screen lg:min-h-[680px] overflow-hidden bg-ink">
 
       {/* Main content */}
-      <div className="relative z-10 w-full min-h-full lg:h-full flex items-start lg:items-center pt-32 pb-20 lg:pt-0 lg:pb-0 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
+      <div className="relative z-10 w-full min-h-full lg:h-full flex flex-col lg:flex-row items-start lg:items-center pt-32 pb-20 lg:pt-0 lg:pb-0 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
 
         {/* LEFT: Text content */}
         <div className="w-full lg:w-[44%] flex-shrink-0 flex flex-col justify-center">
@@ -88,7 +88,7 @@ export default function Hero() {
 
         {/* RIGHT: Foreground video — surface element, center + right wing */}
         <motion.div
-          className="hidden lg:flex flex-1 items-center justify-center pl-10 h-full py-14"
+          className="flex w-full lg:flex-1 items-center justify-center lg:pl-10 lg:h-full py-8 lg:py-14"
           initial={{ opacity: 0, x: 60, scale: 0.97 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.5, ease: 'easeOut' }}
@@ -96,7 +96,7 @@ export default function Hero() {
           <div className="relative w-full">
             <video
               ref={videoRef}
-              className="w-full h-auto max-h-[78vh] object-contain rounded-sm shadow-[0_40px_100px_rgba(0,0,0,0.7)]"
+              className="w-full h-auto max-h-[50vh] lg:max-h-[78vh] object-contain rounded-sm shadow-[0_40px_100px_rgba(0,0,0,0.7)]"
               src={videos.hero}
               poster={videoPosters.hero}
               autoPlay
