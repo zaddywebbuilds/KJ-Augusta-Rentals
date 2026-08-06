@@ -73,14 +73,12 @@ export default function Navbar() {
                   {link.label}
                 </button>
               ))}
-              <a
-                href={businessConfig.booking.airbnbUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => scrollTo('#book')}
                 className="ml-4 px-5 py-2.5 bg-champagne text-ink font-manrope text-sm tracking-wider uppercase font-medium hover:bg-clay hover:text-ivory transition-all duration-300 rounded-sm"
               >
-                Check Availability
-              </a>
+                Book Direct
+              </button>
             </div>
 
             {/* Mobile hamburger */}
@@ -122,17 +120,15 @@ export default function Navbar() {
                   {link.label}
                 </motion.button>
               ))}
-              <motion.a
-                href={businessConfig.booking.airbnbUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <motion.button
+                onClick={() => scrollTo('#book')}
                 className="mt-4 px-8 py-4 bg-champagne text-ink font-manrope text-sm tracking-widest uppercase font-medium rounded-sm"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7 }}
               >
-                Check Availability
-              </motion.a>
+                Book Direct
+              </motion.button>
             </div>
           </motion.div>
         )}

@@ -8,7 +8,7 @@ export default function AboutKJ() {
   const { ref, inView } = useInView();
 
   return (
-    <section ref={ref as React.RefObject<HTMLElement>} className="py-24 md:py-36 bg-linen">
+    <section ref={ref as React.RefObject<HTMLElement>} className="py-12 md:py-16 bg-linen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
@@ -55,10 +55,10 @@ export default function AboutKJ() {
                 the priority.
               </p>
               <p>
-                As an Airbnb Superhost, KJ's reputation has been earned review by
-                review over 11 years of hosting. Guests consistently highlight the
-                ease of check-in, the responsiveness of the host, and the quality
-                of the property itself.
+                With over 11 years of hosting and a perfect 5-star rating across
+                22+ Google reviews, KJ's reputation has been earned stay by stay.
+                Guests consistently highlight the ease of check-in, the
+                responsiveness of the host, and the quality of the property itself.
               </p>
               <p>
                 Have a question about the area, the property, or upcoming availability?
@@ -69,7 +69,7 @@ export default function AboutKJ() {
             {/* Badges */}
             <div className="flex flex-wrap gap-4 mb-8">
               {[
-                { icon: Star, label: 'Superhost on Airbnb' },
+                { icon: Star, label: 'Verified Superhost' },
                 { icon: Shield, label: '11+ Years Hosting' },
                 { icon: Home, label: 'Military Veteran' },
               ].map(({ icon: Icon, label }) => (

@@ -41,7 +41,7 @@ export default function RoomTour() {
   const [active, setActive] = useState(0);
 
   return (
-    <section ref={ref as React.RefObject<HTMLElement>} className="py-24 md:py-36 bg-ivory">
+    <section ref={ref as React.RefObject<HTMLElement>} className="py-12 md:py-16 bg-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"

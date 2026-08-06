@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
 import { useCountUp } from '../hooks/useCountUp';
 import { Users, BedDouble, Bath, Maximize2, TreePine, Waves } from 'lucide-react';
+import { businessConfig } from '../data/businessConfig';
 
 const stats = [
   { label: 'Guests', value: 7, suffix: '', icon: Users },
@@ -55,9 +56,9 @@ export default function PropertyStats() {
           ))}
         </motion.div>
 
-        {/* Waterfront badge */}
+        {/* Waterfront badge + booking CTA */}
         <motion.div
-          className="mt-10 flex justify-center"
+          className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6"
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -69,6 +70,13 @@ export default function PropertyStats() {
             </span>
             <Waves className="text-champagne" size={16} />
           </div>
+          <a
+            href="#book"
+            onClick={(e) => { e.preventDefault(); document.querySelector('#book')?.scrollIntoView({ behavior: 'smooth' }); }}
+            className="inline-flex items-center gap-2 px-8 py-3 bg-champagne text-ink font-manrope text-xs tracking-widest uppercase font-semibold hover:bg-clay hover:text-ivory transition-all duration-300 rounded-sm"
+          >
+            Book Direct
+          </a>
         </motion.div>
       </div>
     </section>

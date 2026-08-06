@@ -43,7 +43,7 @@ export default function VideoFeature() {
   };
 
   return (
-    <section className="py-24 md:py-36 bg-linen" ref={ref as React.RefObject<HTMLElement>}>
+    <section className="py-12 md:py-16 bg-linen" ref={ref as React.RefObject<HTMLElement>}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"

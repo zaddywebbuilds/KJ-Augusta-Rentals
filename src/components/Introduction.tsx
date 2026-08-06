@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
-import { introImage1, introImage2 } from '../data/mediaConfig';
+import { riverViews, exteriorImages } from '../data/mediaConfig';
 
 export default function Introduction() {
   const { ref, inView } = useInView();
 
   return (
-    <section id="property" ref={ref as React.RefObject<HTMLElement>} className="py-24 md:py-36 bg-ivory">
+    <section id="property" ref={ref as React.RefObject<HTMLElement>} className="py-12 md:py-16 bg-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Text */}
@@ -47,36 +47,43 @@ export default function Introduction() {
             <div className="mt-10 flex items-center gap-4">
               <div className="flex items-center gap-2">
                 <span className="text-champagne text-xl">★</span>
-                <span className="font-cormorant text-3xl text-ink">4.8</span>
-                <span className="font-manrope text-sm text-sage">/ 5 on Airbnb</span>
+                <span className="font-cormorant text-3xl text-ink">5.0</span>
+                <span className="font-manrope text-sm text-sage">· Google Reviews</span>
               </div>
               <span className="w-px h-8 bg-linen" />
-              <span className="font-manrope text-sm text-sage">41 guest reviews</span>
+              <span className="font-manrope text-sm text-sage">22+ guest reviews</span>
               <span className="w-px h-8 bg-linen" />
-              <span className="font-manrope text-sm text-sage font-medium text-champagne">Superhost</span>
+              <span className="font-manrope text-sm font-medium text-champagne">Verified Host</span>
             </div>
           </motion.div>
 
-          {/* Images */}
+          {/* Images — clean surface grid, no overlap */}
           <motion.div
-            className="relative h-[500px] lg:h-[600px]"
+            className="grid grid-cols-2 gap-4 h-[500px] lg:h-[580px]"
             initial={{ opacity: 0, x: 40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.9, delay: 0.2 }}
           >
+            {/* Left column — tall river view */}
             <img
-              src={introImage1}
-              alt="KJ Augusta Rentals pool area"
-              className="absolute top-0 right-0 w-4/5 h-4/5 object-cover rounded-sm shadow-2xl"
+              src={riverViews[4]}
+              alt="Savannah River view from the property"
+              className="w-full h-full object-cover rounded-sm shadow-xl"
             />
-            <img
-              src={introImage2}
-              alt="KJ Augusta Rentals exterior"
-              className="absolute bottom-0 left-0 w-3/5 h-3/5 object-cover rounded-sm shadow-xl border-4 border-ivory"
-            />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-champagne/20 backdrop-blur-sm border border-champagne/30 rounded-sm px-6 py-4 text-center">
-              <span className="font-cormorant text-3xl text-ink">~3</span>
-              <p className="font-manrope text-[9px] tracking-wider uppercase text-sage mt-1">Private Acres</p>
+            {/* Right column — exterior + stats badge */}
+            <div className="flex flex-col gap-4 h-full">
+              <img
+                src={exteriorImages[2]}
+                alt="KJ Augusta Rentals exterior"
+                className="w-full flex-1 object-cover rounded-sm shadow-lg"
+              />
+              <div className="bg-ink rounded-sm px-5 py-5 flex items-center gap-4 flex-shrink-0">
+                <span className="font-cormorant text-5xl text-ivory leading-none">~3</span>
+                <div>
+                  <p className="font-manrope text-[9px] tracking-[0.2em] uppercase text-champagne">Private Acres</p>
+                  <p className="font-manrope text-[9px] tracking-[0.15em] uppercase text-ivory/50 mt-1">Savannah River</p>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>

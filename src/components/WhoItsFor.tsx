@@ -9,28 +9,28 @@ const cards = [
     title: 'Masters Week',
     body: "Located minutes from Augusta National, KJ's River House is one of the most sought-after retreats during the Masters Tournament. Space, privacy, and a river view make the week unforgettable.",
     image: riverViews[0],
-    cta: 'Book on Airbnb',
+    cta: 'Reserve Your Dates',
   },
   {
     icon: Briefcase,
     title: 'Corporate Stays',
     body: "Team retreats, client entertainment, or off-site strategy sessions — the River House offers the space, amenities, and setting to make work feel less like work.",
     image: poolImages[3],
-    cta: 'Check Availability',
+    cta: 'Book Direct',
   },
   {
     icon: Users,
     title: 'Family Getaways',
     body: "Seven guests across six beds means everyone has a place. The pool, the dock, the kayaks, and the grounds give kids (and adults) more than enough to explore.",
     image: bedroomImages[2],
-    cta: 'View on Airbnb',
+    cta: 'Book Direct',
   },
   {
     icon: Waves,
     title: 'Water Lovers',
     body: "A private dock, kayaks, and the wide Savannah River at your door. Whether you're on the water at dawn or watching it turn gold at dusk, this is the riverfront escape you've been looking for.",
     image: dockImages[0],
-    cta: 'See the Property',
+    cta: 'Check Availability',
   },
 ];
 
@@ -38,7 +38,7 @@ export default function WhoItsFor() {
   const { ref, inView } = useInView();
 
   return (
-    <section ref={ref as React.RefObject<HTMLElement>} className="py-24 md:py-36 bg-linen">
+    <section ref={ref as React.RefObject<HTMLElement>} className="py-12 md:py-16 bg-linen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-20"
@@ -80,9 +80,8 @@ export default function WhoItsFor() {
                 </div>
                 <p className="font-manrope text-sm text-sage leading-relaxed mb-5">{body}</p>
                 <a
-                  href="https://www.airbnb.com/rooms/3592869"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#book"
+                  onClick={(e) => { e.preventDefault(); document.querySelector('#book')?.scrollIntoView({ behavior: 'smooth' }); }}
                   className="font-manrope text-xs tracking-widest uppercase text-champagne hover:text-clay transition-colors"
                 >
                   {cta} →

@@ -9,7 +9,7 @@ export default function LocationSection() {
   const mapsEmbedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.0!2d${businessConfig.location.longitude}!3d${businessConfig.location.latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f9c97d6cfd07e1%3A0x9104739615c98f62!2sKJ%20Augusta%20Rentals!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus`;
 
   return (
-    <section id="location" ref={ref as React.RefObject<HTMLElement>} className="py-24 md:py-36 bg-ivory">
+    <section id="location" ref={ref as React.RefObject<HTMLElement>} className="py-12 md:py-16 bg-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"

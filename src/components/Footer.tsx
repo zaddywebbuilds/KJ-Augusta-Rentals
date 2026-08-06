@@ -71,24 +71,21 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href={businessConfig.booking.airbnbUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#book"
+                  onClick={(e) => { e.preventDefault(); document.querySelector('#book')?.scrollIntoView({ behavior: 'smooth' }); }}
                   className="inline-flex items-center gap-2 font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
                 >
                   <ExternalLink size={12} />
-                  Book on Airbnb
+                  Book Direct
                 </a>
               </li>
               <li>
                 <a
-                  href={businessConfig.booking.secondaryBookingUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={`mailto:${businessConfig.contact.email}`}
                   className="inline-flex items-center gap-2 font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
                 >
-                  <ExternalLink size={12} />
-                  {businessConfig.booking.secondaryBookingLabel}
+                  <Mail size={12} />
+                  Email KJ
                 </a>
               </li>
               <li>
@@ -152,7 +149,7 @@ export default function Footer() {
                     <strong className="text-ivory/70">Privacy:</strong> This website does not collect personal data, use tracking cookies, or share information with third parties. Contact information submitted via email or phone is used solely to respond to your enquiry about KJ Augusta Rentals.
                   </p>
                   <p className="font-manrope text-xs text-ivory/50 leading-relaxed mb-3">
-                    <strong className="text-ivory/70">Booking Disclaimer:</strong> Availability and pricing displayed on this website are for informational purposes only. All bookings are confirmed through Airbnb or Expedia. KJ Augusta Rentals is not responsible for discrepancies between this site and third-party booking platforms.
+                    <strong className="text-ivory/70">Booking Disclaimer:</strong> Availability is confirmed directly with KJ by phone or email. A live booking calendar (powered by Bookee) is coming soon. No payment is collected on this website. The current booking form sends a direct inquiry to KJ Augusta Rentals.
                   </p>
                   <p className="font-manrope text-xs text-ivory/50 leading-relaxed">
                     <strong className="text-ivory/70">Property:</strong> The saltwater pool is available seasonally, April–October. Property amenities are subject to change. Photos are representative of the property. No exact address is published on this site for privacy reasons.

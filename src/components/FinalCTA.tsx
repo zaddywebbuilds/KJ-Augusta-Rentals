@@ -1,54 +1,17 @@
-import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Play, Pause, Phone, ExternalLink } from 'lucide-react';
+import { Phone } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import { businessConfig } from '../data/businessConfig';
-import { videos, videoPosters } from '../data/mediaConfig';
 
 export default function FinalCTA() {
   const { ref, inView } = useInView(0.3);
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [playing, setPlaying] = useState(true);
-
-  const togglePlay = () => {
-    if (!videoRef.current) return;
-    if (playing) {
-      videoRef.current.pause();
-    } else {
-      videoRef.current.play();
-    }
-    setPlaying(!playing);
-  };
 
   return (
     <section
       ref={ref as React.RefObject<HTMLElement>}
-      className="relative min-h-[70vh] flex items-center justify-center overflow-hidden"
+      className="py-16 md:py-24 bg-ink flex items-center justify-center"
     >
-      {/* Video background */}
-      <video
-        ref={videoRef}
-        className="absolute inset-0 w-full h-full object-cover"
-        src={videos.feature}
-        poster={videoPosters.feature}
-        autoPlay
-        muted
-        loop
-        playsInline
-      />
-      <div className="absolute inset-0 bg-ink/65" />
-
-      {/* Video toggle */}
-      <button
-        onClick={togglePlay}
-        className="absolute bottom-6 left-6 p-2 bg-ivory/10 backdrop-blur-sm rounded-full text-ivory/60 hover:text-ivory transition-colors"
-        aria-label={playing ? 'Pause background video' : 'Play background video'}
-      >
-        {playing ? <Pause size={16} /> : <Play size={16} />}
-      </button>
-
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
+      <div className="text-center px-4 max-w-3xl mx-auto">
         <motion.p
           className="font-manrope text-[10px] tracking-[0.35em] uppercase text-champagne mb-6"
           initial={{ opacity: 0, y: 20 }}
@@ -73,13 +36,11 @@ export default function FinalCTA() {
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           <a
-            href={businessConfig.booking.airbnbUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#book"
+            onClick={(e) => { e.preventDefault(); document.querySelector('#book')?.scrollIntoView({ behavior: 'smooth' }); }}
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-champagne text-ink font-manrope text-sm tracking-widest uppercase font-semibold hover:bg-clay hover:text-ivory transition-all duration-300 rounded-sm"
           >
-            <ExternalLink size={16} />
-            Check Airbnb Availability
+            Book Direct
           </a>
           <a
             href={`tel:${businessConfig.contact.phoneHref}`}
