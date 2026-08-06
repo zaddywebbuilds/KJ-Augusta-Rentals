@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
-import { poolImages, riverViews, livingImages, bedroomImages } from '../data/mediaConfig';
 import Photo from './Photo';
 import {
   Waves, Flame, Wind, Wifi, Car, Utensils, Tv, Dumbbell,
@@ -11,7 +10,7 @@ const amenityGroups = [
   {
     category: 'On the Water',
     icon: Waves,
-    image: riverViews[1],
+    image: 'photo_38',
     items: [
       { icon: Anchor, label: 'Private dock on the Savannah River' },
       { icon: Waves, label: 'Kayaks & river access' },
@@ -22,7 +21,7 @@ const amenityGroups = [
   {
     category: 'Outdoors',
     icon: Sun,
-    image: poolImages[4],
+    image: 'photo_29',
     note: '🌊 Saltwater pool open April – October',
     items: [
       { icon: Sun, label: 'Saltwater pool (seasonal, Apr–Oct)' },
@@ -34,7 +33,7 @@ const amenityGroups = [
   {
     category: 'Inside',
     icon: Utensils,
-    image: livingImages[1],
+    image: 'photo_34',
     items: [
       { icon: Utensils, label: 'Fully equipped kitchen' },
       { icon: Tv, label: 'Smart TV / streaming' },
@@ -46,7 +45,7 @@ const amenityGroups = [
   {
     category: 'Rest & Refresh',
     icon: BedDouble,
-    image: bedroomImages[1],
+    image: 'photo_47',
     items: [
       { icon: BedDouble, label: '6 beds across 2 bedrooms' },
       { icon: Bath, label: '2 full bathrooms' },

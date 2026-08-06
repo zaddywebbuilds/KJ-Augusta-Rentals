@@ -12,10 +12,10 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative h-screen min-h-[680px] overflow-hidden bg-ink">
+    <section className="relative min-h-screen lg:h-screen lg:min-h-[680px] overflow-hidden bg-ink">
 
       {/* Main content */}
-      <div className="relative z-10 w-full h-full flex items-center max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
+      <div className="relative z-10 w-full min-h-full lg:h-full flex items-start lg:items-center pt-32 pb-20 lg:pt-0 lg:pb-0 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
 
         {/* LEFT: Text content */}
         <div className="w-full lg:w-[44%] flex-shrink-0 flex flex-col justify-center">
