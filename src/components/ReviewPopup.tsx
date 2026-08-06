@@ -1,25 +1,16 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, X } from 'lucide-react';
-import { allReviews, type Review } from '../data/reviews';
+import { reviewsNewestFirst, type Review } from '../data/reviews';
 
 const DISMISS_KEY = 'kj-review-popup-dismissed';
 const FIRST_DELAY = 7000;   // let the page settle before the first toast
 const VISIBLE_MS = 7000;    // long enough to actually read the quote
 const GAP_MS = 9000;        // breathing room between toasts
 
-function shuffle<T>(input: T[]): T[] {
-  const a = [...input];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
 export default function ReviewPopup() {
-  // Order is randomised per visit so repeat visitors don't see the same run.
-  const queue = useMemo<Review[]>(() => shuffle(allReviews), []);
+  // Newest guests first, then older ones.
+  const queue = useMemo<Review[]>(() => reviewsNewestFirst, []);
 
   const [active, setActive] = useState(false);
   const [idx, setIdx] = useState(-1);
@@ -110,13 +101,16 @@ export default function ReviewPopup() {
                   <p className="font-manrope text-[12px] text-ink font-semibold leading-tight truncate">
                     {review.name}
                   </p>
+                  {/* Undated by design: a testimonial makes no recency claim.
+                      Showing a real age here reads as stale; inventing a
+                      recent one would misrepresent the review. */}
                   <div className="flex items-center gap-1.5 mt-0.5">
                     <span className="flex gap-px">
                       {Array.from({ length: 5 }).map((_, i) => (
                         <Star key={i} size={9} className="text-champagne fill-champagne" />
                       ))}
                     </span>
-                    <span className="font-manrope text-[9px] text-sage/70">{review.time}</span>
+                    <span className="font-manrope text-[9px] text-sage/70">5.0</span>
                   </div>
                 </div>
               </div>

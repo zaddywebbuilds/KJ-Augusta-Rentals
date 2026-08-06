@@ -87,3 +87,26 @@ export const featuredReview: Review = {
 };
 
 export const allReviews: Review[] = [featuredReview, ...row1, ...row2];
+
+// Approximate age in months, taken from the relative age Google reports.
+// Used only for ordering — never rendered as a recency claim.
+const ageMonths: Record<string, number> = {
+  'Brian Ferguson': 36,
+  'Ryan Kreicker': 36,
+  'Heather Mills': 36,
+  'Brandon Haubner': 36,
+  'Shawn Weeks': 36,
+  'Brad Schilling': 48,
+  'Dorothy S.': 60,
+  'Cheryl Williams': 60,
+  'adrianne hardy': 60,
+  'Steve Miller': 84,
+  'Abby Lehmann': 84,
+  'Alison Tirschel': 84,
+  'KRM MD': 96,
+};
+
+// Newest first. The popup surfaces the most recent guests before older ones.
+export const reviewsNewestFirst: Review[] = [...allReviews].sort(
+  (a, b) => (ageMonths[a.name] ?? 999) - (ageMonths[b.name] ?? 999)
+);
