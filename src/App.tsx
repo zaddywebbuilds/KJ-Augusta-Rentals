@@ -17,6 +17,7 @@ import LocationSection from './components/LocationSection';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import MobileBookingBar from './components/MobileBookingBar';
+import ReviewPopup from './components/ReviewPopup';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
       <FinalCTA />
       <Footer />
       <MobileBookingBar />
+      <ReviewPopup />
     </div>
   );
 }
