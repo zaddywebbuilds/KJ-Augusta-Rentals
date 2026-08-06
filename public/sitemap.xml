@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://zaddywebbuilds.github.io/KJ-Augusta-Rentals/</loc>
-    <lastmod>2025-08-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://zaddywebbuilds.github.io/KJ-Augusta-Rentals/assets/img/social-card.jpg</image:loc>
+      <image:title>KJ's River House on the Savannah River, Augusta GA</image:title>
+    </image:image>
   </url>
 </urlset>

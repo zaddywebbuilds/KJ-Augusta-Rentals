@@ -5,6 +5,7 @@ import { ChevronDown, Calendar, Users, Phone, Mail, Zap } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import { businessConfig } from '../data/businessConfig';
 import { poolImages, dockImages } from '../data/mediaConfig';
+import Photo from './Photo';
 
 const faqs = [
   {
@@ -187,9 +188,10 @@ export default function FAQ() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="overflow-hidden rounded-sm bg-ivory">
-              <img
-                src={poolImages[5]}
+              <Photo
+                id={poolImages[5]}
                 alt="Guests enjoying the pool"
+                sizes="260px"
                 className="w-full aspect-[4/3] object-contain"
               />
             </div>
@@ -205,9 +207,10 @@ export default function FAQ() {
             </div>
 
             <div className="overflow-hidden rounded-sm bg-ivory">
-              <img
-                src={dockImages[0]}
+              <Photo
+                id={dockImages[0]}
                 alt="Private dock on the Savannah River"
+                sizes="260px"
                 className="w-full aspect-[4/3] object-contain"
               />
             </div>

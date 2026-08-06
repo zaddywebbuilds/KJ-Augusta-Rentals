@@ -39,6 +39,14 @@ export const businessConfig = {
     googleReviewCount: 22,
     yearsHosting: 11
   },
+  // The Masters is played the first full week of April. Update `year` each
+  // spring; `enabled` hides the banner entirely once the week has passed.
+  masters: {
+    enabled: true,
+    year: 2027,
+    label: "Now booking Masters week 2027",
+    detail: "Augusta fills up fast that week — enquire early to hold your dates."
+  },
   social: {
     facebook: "https://www.facebook.com/KJRentals"
   }

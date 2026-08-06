@@ -9,8 +9,15 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     chunkSizeWarningLimit: 2000,
-  },
-  optimizeDeps: {
-    include: ['three'],
+    rollupOptions: {
+      output: {
+        // Split the animation and icon libraries out of the main chunk so the
+        // above-the-fold render isn't blocked on parsing all of it.
+        manualChunks: {
+          react: ['react', 'react-dom'],
+          motion: ['framer-motion'],
+        },
+      },
+    },
   },
 })

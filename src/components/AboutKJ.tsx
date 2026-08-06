@@ -3,6 +3,7 @@ import { useInView } from '../hooks/useInView';
 import { Phone, Mail, Star, Shield, Home } from 'lucide-react';
 import { businessConfig } from '../data/businessConfig';
 import { detailImages } from '../data/mediaConfig';
+import Photo from './Photo';
 
 export default function AboutKJ() {
   const { ref, inView } = useInView();
@@ -18,9 +19,10 @@ export default function AboutKJ() {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <img
-              src={detailImages[1]}
+            <Photo
+              id={detailImages[1]}
               alt="KJ Augusta Rentals property"
+              sizes="(max-width: 1024px) 100vw, 560px"
               className="w-full aspect-[4/3] object-contain bg-linen rounded-sm shadow-xl"
             />
             <div className="absolute -bottom-6 -right-6 bg-ivory border border-champagne/20 rounded-sm p-5 shadow-lg">

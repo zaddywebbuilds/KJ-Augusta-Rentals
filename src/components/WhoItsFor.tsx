@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
+import Photo from './Photo';
 import { poolImages, riverViews, bedroomImages, dockImages } from '../data/mediaConfig';
 import { Trophy, Briefcase, Users, Waves } from 'lucide-react';
 
@@ -65,9 +66,10 @@ export default function WhoItsFor() {
               whileHover={{ y: -6 }}
             >
               <div className="bg-ivory">
-                <img
-                  src={image}
+                <Photo
+                  id={image}
                   alt={title}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 300px"
                   className="w-full aspect-[4/3] object-contain"
                 />
               </div>

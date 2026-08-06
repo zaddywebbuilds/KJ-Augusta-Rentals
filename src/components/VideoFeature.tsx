@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
@@ -16,6 +16,20 @@ export default function VideoFeature() {
   const [playing, setPlaying] = useState(false);
   const [muted, setMuted] = useState(true);
   const [activeClip, setActiveClip] = useState(0);
+
+  // Autoplay (muted) once the section scrolls into view, and pause when it
+  // leaves — an off-screen decoding video is wasted CPU and battery, which is
+  // what makes long pages feel janky on phones.
+  useEffect(() => {
+    const el = videoRef.current;
+    if (!el) return;
+    if (inView) {
+      el.play().then(() => setPlaying(true)).catch(() => setPlaying(false));
+    } else {
+      el.pause();
+      setPlaying(false);
+    }
+  }, [inView, activeClip]);
 
   const togglePlay = () => {
     if (!videoRef.current) return;
@@ -35,10 +49,9 @@ export default function VideoFeature() {
 
   const switchClip = (idx: number) => {
     setActiveClip(idx);
-    setPlaying(false);
     if (videoRef.current) {
-      videoRef.current.pause();
       videoRef.current.load();
+      videoRef.current.play().then(() => setPlaying(true)).catch(() => setPlaying(false));
     }
   };
 
@@ -65,7 +78,7 @@ export default function VideoFeature() {
             <button
               key={clip.label}
               onClick={() => switchClip(i)}
-              className={`px-5 py-2 font-manrope text-xs tracking-widest uppercase transition-all duration-300 rounded-sm ${
+              className={`px-5 min-h-[44px] md:min-h-0 md:py-2 font-manrope text-xs tracking-widest uppercase transition-all duration-300 rounded-sm ${
                 i === activeClip
                   ? 'bg-ink text-ivory'
                   : 'bg-ivory text-sage border border-linen hover:border-champagne'
@@ -90,8 +103,9 @@ export default function VideoFeature() {
             src={clips[activeClip].src}
             poster={clips[activeClip].poster}
             muted={muted}
+            loop
             playsInline
-            onEnded={() => setPlaying(false)}
+            preload="metadata"
           />
 
           {/* Overlay controls */}

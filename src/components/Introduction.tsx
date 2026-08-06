@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
 import { riverViews, exteriorImages } from '../data/mediaConfig';
+import Photo from './Photo';
 
 export default function Introduction() {
   const { ref, inView } = useInView();
@@ -64,14 +65,16 @@ export default function Introduction() {
             transition={{ duration: 0.9, delay: 0.2 }}
           >
             <div className="grid grid-cols-2 gap-4">
-              <img
-                src={riverViews[4]}
+              <Photo
+                id={riverViews[4]}
                 alt="Savannah River view from the property"
+                sizes="(max-width: 1024px) 45vw, 300px"
                 className="w-full aspect-[4/3] object-contain bg-linen rounded-sm shadow-xl"
               />
-              <img
-                src={exteriorImages[3]}
+              <Photo
+                id={exteriorImages[3]}
                 alt="KJ Augusta Rentals exterior"
+                sizes="(max-width: 1024px) 45vw, 300px"
                 className="w-full aspect-[4/3] object-contain bg-linen rounded-sm shadow-lg"
               />
             </div>

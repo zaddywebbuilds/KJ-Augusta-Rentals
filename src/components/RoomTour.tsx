@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
 import { bedroomImages, livingImages, kitchenImages, outdoorImages } from '../data/mediaConfig';
+import Photo from './Photo';
 
 const rooms = [
   {
@@ -63,7 +64,7 @@ export default function RoomTour() {
             <button
               key={room.name}
               onClick={() => setActive(i)}
-              className={`flex-shrink-0 px-5 py-2.5 font-manrope text-xs tracking-widest uppercase transition-all duration-300 rounded-sm ${
+              className={`flex-shrink-0 px-5 min-h-[44px] md:min-h-0 md:py-2.5 font-manrope text-xs tracking-widest uppercase transition-all duration-300 rounded-sm ${
                 i === active
                   ? 'bg-ink text-ivory'
                   : 'text-sage border border-linen hover:border-champagne'
@@ -93,9 +94,10 @@ export default function RoomTour() {
               </p>
             </div>
             <div className="order-1 lg:order-2 rounded-sm overflow-hidden shadow-xl aspect-[4/3] bg-linen">
-              <img
-                src={rooms[active].image}
-                alt={rooms[active].name}
+              <Photo
+                id={rooms[active].image}
+                alt={`${rooms[active].name} at KJ's River House`}
+                sizes="(max-width: 1024px) 100vw, 560px"
                 className="w-full h-full object-contain"
               />
             </div>

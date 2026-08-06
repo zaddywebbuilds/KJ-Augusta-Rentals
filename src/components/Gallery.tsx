@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import { galleryCategories, allPhotos } from '../data/mediaConfig';
+import Photo, { photoUrl } from './Photo';
 
 export default function Gallery() {
   const { ref, inView } = useInView(0.05);
@@ -49,7 +50,7 @@ export default function Gallery() {
             <button
               key={label}
               onClick={() => setActiveCategory(label)}
-              className={`px-5 py-2 font-manrope text-xs tracking-widest uppercase transition-all duration-300 rounded-sm ${
+              className={`px-5 min-h-[44px] md:min-h-0 md:py-2 font-manrope text-xs tracking-widest uppercase transition-all duration-300 rounded-sm ${
                 label === activeCategory
                   ? 'bg-champagne text-ink'
                   : 'text-ivory/60 border border-ivory/20 hover:border-champagne hover:text-ivory'
@@ -75,11 +76,11 @@ export default function Gallery() {
               transition={{ duration: 0.3 }}
               onClick={() => openLightbox(idx)}
             >
-              <img
-                src={src}
-                alt={`KJ Augusta Rentals - photo ${idx + 1}`}
-                className="w-full h-auto object-cover group-hover:opacity-90 transition-opacity duration-300"
-                loading="lazy"
+              <Photo
+                id={src}
+                alt={`KJ Augusta Rentals — photo ${idx + 1} of ${images.length}`}
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                className="w-full h-auto group-hover:opacity-90 transition-opacity duration-300"
               />
             </motion.div>
           ))}
@@ -116,7 +117,7 @@ export default function Gallery() {
             </button>
             <motion.img
               key={lightboxIdx}
-              src={images[lightboxIdx]}
+              src={photoUrl(images[lightboxIdx], 1600)}
               alt={`Photo ${lightboxIdx + 1}`}
               className="max-w-[90vw] max-h-[85vh] object-contain rounded-sm"
               initial={{ scale: 0.9, opacity: 0 }}

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { exteriorImages, poolImages, outdoorImages, detailImages } from '../data/mediaConfig';
+import Photo from './Photo';
 
 const scenes = [
   {
@@ -52,7 +53,7 @@ export default function StorySection() {
                 <button
                   key={scene.time}
                   onClick={() => setActive(i)}
-                  className={`px-5 py-2 font-manrope text-xs tracking-widest uppercase transition-all duration-300 rounded-sm ${
+                  className={`px-5 min-h-[44px] md:min-h-0 md:py-2 font-manrope text-xs tracking-widest uppercase transition-all duration-300 rounded-sm ${
                     i === active
                       ? 'bg-champagne text-ink'
                       : 'text-ivory/60 hover:text-ivory border border-ivory/20 hover:border-ivory/40'
@@ -91,9 +92,10 @@ export default function StorySection() {
               exit={{ opacity: 0, scale: 0.97 }}
               transition={{ duration: 0.6 }}
             >
-              <img
-                src={scenes[active].image}
-                alt={scenes[active].time}
+              <Photo
+                id={scenes[active].image}
+                alt={`The river house — ${scenes[active].time.toLowerCase()}`}
+                sizes="(max-width: 1024px) 100vw, 560px"
                 className="w-full aspect-[4/3] object-contain"
               />
               {/* Caption sits below the photo — never over it */}

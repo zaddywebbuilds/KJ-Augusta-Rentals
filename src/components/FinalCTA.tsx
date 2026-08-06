@@ -3,6 +3,7 @@ import { Phone } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import { businessConfig } from '../data/businessConfig';
 import { dockImages, outdoorImages, exteriorImages } from '../data/mediaConfig';
+import Photo from './Photo';
 
 const parting = [
   { src: dockImages[1], caption: 'The private dock' },
@@ -33,11 +34,11 @@ export default function FinalCTA() {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.1 * i }}
           >
-            <img
-              src={src}
+            <Photo
+              id={src}
               alt={caption}
+              sizes="(max-width: 640px) 100vw, 400px"
               className="w-full aspect-[4/3] object-contain"
-              loading="lazy"
             />
             <figcaption className="px-4 py-3 border-t border-ivory/10 font-manrope text-[10px] tracking-[0.2em] uppercase text-champagne">
               {caption}

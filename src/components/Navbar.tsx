@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { businessConfig } from '../data/businessConfig';
+import MastersBanner from './MastersBanner';
 
 const navLinks = [
   { label: 'The Property', href: '#property' },
@@ -40,6 +41,10 @@ export default function Navbar() {
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
+        {/* Seasonal urgency strip — rides along inside the fixed header so it
+            can't be overlapped by it */}
+        <MastersBanner />
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
 import { poolImages, riverViews, livingImages, bedroomImages } from '../data/mediaConfig';
+import Photo from './Photo';
 import {
   Waves, Flame, Wind, Wifi, Car, Utensils, Tv, Dumbbell,
   Sun, Anchor, TreePine, Coffee, Sunset, Bath, BedDouble, Shirt
@@ -100,9 +101,10 @@ export default function Amenities() {
             >
               {image && (
                 <div className="bg-ivory">
-                  <img
-                    src={image}
-                    alt={category}
+                  <Photo
+                    id={image}
+                    alt={`${category} at KJ's River House`}
+                    sizes="(max-width: 768px) 100vw, 560px"
                     className="w-full aspect-[4/3] object-contain"
                   />
                 </div>
