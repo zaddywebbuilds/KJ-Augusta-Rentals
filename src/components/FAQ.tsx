@@ -188,7 +188,7 @@ export default function FAQ() {
           >
             <div className="relative overflow-hidden rounded-sm">
               <img
-                src={poolImages[0]}
+                src={poolImages[5]}
                 alt="Guests enjoying the pool"
                 className="w-full h-44 object-cover"
               />

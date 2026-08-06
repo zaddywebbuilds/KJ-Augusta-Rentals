@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
-import { bedroomImages, livingImages, kitchenImages, poolImages, riverViews } from '../data/mediaConfig';
+import { bedroomImages, livingImages, kitchenImages, outdoorImages } from '../data/mediaConfig';
 
 const rooms = [
   {
@@ -22,7 +22,7 @@ const rooms = [
   {
     name: 'Sunroom',
     description: 'A rare feature that earns its name. The sunroom faces the river and floods with natural light throughout the day — perfect for reading, working, or simply watching the water.',
-    image: riverViews[4] ?? livingImages[3],
+    image: livingImages[3],
   },
   {
     name: 'Kitchen',
@@ -32,7 +32,7 @@ const rooms = [
   {
     name: 'Outdoor Living',
     description: 'Wrap-around deck, patio seating, grill, and direct access to the pool and dock. When the weather cooperates, you may never want to go inside.',
-    image: poolImages[0],
+    image: outdoorImages[3],
   },
 ];
 

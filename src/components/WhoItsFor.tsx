@@ -8,7 +8,7 @@ const cards = [
     icon: Trophy,
     title: 'Masters Week',
     body: "Located minutes from Augusta National, KJ's River House is one of the most sought-after retreats during the Masters Tournament. Space, privacy, and a river view make the week unforgettable.",
-    image: riverViews[0],
+    image: riverViews[3],
     cta: 'Reserve Your Dates',
   },
   {
@@ -29,7 +29,7 @@ const cards = [
     icon: Waves,
     title: 'Water Lovers',
     body: "A private dock, kayaks, and the wide Savannah River at your door. Whether you're on the water at dawn or watching it turn gold at dusk, this is the riverfront escape you've been looking for.",
-    image: dockImages[0],
+    image: dockImages[2],
     cta: 'Check Availability',
   },
 ];

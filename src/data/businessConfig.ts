@@ -18,10 +18,12 @@ export const businessConfig = {
     googleMapsUrl: "https://www.google.com/maps/place/KJ+Augusta+Rentals/@33.4411849,-81.9172333,17z/data=!4m17!1m10!3m9!1s0x88f9c97d6cfd07e1:0x9104739615c98f62"
   },
   booking: {
-    airbnbUrl: "https://www.airbnb.com/rooms/3592869",
-    secondaryBookingUrl: "https://www.expedia.com/Augusta-Hotels-PRIVATE-WATERFRONT-HOME-W-POOL.h27442126.Hotel-Information",
-    secondaryBookingLabel: "View on Expedia",
-    availabilityIsExternal: true
+    // Direct booking only — no third-party platforms, no third-party fees.
+    // A live calendar (Bookee) replaces the inquiry form once integrated.
+    mode: "direct",
+    platformName: "Bookee",
+    platformLive: false,
+    collectsPaymentOnSite: false
   },
   property: {
     guests: 7,
@@ -33,9 +35,9 @@ export const businessConfig = {
     waterfront: true
   },
   trustSignals: {
-    airbnbRating: 4.8,
-    airbnbReviewCount: 41,
-    hostSuperhost: true
+    googleRating: 5.0,
+    googleReviewCount: 22,
+    yearsHosting: 11
   },
   social: {
     facebook: "https://www.facebook.com/KJRentals"

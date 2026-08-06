@@ -145,6 +145,5 @@ export const galleryCategories = [
   { label: 'Details', images: [...dockImages, ...detailImages] },
 ];
 
-export const heroImage = riverViews[0];
-export const introImage1 = poolImages[0];
-export const introImage2 = exteriorImages[0];
+// Video poster frames are the only place photo_01 / photo_06 / photo_16 appear
+// outside the full gallery — no section reuses them.

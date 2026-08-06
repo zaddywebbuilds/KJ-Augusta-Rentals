@@ -27,7 +27,7 @@ export default function AboutKJ() {
               <div className="flex items-center gap-3">
                 <Star className="text-champagne fill-champagne/50" size={20} />
                 <div>
-                  <p className="font-cormorant text-xl text-ink">Superhost</p>
+                  <p className="font-cormorant text-xl text-ink">5.0 Rated</p>
                   <p className="font-manrope text-xs text-sage">11 years hosting</p>
                 </div>
               </div>
@@ -69,7 +69,7 @@ export default function AboutKJ() {
             {/* Badges */}
             <div className="flex flex-wrap gap-4 mb-8">
               {[
-                { icon: Star, label: 'Verified Superhost' },
+                { icon: Star, label: '5.0 on Google' },
                 { icon: Shield, label: '11+ Years Hosting' },
                 { icon: Home, label: 'Military Veteran' },
               ].map(({ icon: Icon, label }) => (
