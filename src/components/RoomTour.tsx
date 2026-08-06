@@ -22,7 +22,7 @@ const rooms = [
   {
     name: 'Sunroom',
     description: 'A rare feature that earns its name. The sunroom faces the river and floods with natural light throughout the day — perfect for reading, working, or simply watching the water.',
-    image: livingImages[3],
+    image: livingImages[2],
   },
   {
     name: 'Kitchen',
@@ -32,7 +32,7 @@ const rooms = [
   {
     name: 'Outdoor Living',
     description: 'Wrap-around deck, patio seating, grill, and direct access to the pool and dock. When the weather cooperates, you may never want to go inside.',
-    image: outdoorImages[3],
+    image: outdoorImages[7],
   },
 ];
 
@@ -92,11 +92,11 @@ export default function RoomTour() {
                 {rooms[active].description}
               </p>
             </div>
-            <div className="order-1 lg:order-2 rounded-sm overflow-hidden shadow-xl aspect-[4/3]">
+            <div className="order-1 lg:order-2 rounded-sm overflow-hidden shadow-xl aspect-[4/3] bg-linen">
               <img
                 src={rooms[active].image}
                 alt={rooms[active].name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
           </motion.div>

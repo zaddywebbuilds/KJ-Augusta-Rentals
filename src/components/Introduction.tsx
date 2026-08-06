@@ -57,32 +57,29 @@ export default function Introduction() {
             </div>
           </motion.div>
 
-          {/* Images — clean surface grid, no overlap */}
+          {/* Images — full-frame, nothing cropped */}
           <motion.div
-            className="grid grid-cols-2 gap-4 h-[500px] lg:h-[580px]"
             initial={{ opacity: 0, x: 40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.9, delay: 0.2 }}
           >
-            {/* Left column — tall river view */}
-            <img
-              src={riverViews[4]}
-              alt="Savannah River view from the property"
-              className="w-full h-full object-cover rounded-sm shadow-xl"
-            />
-            {/* Right column — exterior + stats badge */}
-            <div className="flex flex-col gap-4 h-full">
+            <div className="grid grid-cols-2 gap-4">
               <img
-                src={exteriorImages[2]}
-                alt="KJ Augusta Rentals exterior"
-                className="w-full flex-1 object-cover rounded-sm shadow-lg"
+                src={riverViews[4]}
+                alt="Savannah River view from the property"
+                className="w-full aspect-[4/3] object-contain bg-linen rounded-sm shadow-xl"
               />
-              <div className="bg-ink rounded-sm px-5 py-5 flex items-center gap-4 flex-shrink-0">
-                <span className="font-cormorant text-5xl text-ivory leading-none">~3</span>
-                <div>
-                  <p className="font-manrope text-[9px] tracking-[0.2em] uppercase text-champagne">Private Acres</p>
-                  <p className="font-manrope text-[9px] tracking-[0.15em] uppercase text-ivory/50 mt-1">Savannah River</p>
-                </div>
+              <img
+                src={exteriorImages[3]}
+                alt="KJ Augusta Rentals exterior"
+                className="w-full aspect-[4/3] object-contain bg-linen rounded-sm shadow-lg"
+              />
+            </div>
+            <div className="mt-4 bg-ink rounded-sm px-6 py-5 flex items-center gap-4">
+              <span className="font-cormorant text-5xl text-ivory leading-none">~3</span>
+              <div>
+                <p className="font-manrope text-[9px] tracking-[0.2em] uppercase text-champagne">Private Acres</p>
+                <p className="font-manrope text-[9px] tracking-[0.15em] uppercase text-ivory/50 mt-1">On the Savannah River</p>
               </div>
             </div>
           </motion.div>

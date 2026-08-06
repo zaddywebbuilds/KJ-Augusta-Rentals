@@ -20,7 +20,10 @@ import MobileBookingBar from './components/MobileBookingBar';
 
 function App() {
   return (
-    <div className="min-h-screen bg-ivory text-ink">
+    // overflow-x-clip (not -hidden) contains off-screen entry-animation
+    // transforms without creating a scroll container that would break
+    // the sticky booking panel in the FAQ section.
+    <div className="min-h-screen bg-ivory text-ink overflow-x-clip">
       <Navbar />
       <Hero />
       <Introduction />

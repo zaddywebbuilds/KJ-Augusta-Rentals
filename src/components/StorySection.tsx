@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { riverViews, poolImages, outdoorImages, detailImages } from '../data/mediaConfig';
+import { exteriorImages, poolImages, outdoorImages, detailImages } from '../data/mediaConfig';
 
 const scenes = [
   {
     time: 'Morning',
     headline: 'Coffee, river, silence.',
     body: "The Savannah moves slowly at dawn. From the deck, you watch it catch the first light while the coffee brews. There's nothing to do yet — and that's exactly the point. The kayaks are ready when you are.",
-    image: riverViews[2],
+    image: exteriorImages[1],
   },
   {
     time: 'Afternoon',
@@ -85,7 +85,7 @@ export default function StorySection() {
           <AnimatePresence mode="wait">
             <motion.div
               key={active}
-              className="relative overflow-hidden rounded-sm shadow-2xl"
+              className="rounded-sm overflow-hidden shadow-2xl bg-ivory/5"
               initial={{ opacity: 0, scale: 1.04 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.97 }}
@@ -94,9 +94,10 @@ export default function StorySection() {
               <img
                 src={scenes[active].image}
                 alt={scenes[active].time}
-                className="w-full aspect-[4/3] object-cover"
+                className="w-full aspect-[4/3] object-contain"
               />
-              <div className="absolute bottom-0 left-0 right-0 px-5 py-4 bg-gradient-to-t from-ink/80 to-transparent">
+              {/* Caption sits below the photo — never over it */}
+              <div className="px-5 py-3 bg-ivory/5 border-t border-ivory/10">
                 <span className="font-manrope text-[10px] tracking-[0.25em] uppercase text-champagne">
                   {scenes[active].time}
                 </span>

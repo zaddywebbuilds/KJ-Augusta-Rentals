@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
-import { poolImages, riverViews } from '../data/mediaConfig';
+import { poolImages, riverViews, livingImages, bedroomImages } from '../data/mediaConfig';
 import {
   Waves, Flame, Wind, Wifi, Car, Utensils, Tv, Dumbbell,
   Sun, Anchor, TreePine, Coffee, Sunset, Bath, BedDouble, Shirt
@@ -21,7 +21,7 @@ const amenityGroups = [
   {
     category: 'Outdoors',
     icon: Sun,
-    image: poolImages[1],
+    image: poolImages[4],
     note: '🌊 Saltwater pool open April – October',
     items: [
       { icon: Sun, label: 'Saltwater pool (seasonal, Apr–Oct)' },
@@ -33,7 +33,7 @@ const amenityGroups = [
   {
     category: 'Inside',
     icon: Utensils,
-    image: null,
+    image: livingImages[1],
     items: [
       { icon: Utensils, label: 'Fully equipped kitchen' },
       { icon: Tv, label: 'Smart TV / streaming' },
@@ -45,7 +45,7 @@ const amenityGroups = [
   {
     category: 'Rest & Refresh',
     icon: BedDouble,
-    image: null,
+    image: bedroomImages[1],
     items: [
       { icon: BedDouble, label: '6 beds across 2 bedrooms' },
       { icon: Bath, label: '2 full bathrooms' },
@@ -63,7 +63,7 @@ export default function Amenities() {
     <section id="amenities" ref={ref as React.RefObject<HTMLElement>} className="py-12 md:py-16 bg-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          className="text-center mb-20"
+          className="text-center mb-12"
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
@@ -99,11 +99,11 @@ export default function Amenities() {
               transition={{ duration: 0.7, delay: 0.1 * groupIdx }}
             >
               {image && (
-                <div className="h-48 overflow-hidden">
+                <div className="bg-ivory">
                   <img
                     src={image}
                     alt={category}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                    className="w-full aspect-[4/3] object-contain"
                   />
                 </div>
               )}

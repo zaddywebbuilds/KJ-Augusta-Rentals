@@ -86,7 +86,7 @@ export default function VideoFeature() {
           <video
             ref={videoRef}
             key={activeClip}
-            className="w-full aspect-video object-cover"
+            className="w-full aspect-video object-contain bg-ink"
             src={clips[activeClip].src}
             poster={clips[activeClip].poster}
             muted={muted}

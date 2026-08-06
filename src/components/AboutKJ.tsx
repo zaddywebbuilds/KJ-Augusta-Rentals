@@ -21,7 +21,7 @@ export default function AboutKJ() {
             <img
               src={detailImages[1]}
               alt="KJ Augusta Rentals property"
-              className="w-full aspect-[4/3] object-cover rounded-sm shadow-xl"
+              className="w-full aspect-[4/3] object-contain bg-linen rounded-sm shadow-xl"
             />
             <div className="absolute -bottom-6 -right-6 bg-ivory border border-champagne/20 rounded-sm p-5 shadow-lg">
               <div className="flex items-center gap-3">

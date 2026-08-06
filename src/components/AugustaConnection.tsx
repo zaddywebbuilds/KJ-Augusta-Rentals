@@ -1,15 +1,40 @@
 import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
-import { MapPin, ExternalLink } from 'lucide-react';
+import { Waves, Building2, Trophy, Plane, ExternalLink } from 'lucide-react';
 import { businessConfig } from '../data/businessConfig';
+import { dockImages, exteriorImages, detailImages } from '../data/mediaConfig';
 
-const landmarks = [
-  { name: "KJ's River House", note: 'Your stay', x: 50, y: 50, highlight: true },
-  { name: 'Savannah River', note: 'At your doorstep', x: 60, y: 42, highlight: false },
-  { name: 'Downtown Augusta', note: 'Convenient access', x: 68, y: 35, highlight: false },
-  { name: 'Augusta National Area', note: 'Convenient access', x: 30, y: 28, highlight: false },
-  { name: 'Augusta Airport', note: 'Convenient access', x: 75, y: 62, highlight: false },
-  { name: 'Augusta Riverwalk', note: 'Nearby', x: 70, y: 38, highlight: false },
+const destinations = [
+  {
+    icon: Waves,
+    name: 'The Savannah River',
+    detail: 'At your doorstep — private dock and kayak access.',
+    tone: 'champagne',
+  },
+  {
+    icon: Building2,
+    name: 'Downtown Augusta',
+    detail: 'Historic riverfront district: restaurants, music, the Riverwalk.',
+    tone: 'sage',
+  },
+  {
+    icon: Trophy,
+    name: 'Augusta National Area',
+    detail: 'Home of the Masters — a practical base for tournament week.',
+    tone: 'clay',
+  },
+  {
+    icon: Plane,
+    name: 'Augusta Regional Airport',
+    detail: 'Easy fly-in for groups travelling in together.',
+    tone: 'sage',
+  },
+];
+
+const scenes = [
+  { src: exteriorImages[7], caption: 'The approach' },
+  { src: dockImages[4], caption: 'Down to the water' },
+  { src: detailImages[3], caption: 'Room to breathe' },
 ];
 
 export default function AugustaConnection() {
@@ -18,8 +43,9 @@ export default function AugustaConnection() {
   return (
     <section ref={ref as React.RefObject<HTMLElement>} className="py-12 md:py-16 bg-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <motion.div
-          className="text-center mb-16"
+          className="max-w-2xl mb-12"
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
@@ -27,146 +53,178 @@ export default function AugustaConnection() {
           <p className="font-manrope text-[10px] tracking-[0.3em] uppercase text-clay mb-4">
             Where You'll Be
           </p>
-          <h2 className="font-cormorant text-4xl md:text-5xl lg:text-6xl text-ink">
+          <h2 className="font-cormorant text-4xl md:text-5xl lg:text-6xl text-ink leading-tight">
             The quiet side of Augusta.
           </h2>
-          <p className="font-manrope text-base text-sage mt-6 max-w-xl mx-auto leading-relaxed">
-            KJ's River House sits on the Savannah River at Augusta, Georgia —
-            far enough from city noise to feel like an escape, close enough to
+          <p className="font-manrope text-base text-sage mt-5 leading-relaxed">
+            Far enough from city noise to feel like an escape — close enough to
             everything that matters to be a perfect home base.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* SVG Map */}
+        {/* Map + destinations */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_1fr] gap-8 items-stretch">
+          {/* Cartographic map card */}
           <motion.div
-            className="relative bg-linen rounded-sm overflow-hidden shadow-lg border border-champagne/20"
-            initial={{ opacity: 0, x: -40 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8 }}
+            className="relative rounded-sm overflow-hidden bg-ink shadow-2xl"
+            initial={{ opacity: 0, y: 40 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.9 }}
           >
-            <svg viewBox="0 0 400 300" className="w-full" xmlns="http://www.w3.org/2000/svg">
-              {/* Background */}
-              <rect width="400" height="300" fill="#E4D8C9" />
+            <svg viewBox="0 0 480 360" className="w-full block" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="riverGrad" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stopColor="#667466" stopOpacity="0.35" />
+                  <stop offset="50%" stopColor="#CDB28A" stopOpacity="0.55" />
+                  <stop offset="100%" stopColor="#667466" stopOpacity="0.35" />
+                </linearGradient>
+                <radialGradient id="pinGlow">
+                  <stop offset="0%" stopColor="#CDB28A" stopOpacity="0.55" />
+                  <stop offset="100%" stopColor="#CDB28A" stopOpacity="0" />
+                </radialGradient>
+                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#F5EFE6" strokeWidth="0.5" opacity="0.05" />
+                </pattern>
+              </defs>
 
-              {/* River (Savannah River — flowing roughly east-west) */}
+              <rect width="480" height="360" fill="#121412" />
+              <rect width="480" height="360" fill="url(#grid)" />
+
+              {/* River — wide glow then defined ribbon */}
               <path
-                d="M 0 130 Q 60 120 100 135 Q 150 150 200 140 Q 250 130 300 145 Q 350 155 400 145"
-                fill="none"
-                stroke="#667466"
-                strokeWidth="20"
-                opacity="0.3"
+                d="M -10 175 Q 70 158 130 178 Q 195 202 260 186 Q 330 168 400 192 Q 445 206 490 196"
+                fill="none" stroke="url(#riverGrad)" strokeWidth="34" strokeLinecap="round" opacity="0.4"
               />
               <path
-                d="M 0 130 Q 60 120 100 135 Q 150 150 200 140 Q 250 130 300 145 Q 350 155 400 145"
-                fill="none"
-                stroke="#667466"
-                strokeWidth="12"
-                opacity="0.4"
+                d="M -10 175 Q 70 158 130 178 Q 195 202 260 186 Q 330 168 400 192 Q 445 206 490 196"
+                fill="none" stroke="url(#riverGrad)" strokeWidth="14" strokeLinecap="round"
               />
-              <text x="160" y="165" fontFamily="Manrope,sans-serif" fontSize="9" fill="#667466" opacity="0.7" textAnchor="middle">
+              <text x="118" y="218" fontFamily="Cormorant Garamond,serif" fontSize="13" fill="#CDB28A" opacity="0.75" fontStyle="italic">
                 Savannah River
               </text>
 
               {/* Roads */}
-              <line x1="0" y1="100" x2="400" y2="100" stroke="#CDB28A" strokeWidth="2" opacity="0.4" strokeDasharray="8,6" />
-              <line x1="200" y1="0" x2="200" y2="300" stroke="#CDB28A" strokeWidth="2" opacity="0.4" strokeDasharray="8,6" />
+              <path d="M 0 108 Q 240 96 480 116" fill="none" stroke="#F5EFE6" strokeWidth="1" opacity="0.14" strokeDasharray="7,7" />
+              <path d="M 236 0 L 236 360" stroke="#F5EFE6" strokeWidth="1" opacity="0.1" strokeDasharray="7,7" />
 
-              {/* KJ River House — main pin */}
-              <circle cx="200" cy="150" r="14" fill="#CDB28A" opacity="0.9" />
-              <circle cx="200" cy="150" r="8" fill="#121412" />
-              <circle cx="200" cy="150" r="4" fill="#F5EFE6" />
-              {/* Pulse animation ring */}
-              <circle cx="200" cy="150" r="20" fill="none" stroke="#CDB28A" strokeWidth="2" opacity="0.4">
-                <animate attributeName="r" values="14;26;14" dur="3s" repeatCount="indefinite" />
-                <animate attributeName="opacity" values="0.5;0;0.5" dur="3s" repeatCount="indefinite" />
+              {/* Landmarks */}
+              <g fontFamily="Manrope,sans-serif" fontSize="9" letterSpacing="1">
+                <circle cx="330" cy="112" r="4.5" fill="#667466" />
+                <circle cx="330" cy="112" r="9" fill="none" stroke="#667466" strokeWidth="1" opacity="0.4" />
+                <text x="344" y="110" fill="#F5EFE6" opacity="0.75">DOWNTOWN</text>
+                <text x="344" y="122" fill="#F5EFE6" opacity="0.45">AUGUSTA</text>
+
+                <circle cx="118" cy="92" r="4.5" fill="#B58B73" />
+                <circle cx="118" cy="92" r="9" fill="none" stroke="#B58B73" strokeWidth="1" opacity="0.4" />
+                <text x="132" y="90" fill="#F5EFE6" opacity="0.75">AUGUSTA</text>
+                <text x="132" y="102" fill="#F5EFE6" opacity="0.45">NATIONAL</text>
+
+                <circle cx="372" cy="268" r="4.5" fill="#667466" />
+                <circle cx="372" cy="268" r="9" fill="none" stroke="#667466" strokeWidth="1" opacity="0.4" />
+                <text x="386" y="272" fill="#F5EFE6" opacity="0.6">AIRPORT</text>
+
+                <circle cx="392" cy="146" r="3.5" fill="#B58B73" opacity="0.8" />
+                <text x="404" y="150" fill="#F5EFE6" opacity="0.5">RIVERWALK</text>
+              </g>
+
+              {/* Property pin */}
+              <circle cx="236" cy="192" r="46" fill="url(#pinGlow)" />
+              <circle cx="236" cy="192" r="20" fill="none" stroke="#CDB28A" strokeWidth="1.5" opacity="0.5">
+                <animate attributeName="r" values="18;40;18" dur="3.6s" repeatCount="indefinite" />
+                <animate attributeName="opacity" values="0.6;0;0.6" dur="3.6s" repeatCount="indefinite" />
               </circle>
-              <text x="200" y="180" fontFamily="Cormorant Garamond,serif" fontSize="11" fill="#121412" fontWeight="600" textAnchor="middle">
+              <circle cx="236" cy="192" r="13" fill="#CDB28A" />
+              <circle cx="236" cy="192" r="6" fill="#121412" />
+              <text x="236" y="232" fontFamily="Cormorant Garamond,serif" fontSize="17" fill="#F5EFE6" textAnchor="middle">
                 KJ's River House
               </text>
-
-              {/* Downtown Augusta */}
-              <circle cx="272" cy="105" r="6" fill="#667466" opacity="0.8" />
-              <text x="272" y="96" fontFamily="Manrope,sans-serif" fontSize="8" fill="#667466" textAnchor="middle">Downtown</text>
-              <text x="272" y="86" fontFamily="Manrope,sans-serif" fontSize="8" fill="#667466" textAnchor="middle">Augusta</text>
-
-              {/* Augusta National Area */}
-              <circle cx="120" cy="84" r="6" fill="#B58B73" opacity="0.8" />
-              <text x="120" y="75" fontFamily="Manrope,sans-serif" fontSize="8" fill="#B58B73" textAnchor="middle">Augusta National</text>
-              <text x="120" y="65" fontFamily="Manrope,sans-serif" fontSize="8" fill="#B58B73" textAnchor="middle">Area</text>
-
-              {/* Augusta Airport */}
-              <circle cx="300" cy="186" r="6" fill="#667466" opacity="0.7" />
-              <text x="300" y="200" fontFamily="Manrope,sans-serif" fontSize="8" fill="#667466" textAnchor="middle">Airport</text>
-
-              {/* Augusta Riverwalk */}
-              <circle cx="310" cy="125" r="5" fill="#B58B73" opacity="0.7" />
-              <text x="310" y="116" fontFamily="Manrope,sans-serif" fontSize="7" fill="#B58B73" textAnchor="middle">Riverwalk</text>
-
-              {/* Compass rose */}
-              <text x="36" y="24" fontFamily="serif" fontSize="14" fill="#121412" opacity="0.4" textAnchor="middle">N</text>
-              <line x1="36" y1="26" x2="36" y2="40" stroke="#121412" strokeWidth="1" opacity="0.3" />
-
-              {/* Scale label */}
-              <text x="200" y="292" fontFamily="Manrope,sans-serif" fontSize="8" fill="#667466" textAnchor="middle" opacity="0.6">
-                Augusta, Georgia — Savannah River Area
+              <text x="236" y="248" fontFamily="Manrope,sans-serif" fontSize="8" fill="#CDB28A" textAnchor="middle" letterSpacing="2.5">
+                YOUR STAY
               </text>
+
+              {/* Compass */}
+              <g opacity="0.35">
+                <path d="M 440 34 L 435 50 L 440 46 L 445 50 Z" fill="#F5EFE6" />
+                <text x="440" y="28" fontFamily="Cormorant Garamond,serif" fontSize="12" fill="#F5EFE6" textAnchor="middle">N</text>
+              </g>
             </svg>
+
+            <div className="px-6 py-4 border-t border-ivory/10 flex items-center justify-between gap-4">
+              <span className="font-manrope text-[9px] tracking-[0.25em] uppercase text-ivory/40">
+                Augusta, Georgia
+              </span>
+              <span className="font-manrope text-[9px] tracking-[0.25em] uppercase text-ivory/30">
+                Illustrative — not to scale
+              </span>
+            </div>
           </motion.div>
 
-          {/* Location details */}
+          {/* Destination list */}
           <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex flex-col gap-3"
+            initial={{ opacity: 0, y: 40 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.9, delay: 0.15 }}
           >
-            <div className="space-y-8">
-              {[
-                {
-                  label: 'Your address',
-                  value: businessConfig.location.showExactAddressPublicly
-                    ? businessConfig.location.streetAddress
-                    : 'Augusta, Georgia • Savannah River',
-                  note: 'Exact address shared upon confirmed booking.',
-                },
-                {
-                  label: 'Downtown Augusta',
-                  value: 'Convenient access',
-                  note: 'Historic downtown, restaurants, entertainment.',
-                },
-                {
-                  label: 'Augusta National Area',
-                  value: 'Convenient access',
-                  note: 'Home of the Masters Tournament.',
-                },
-                {
-                  label: 'Augusta Regional Airport',
-                  value: 'Convenient access',
-                  note: 'Easy fly-in for group stays.',
-                },
-              ].map(({ label, value, note }) => (
-                <div key={label} className="flex gap-4 border-b border-linen pb-6 last:border-0">
-                  <MapPin className="text-champagne flex-shrink-0 mt-1" size={18} />
-                  <div>
-                    <p className="font-manrope text-xs tracking-widest uppercase text-clay mb-1">{label}</p>
-                    <p className="font-cormorant text-2xl text-ink mb-1">{value}</p>
-                    {note && <p className="font-manrope text-xs text-sage">{note}</p>}
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="mt-10">
-              <a
-                href={businessConfig.location.googleMapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 border border-ink text-ink font-manrope text-xs tracking-widest uppercase hover:bg-ink hover:text-ivory transition-all duration-300 rounded-sm"
+            {destinations.map(({ icon: Icon, name, detail, tone }, i) => (
+              <motion.div
+                key={name}
+                className="group flex-1 flex items-start gap-4 bg-linen border border-champagne/20 rounded-sm p-5 hover:border-champagne/60 hover:shadow-md transition-all duration-300"
+                initial={{ opacity: 0, x: 24 }}
+                animate={inView ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.6, delay: 0.25 + i * 0.08 }}
               >
-                <ExternalLink size={14} />
-                View on Google Maps
-              </a>
-            </div>
+                <span
+                  className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300 ${
+                    tone === 'champagne'
+                      ? 'bg-champagne/20 text-champagne group-hover:bg-champagne group-hover:text-ink'
+                      : tone === 'clay'
+                      ? 'bg-clay/15 text-clay group-hover:bg-clay group-hover:text-ivory'
+                      : 'bg-sage/15 text-sage group-hover:bg-sage group-hover:text-ivory'
+                  }`}
+                >
+                  <Icon size={17} />
+                </span>
+                <div>
+                  <p className="font-cormorant text-2xl text-ink leading-tight mb-1">{name}</p>
+                  <p className="font-manrope text-[13px] text-sage leading-relaxed">{detail}</p>
+                </div>
+              </motion.div>
+            ))}
+
+            <a
+              href={businessConfig.location.googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 mt-1 px-6 py-4 bg-ink text-ivory font-manrope text-xs tracking-[0.2em] uppercase hover:bg-champagne hover:text-ink transition-all duration-300 rounded-sm"
+            >
+              <ExternalLink size={14} />
+              View on Google Maps
+            </a>
           </motion.div>
+        </div>
+
+        {/* Scene strip */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+          {scenes.map(({ src, caption }, i) => (
+            <motion.figure
+              key={src}
+              className="rounded-sm overflow-hidden bg-linen border border-champagne/20"
+              initial={{ opacity: 0, y: 30 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, delay: 0.4 + i * 0.1 }}
+            >
+              <img
+                src={src}
+                alt={caption}
+                className="w-full aspect-[4/3] object-contain"
+                loading="lazy"
+              />
+              <figcaption className="px-4 py-3 border-t border-champagne/20 font-manrope text-[10px] tracking-[0.2em] uppercase text-clay">
+                {caption}
+              </figcaption>
+            </motion.figure>
+          ))}
         </div>
       </div>
     </section>

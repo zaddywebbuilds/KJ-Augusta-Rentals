@@ -186,13 +186,12 @@ export default function FAQ() {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="relative overflow-hidden rounded-sm">
+            <div className="overflow-hidden rounded-sm bg-ivory">
               <img
                 src={poolImages[5]}
                 alt="Guests enjoying the pool"
-                className="w-full h-44 object-cover"
+                className="w-full aspect-[4/3] object-contain"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/60 to-transparent" />
             </div>
 
             <div className="bg-ink rounded-sm p-5">
@@ -205,13 +204,12 @@ export default function FAQ() {
               </p>
             </div>
 
-            <div className="relative overflow-hidden rounded-sm">
+            <div className="overflow-hidden rounded-sm bg-ivory">
               <img
                 src={dockImages[0]}
                 alt="Private dock on the Savannah River"
-                className="w-full h-36 object-cover"
+                className="w-full aspect-[4/3] object-contain"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/50 to-transparent" />
             </div>
 
             <div className="bg-linen border border-champagne/20 rounded-sm p-5">

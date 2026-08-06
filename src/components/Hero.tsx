@@ -93,10 +93,10 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.5, ease: 'easeOut' }}
         >
-          <div className="relative w-full h-full">
+          <div className="relative w-full">
             <video
               ref={videoRef}
-              className="w-full h-full object-cover rounded-sm shadow-[0_40px_100px_rgba(0,0,0,0.7)]"
+              className="w-full h-auto max-h-[78vh] object-contain rounded-sm shadow-[0_40px_100px_rgba(0,0,0,0.7)]"
               src={videos.hero}
               poster={videoPosters.hero}
               autoPlay

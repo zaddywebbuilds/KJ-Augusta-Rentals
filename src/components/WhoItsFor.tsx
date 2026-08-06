@@ -64,11 +64,11 @@ export default function WhoItsFor() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               whileHover={{ y: -6 }}
             >
-              <div className="h-52 overflow-hidden">
+              <div className="bg-ivory">
                 <img
                   src={image}
                   alt={title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full aspect-[4/3] object-contain"
                 />
               </div>
               <div className="p-6">
