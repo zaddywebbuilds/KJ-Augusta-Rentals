@@ -18,6 +18,7 @@ import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import MobileBookingBar from './components/MobileBookingBar';
 import ReviewPopup from './components/ReviewPopup';
+import BookingActivityPopup from './components/BookingActivityPopup';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
       <Footer />
       <MobileBookingBar />
       <ReviewPopup />
+      <BookingActivityPopup />
     </div>
   );
 }
