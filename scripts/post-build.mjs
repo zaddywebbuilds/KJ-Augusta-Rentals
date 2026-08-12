@@ -14,3 +14,7 @@ await copyFile('dist/index.html', 'dist/404.html');
 await writeFile('dist/.nojekyll', '');
 
 console.log('post-build: 404.html + .nojekyll written');
+
+// Real 200-status pages per route; 404.html above stays as the safety net for
+// anything not in the route list.
+await import('./prerender.mjs');
