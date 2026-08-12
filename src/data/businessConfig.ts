@@ -19,17 +19,20 @@ export const businessConfig = {
   },
   booking: {
     // Direct booking only — no third-party platforms, no third-party fees.
-    // A live calendar (Bookee) replaces the inquiry form once integrated.
+    // Each accommodation page renders a live availability calendar once its
+    // `googleCalendarId` is set in accommodations.ts; until then the enquiry
+    // form is the booking path.
     mode: "direct",
-    platformName: "Bookee",
-    platformLive: false,
+    calendarProvider: "google",
+    calendarLive: false,
     collectsPaymentOnSite: false
   },
+  // Whole-property figures. Per-accommodation numbers live in accommodations.ts.
   property: {
-    guests: 7,
-    bedrooms: 2,
-    beds: 6,
-    bathrooms: 2,
+    guests: 16,
+    bedrooms: 3,
+    beds: 9,
+    bathrooms: 3,
     squareFeet: 2638,
     acreage: 3,
     waterfront: true
@@ -37,6 +40,8 @@ export const businessConfig = {
   trustSignals: {
     googleRating: 5.0,
     googleReviewCount: 22,
+    airbnbRating: 5.0,
+    airbnbReviewCount: 22,
     yearsHosting: 11
   },
   // The Masters is played the first full week of April. Update `year` each

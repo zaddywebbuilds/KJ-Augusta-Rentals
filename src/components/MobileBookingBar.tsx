@@ -1,19 +1,18 @@
 import { Phone } from 'lucide-react';
 import { businessConfig } from '../data/businessConfig';
+import { useGoToStays } from '../hooks/useGoToStays';
 
 export default function MobileBookingBar() {
-  const scrollToBook = () => {
-    document.querySelector('#book')?.scrollIntoView({ behavior: 'smooth' });
-  };
+  const goToStays = useGoToStays();
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-ivory border-t border-linen shadow-lg">
       <div className="flex divide-x divide-linen">
         <button
-          onClick={scrollToBook}
+          onClick={goToStays}
           className="flex-1 flex items-center justify-center py-4 bg-champagne text-ink font-manrope text-xs tracking-widest uppercase font-semibold hover:bg-clay hover:text-ivory transition-all"
         >
-          Book Direct
+          Check Availability
         </button>
         <a
           href={`tel:${businessConfig.contact.phoneHref}`}

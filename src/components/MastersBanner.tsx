@@ -1,18 +1,16 @@
 import { Trophy, ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { businessConfig } from '../data/businessConfig';
 
 export default function MastersBanner() {
   const { enabled, label, detail } = businessConfig.masters;
+  const navigate = useNavigate();
   if (!enabled) return null;
-
-  const toBook = () => {
-    document.querySelector('#book')?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <aside className="bg-ink border-b border-champagne/25">
       <button
-        onClick={toBook}
+        onClick={() => navigate('/masters')}
         className="group w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex items-center justify-center gap-x-3 gap-y-1 flex-wrap text-center"
       >
         <span className="inline-flex items-center gap-2">

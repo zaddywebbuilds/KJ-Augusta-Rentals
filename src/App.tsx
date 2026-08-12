@@ -1,48 +1,47 @@
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Introduction from './components/Introduction';
-import PropertyStats from './components/PropertyStats';
-import StorySection from './components/StorySection';
-import Amenities from './components/Amenities';
-import VideoFeature from './components/VideoFeature';
-import Gallery from './components/Gallery';
-import RoomTour from './components/RoomTour';
-import WhoItsFor from './components/WhoItsFor';
-import AugustaConnection from './components/AugustaConnection';
-import Reviews from './components/Reviews';
-import AboutKJ from './components/AboutKJ';
-import FAQ from './components/FAQ';
-import BookingPanel from './components/BookingPanel';
-import LocationSection from './components/LocationSection';
-import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import MobileBookingBar from './components/MobileBookingBar';
 import ReviewPopup from './components/ReviewPopup';
 import BookingActivityPopup from './components/BookingActivityPopup';
+import HomePage from './pages/HomePage';
+import StayPage from './pages/StayPage';
+import MastersPage from './pages/MastersPage';
 
-function App() {
+function ScrollBehaviour() {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      // Let the destination route render before hunting for the anchor.
+      requestAnimationFrame(() =>
+        document.querySelector(hash)?.scrollIntoView({ behavior: 'smooth' })
+      );
+      return;
+    }
+    window.scrollTo(0, 0);
+  }, [pathname, hash]);
+
+  return null;
+}
+
+export default function App() {
   return (
     // overflow-x-clip (not -hidden) contains off-screen entry-animation
     // transforms without creating a scroll container that would break
-    // the sticky booking panel in the FAQ section.
+    // sticky positioning inside the pages.
     <div className="min-h-screen bg-ivory text-ink overflow-x-clip">
+      <ScrollBehaviour />
       <Navbar />
-      <Hero />
-      <Introduction />
-      <PropertyStats />
-      <StorySection />
-      <Amenities />
-      <VideoFeature />
-      <Gallery />
-      <RoomTour />
-      <WhoItsFor />
-      <AugustaConnection />
-      <Reviews />
-      <AboutKJ />
-      <FAQ />
-      <BookingPanel />
-      <LocationSection />
-      <FinalCTA />
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/stays/:slug" element={<StayPage />} />
+          <Route path="/masters" element={<MastersPage />} />
+          <Route path="*" element={<HomePage />} />
+        </Routes>
+      </main>
       <Footer />
       <MobileBookingBar />
       <ReviewPopup />
@@ -50,5 +49,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

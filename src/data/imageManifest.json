@@ -1312,5 +1312,2085 @@
     "file": "photo_70-1600.webp"
    }
   ]
+ },
+ "entire-house_01": {
+  "width": 2560,
+  "height": 1704,
+  "aspect": 1.5023,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_01-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_01-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_01-1600.webp"
+   }
+  ],
+  "alt": "Another view of the spacious living area featuring vaulted ceilings and relaxing seating."
+ },
+ "entire-house_02": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_02-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_02-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_02-1600.webp"
+   }
+  ],
+  "alt": "Comfortable living area with cozy seating and TV, perfect for relaxing after a day exploring Augusta."
+ },
+ "entire-house_03": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_03-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_03-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_03-1600.webp"
+   }
+  ],
+  "alt": "Bright living space with modern seating and large windows bringing in natural light and scenic views."
+ },
+ "entire-house_04": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_04-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_04-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_04-1600.webp"
+   }
+  ],
+  "alt": "Open living room with comfortable seating and entertainment space for gathering with family and friends."
+ },
+ "entire-house_05": {
+  "width": 2560,
+  "height": 1708,
+  "aspect": 1.4988,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_05-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_05-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_05-1600.webp"
+   }
+  ],
+  "alt": "Bright bedroom with comfortable bedding and natural light, perfect for a peaceful night’s rest."
+ },
+ "entire-house_06": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_06-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_06-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_06-1600.webp"
+   }
+  ],
+  "alt": "Cozy living area with comfortable seating and TV, offering a relaxing space to unwind after a day out."
+ },
+ "entire-house_07": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_07-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_07-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_07-1600.webp"
+   }
+  ],
+  "alt": "Bedroom with large windows and balcony access offering beautiful waterfront views."
+ },
+ "entire-house_08": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_08-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_08-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_08-1600.webp"
+   }
+  ],
+  "alt": "Bright sunroom with comfortable seating and large windows overlooking the water."
+ },
+ "entire-house_09": {
+  "width": 2560,
+  "height": 1705,
+  "aspect": 1.5015,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_09-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_09-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_09-1600.webp"
+   }
+  ],
+  "alt": "Spacious living room with wide doors opening to the patio and beautiful waterfront scenery."
+ },
+ "entire-house_10": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_10-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_10-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_10-1600.webp"
+   }
+  ],
+  "alt": "Modern kitchen with island seating and stainless appliances, perfect for preparing meals during your stay."
+ },
+ "entire-house_11": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_11-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_11-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_11-1600.webp"
+   }
+  ],
+  "alt": "Bright and fully equipped kitchen with plenty of counter space and natural light."
+ },
+ "entire-house_12": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_12-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_12-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_12-1600.webp"
+   }
+  ],
+  "alt": "Kitchen area with modern appliances and ample workspace for cooking and entertaining."
+ },
+ "entire-house_13": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_13-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_13-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_13-1600.webp"
+   }
+  ],
+  "alt": "Coffee station with coffee maker and mugs; perfect for starting your mornings during your stay."
+ },
+ "entire-house_14": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_14-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_14-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_14-1600.webp"
+   }
+  ],
+  "alt": "Convenient laundry area with washer and dryer, ideal for longer stays and added guest comfort."
+ },
+ "entire-house_15": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_15-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_15-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_15-1600.webp"
+   }
+  ],
+  "alt": "Dining area with large table perfect for group meals and gatherings."
+ },
+ "entire-house_16": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_16-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_16-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_16-1600.webp"
+   }
+  ],
+  "alt": "Open dining and living area with fireplace creating a warm and welcoming gathering space."
+ },
+ "entire-house_17": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_17-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_17-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_17-1600.webp"
+   }
+  ],
+  "alt": "Spacious bedroom with comfortable bedding and large windows offering beautiful views."
+ },
+ "entire-house_18": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_18-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_18-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_18-1600.webp"
+   }
+  ],
+  "alt": "Peaceful bedroom with soft lighting and comfortable bedding for restful nights."
+ },
+ "entire-house_19": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_19-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_19-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_19-1600.webp"
+   }
+  ],
+  "alt": "Spacious bedroom suite with sitting area and comfortable bedding."
+ },
+ "entire-house_20": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_20-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_20-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_20-1600.webp"
+   }
+  ],
+  "alt": "Bright bedroom with multiple beds providing comfortable sleeping space for guests."
+ },
+ "entire-house_21": {
+  "width": 2560,
+  "height": 1711,
+  "aspect": 1.4962,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_21-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_21-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_21-1600.webp"
+   }
+  ],
+  "alt": "Comfortable bedroom with king bed and large windows bringing in natural light."
+ },
+ "entire-house_22": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_22-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_22-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_22-1600.webp"
+   }
+  ],
+  "alt": "Spacious bedroom with simple décor and comfortable bed designed for a relaxing stay."
+ },
+ "entire-house_23": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_23-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_23-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_23-1600.webp"
+   }
+  ],
+  "alt": "Large bedroom with cozy beds and natural light creating a relaxing atmosphere."
+ },
+ "entire-house_24": {
+  "width": 2560,
+  "height": 1705,
+  "aspect": 1.5015,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_24-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_24-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_24-1600.webp"
+   }
+  ],
+  "alt": "Comfortable bedroom with multiple beds ideal for families or groups."
+ },
+ "entire-house_25": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_25-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_25-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_25-1600.webp"
+   }
+  ],
+  "alt": "Large bathroom with soaking tub and double vanity for added comfort and convenience."
+ },
+ "entire-house_26": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_26-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_26-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_26-1600.webp"
+   }
+  ],
+  "alt": "Clean and spacious bathroom with double sinks and plenty of counter space."
+ },
+ "entire-house_27": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_27-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_27-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_27-1600.webp"
+   }
+  ],
+  "alt": "Walk-in tiled shower with modern design and spacious layout."
+ },
+ "entire-house_28": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_28-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_28-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_28-1600.webp"
+   }
+  ],
+  "alt": "Clean and modern bathroom with shower and essential amenities for a comfortable stay."
+ },
+ "entire-house_29": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_29-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_29-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_29-1600.webp"
+   }
+  ],
+  "alt": "Small workspace with desk and chair for guests who need to work during their stay."
+ },
+ "entire-house_30": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_30-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_30-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_30-1600.webp"
+   }
+  ],
+  "alt": "Large lawn area by the water perfect for outdoor games, relaxing, and enjoying the open space."
+ },
+ "entire-house_31": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_31-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_31-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_31-1600.webp"
+   }
+  ],
+  "alt": "Large waterfront lawn perfect for outdoor games, relaxing, and enjoying the open natural surroundings."
+ },
+ "entire-house_32": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_32-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_32-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_32-1600.webp"
+   }
+  ],
+  "alt": "Lakeside deck with Adirondack chairs overlooking the water; perfect for relaxing, enjoying sunsets, and gathering with friends."
+ },
+ "entire-house_33": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_33-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_33-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_33-1600.webp"
+   }
+  ],
+  "alt": "Outdoor balcony seating with scenic water views; an ideal spot for coffee or evening relaxation."
+ },
+ "entire-house_34": {
+  "width": 2560,
+  "height": 1708,
+  "aspect": 1.4988,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_34-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_34-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_34-1600.webp"
+   }
+  ],
+  "alt": "Waterfront patio seating with comfortable cushions and peaceful lake views."
+ },
+ "entire-house_35": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_35-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_35-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_35-1600.webp"
+   }
+  ],
+  "alt": "Outdoor dining table with lake views, ideal for meals in a beautiful waterfront setting."
+ },
+ "entire-house_36": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_36-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_36-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_36-1600.webp"
+   }
+  ],
+  "alt": "Covered patio with outdoor seating offering a shaded space to relax while enjoying scenic waterfront views."
+ },
+ "entire-house_37": {
+  "width": 2560,
+  "height": 1703,
+  "aspect": 1.5032,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_37-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_37-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_37-1600.webp"
+   }
+  ],
+  "alt": "Covered waterfront lounge area with comfortable seating, ideal for morning coffee or evening conversations."
+ },
+ "entire-house_38": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_38-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_38-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_38-1600.webp"
+   }
+  ],
+  "alt": "Covered patio with ping pong table and seating; great for fun games and relaxing while enjoying the lake views."
+ },
+ "entire-house_39": {
+  "width": 2560,
+  "height": 1703,
+  "aspect": 1.5032,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_39-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_39-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_39-1600.webp"
+   }
+  ],
+  "alt": "Covered waterfront patio seating area perfect for relaxing and enjoying peaceful lake views."
+ },
+ "entire-house_40": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_40-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_40-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_40-1600.webp"
+   }
+  ],
+  "alt": "Covered patio with ping pong table offering fun entertainment for guests of all ages."
+ },
+ "entire-house_41": {
+  "width": 2560,
+  "height": 1715,
+  "aspect": 1.4927,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_41-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_41-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_41-1600.webp"
+   }
+  ],
+  "alt": "Spacious view of the waterfront home featuring outdoor entertainment areas and relaxing lake surroundings."
+ },
+ "entire-house_42": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_42-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_42-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_42-1600.webp"
+   }
+  ],
+  "alt": "Front exterior view of the spacious waterfront home with driveway parking and beautiful outdoor surroundings."
+ },
+ "entire-house_43": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_43-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_43-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_43-1600.webp"
+   }
+  ],
+  "alt": "Welcoming driveway entrance surrounded by greenery for easy access and convenient parking."
+ },
+ "entire-house_44": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_44-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_44-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_44-1600.webp"
+   }
+  ],
+  "alt": "Waterfront home with private swimming pool and beautiful lake views; perfect for relaxing, swimming, and enjoying a peaceful Augusta getaway."
+ },
+ "entire-house_45": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_45-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_45-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_45-1600.webp"
+   }
+  ],
+  "alt": "Sparkling outdoor pool surrounded by lounge chairs and greenery, ideal for relaxing under the sun during your stay."
+ },
+ "entire-house_46": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_46-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_46-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_46-1600.webp"
+   }
+  ],
+  "alt": "Another view of the refreshing private pool area with plenty of space to unwind and enjoy warm Georgia days."
+ },
+ "entire-house_47": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_47-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_47-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_47-1600.webp"
+   }
+  ],
+  "alt": "Another view of the refreshing pool surrounded by lounge chairs and sunny outdoor space."
+ },
+ "entire-house_48": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_48-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_48-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_48-1600.webp"
+   }
+  ],
+  "alt": "Private swimming pool with plenty of space to relax, swim, and enjoy your waterfront stay."
+ },
+ "entire-house_49": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_49-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_49-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_49-1600.webp"
+   }
+  ],
+  "alt": "Private swimming pool with clear blue water and lounge space; perfect for relaxing and cooling off on warm days."
+ },
+ "entire-house_50": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_50-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_50-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_50-1600.webp"
+   }
+  ],
+  "alt": "Another view of the refreshing pool area surrounded by greenery and open outdoor space."
+ },
+ "entire-house_51": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_51-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_51-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_51-1600.webp"
+   }
+  ],
+  "alt": "Lakeside fire pit seating area with Adirondack chairs; perfect for evening conversations and relaxing by the water."
+ },
+ "entire-house_52": {
+  "width": 2560,
+  "height": 2734,
+  "aspect": 0.9364,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_52-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_52-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_52-1600.webp"
+   }
+  ],
+  "alt": "Kayaks included with your stay, as well as life jackets"
+ },
+ "entire-house_53": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_53-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_53-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_53-1600.webp"
+   }
+  ],
+  "alt": "Mini golf putting area by the water offering a fun outdoor activity with beautiful lake views."
+ },
+ "entire-house_54": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_54-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_54-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_54-1600.webp"
+   }
+  ],
+  "alt": "Lakeside deck with Adirondack chairs and fire pit; perfect for gathering, relaxing, and enjoying beautiful sunsets."
+ },
+ "entire-house_55": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_55-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_55-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_55-1600.webp"
+   }
+  ],
+  "alt": "Outdoor bar seating area under the patio, perfect for casual drinks and socializing in the open-air entertainment space."
+ },
+ "entire-house_56": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_56-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_56-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_56-1600.webp"
+   }
+  ],
+  "alt": "Lakeside seating deck with Adirondack chairs, a peaceful place to relax and enjoy the scenic waterfront."
+ },
+ "entire-house_57": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_57-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_57-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_57-1600.webp"
+   }
+  ],
+  "alt": "Private dock on the lake offering a peaceful spot to enjoy nature and scenic water views."
+ },
+ "entire-house_58": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_58-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_58-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_58-1600.webp"
+   }
+  ],
+  "alt": "Outdoor bar seating under the patio; perfect for enjoying drinks while overlooking the water."
+ },
+ "entire-house_59": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_59-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_59-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_59-1600.webp"
+   }
+  ],
+  "alt": "Private dock on the lake surrounded by nature, offering peaceful waterfront views and a quiet place to unwind."
+ },
+ "entire-house_60": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "entire-house_60-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "entire-house_60-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "entire-house_60-1600.webp"
+   }
+  ],
+  "alt": "Mini putting green by the water for a fun outdoor activity while enjoying beautiful lake views."
+ },
+ "upstairs-terrace_01": {
+  "width": 2560,
+  "height": 1704,
+  "aspect": 1.5023,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_01-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_01-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_01-1600.webp"
+   }
+  ],
+  "alt": "Comfortable living room with cozy seating and a hanging fireplace; perfect for relaxing after a day of exploring."
+ },
+ "upstairs-terrace_02": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_02-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_02-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_02-1600.webp"
+   }
+  ],
+  "alt": "Spacious lounge area with stylish seating and TV, offering a relaxing space for entertainment and conversation."
+ },
+ "upstairs-terrace_03": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_03-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_03-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_03-1600.webp"
+   }
+  ],
+  "alt": "Another view of the open kitchen and living area, creating a welcoming space for gathering and dining."
+ },
+ "upstairs-terrace_04": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_04-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_04-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_04-1600.webp"
+   }
+  ],
+  "alt": "Bright upstairs living area with large windows and beautiful water views filling the space with natural light."
+ },
+ "upstairs-terrace_05": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_05-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_05-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_05-1600.webp"
+   }
+  ],
+  "alt": "Room that offers unmatchable view."
+ },
+ "upstairs-terrace_06": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_06-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_06-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_06-1600.webp"
+   }
+  ],
+  "alt": "Bright sunroom with large windows overlooking the water; perfect for relaxing with beautiful views."
+ },
+ "upstairs-terrace_07": {
+  "width": 2560,
+  "height": 1705,
+  "aspect": 1.5015,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_07-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_07-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_07-1600.webp"
+   }
+  ],
+  "alt": "Open living space with large glass doors leading to the patio and scenic waterfront views."
+ },
+ "upstairs-terrace_08": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_08-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_08-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_08-1600.webp"
+   }
+  ],
+  "alt": "Modern kitchen with bar seating and stainless appliances; perfect for casual meals and entertaining."
+ },
+ "upstairs-terrace_09": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_09-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_09-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_09-1600.webp"
+   }
+  ],
+  "alt": "Bright kitchen with modern appliances and plenty of counter space for preparing meals."
+ },
+ "upstairs-terrace_10": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_10-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_10-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_10-1600.webp"
+   }
+  ],
+  "alt": "Fully equipped kitchen with modern appliances and ample counter space for cooking during your stay."
+ },
+ "upstairs-terrace_11": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_11-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_11-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_11-1600.webp"
+   }
+  ],
+  "alt": "Coffee station with coffee maker and essentials so guests can easily enjoy their morning coffee."
+ },
+ "upstairs-terrace_12": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_12-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_12-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_12-1600.webp"
+   }
+  ],
+  "alt": "Dining area with wooden table and chairs, ideal for shared meals and group gatherings."
+ },
+ "upstairs-terrace_13": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_13-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_13-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_13-1600.webp"
+   }
+  ],
+  "alt": "Another view of the open space room."
+ },
+ "upstairs-terrace_14": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_14-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_14-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_14-1600.webp"
+   }
+  ],
+  "alt": "Spacious bedroom with comfortable beds, soft lighting, and a relaxing layout - perfect for a restful stay with beautiful natural light."
+ },
+ "upstairs-terrace_15": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_15-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_15-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_15-1600.webp"
+   }
+  ],
+  "alt": "Large upstairs bedroom with multiple beds and scenic waterfront views."
+ },
+ "upstairs-terrace_16": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_16-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_16-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_16-1600.webp"
+   }
+  ],
+  "alt": "Spacious bedroom with comfortable bed and large windows offering relaxing natural light."
+ },
+ "upstairs-terrace_17": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_17-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_17-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_17-1600.webp"
+   }
+  ],
+  "alt": "Master bathroom featuring double vanity and spacious layout for added comfort."
+ },
+ "upstairs-terrace_18": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_18-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_18-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_18-1600.webp"
+   }
+  ],
+  "alt": "Bedroom with beautiful waterfront view and direct access to the outdoor balcony."
+ },
+ "upstairs-terrace_19": {
+  "width": 2560,
+  "height": 1705,
+  "aspect": 1.5015,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_19-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_19-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_19-1600.webp"
+   }
+  ],
+  "alt": "Cozy bedroom with soft bedding and relaxing interior design for a restful night’s sleep."
+ },
+ "upstairs-terrace_20": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_20-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_20-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_20-1600.webp"
+   }
+  ],
+  "alt": "Clean bathroom with modern fixtures and bathtub for a comfortable stay."
+ },
+ "upstairs-terrace_21": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_21-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_21-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_21-1600.webp"
+   }
+  ],
+  "alt": "Walk-in tiled shower with modern finishes and spacious design."
+ },
+ "upstairs-terrace_22": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_22-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_22-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_22-1600.webp"
+   }
+  ],
+  "alt": "Walk in design with modern design."
+ },
+ "upstairs-terrace_23": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_23-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_23-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_23-1600.webp"
+   }
+  ],
+  "alt": "2nd bathroom in the hallway for use with complimentary body and hand soap, shampoo and conditioner."
+ },
+ "upstairs-terrace_24": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_24-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_24-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_24-1600.webp"
+   }
+  ],
+  "alt": "Small workspace desk area for guests who need a quiet place to work during their stay."
+ },
+ "upstairs-terrace_25": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_25-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_25-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_25-1600.webp"
+   }
+  ],
+  "alt": "Lawn games and open outdoor space by the water; perfect for relaxing or enjoying friendly games."
+ },
+ "upstairs-terrace_26": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_26-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_26-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_26-1600.webp"
+   }
+  ],
+  "alt": "Lakeside deck with Adirondack chairs; perfect for relaxing, chatting with friends, or enjoying sunset views."
+ },
+ "upstairs-terrace_27": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_27-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_27-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_27-1600.webp"
+   }
+  ],
+  "alt": "Mini golf putting area by the water offering a fun outdoor activity with scenic lake views."
+ },
+ "upstairs-terrace_28": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_28-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_28-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_28-1600.webp"
+   }
+  ],
+  "alt": "Private dock on the lake, providing a peaceful place to enjoy the natural beauty and waterfront atmosphere."
+ },
+ "upstairs-terrace_29": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_29-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_29-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_29-1600.webp"
+   }
+  ],
+  "alt": "Lakeside fire pit seating area with Adirondack chairs; perfect for cozy evenings and relaxing conversations."
+ },
+ "upstairs-terrace_30": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_30-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_30-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_30-1600.webp"
+   }
+  ],
+  "alt": "Private Boat Slip or Fishing Dock on Savannah River"
+ },
+ "upstairs-terrace_31": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_31-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_31-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_31-1600.webp"
+   }
+  ],
+  "alt": "Beautiful waterfront deck seating area offering stunning lake views and a peaceful place to relax outdoors."
+ },
+ "upstairs-terrace_32": {
+  "width": 2560,
+  "height": 1708,
+  "aspect": 1.4988,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_32-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_32-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_32-1600.webp"
+   }
+  ],
+  "alt": "Waterfront patio seating with cozy cushions; perfect for morning coffee while enjoying peaceful lake views."
+ },
+ "upstairs-terrace_33": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_33-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_33-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_33-1600.webp"
+   }
+  ],
+  "alt": "Outdoor dining table on the patio overlooking the water; great for meals with a view."
+ },
+ "upstairs-terrace_34": {
+  "width": 2560,
+  "height": 1703,
+  "aspect": 1.5032,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_34-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_34-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_34-1600.webp"
+   }
+  ],
+  "alt": "Covered waterfront patio with comfortable seating; an ideal place to unwind and enjoy the peaceful surroundings."
+ },
+ "upstairs-terrace_35": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_35-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_35-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_35-1600.webp"
+   }
+  ],
+  "alt": "Covered patio with ping pong table and outdoor seating, offering a fun hangout spot with scenic waterfront views."
+ },
+ "upstairs-terrace_36": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_36-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_36-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_36-1600.webp"
+   }
+  ],
+  "alt": "Outdoor bar seating area under the patio, perfect for casual drinks, conversations, and enjoying the open-air space."
+ },
+ "upstairs-terrace_37": {
+  "width": 2560,
+  "height": 1715,
+  "aspect": 1.4927,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_37-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_37-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_37-1600.webp"
+   }
+  ],
+  "alt": "Spacious view of the waterfront home featuring outdoor entertainment areas and scenic surroundings."
+ },
+ "upstairs-terrace_38": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_38-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_38-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_38-1600.webp"
+   }
+  ],
+  "alt": "Front exterior view of the spacious waterfront home with easy driveway access and parking."
+ },
+ "upstairs-terrace_39": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_39-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_39-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_39-1600.webp"
+   }
+  ],
+  "alt": "Welcoming driveway entrance surrounded by greenery and landscaping for easy property access."
+ },
+ "upstairs-terrace_40": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_40-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_40-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_40-1600.webp"
+   }
+  ],
+  "alt": "Private swimming pool with spacious deck area, ideal for relaxing, sunbathing, and cooling off on warm Augusta days."
+ },
+ "upstairs-terrace_41": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_41-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_41-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_41-1600.webp"
+   }
+  ],
+  "alt": "Another view of the refreshing outdoor pool surrounded by lounge chairs - perfect for relaxing and enjoying the sunny weather."
+ },
+ "upstairs-terrace_42": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_42-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_42-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_42-1600.webp"
+   }
+  ],
+  "alt": "Inviting swimming pool with plenty of space to lounge and enjoy a refreshing swim during your stay."
+ },
+ "upstairs-terrace_43": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_43-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_43-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_43-1600.webp"
+   }
+  ],
+  "alt": "Another angle of the sparkling swimming pool with lounge seating for relaxing afternoons in the sun."
+ },
+ "upstairs-terrace_44": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-terrace_44-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-terrace_44-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-terrace_44-1600.webp"
+   }
+  ],
+  "alt": "Private Pool and Fire pit w/ RiverFront dock"
  }
 }

@@ -25,3 +25,8 @@ dist-ssr
 
 # Claude
 .claude/
+
+# Raw source material the site build doesn't consume. Kept locally, not in git —
+# streetview/ alone is ~300 MB of unprocessed panoramas.
+streetview/
+new making/

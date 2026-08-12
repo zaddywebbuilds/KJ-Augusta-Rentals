@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, Mail, MapPin, Facebook, ExternalLink, ChevronDown } from 'lucide-react';
 import { businessConfig } from '../data/businessConfig';
+import { accommodations } from '../data/accommodations';
 
 export default function Footer() {
   const [privacyOpen, setPrivacyOpen] = useState(false);
@@ -43,23 +45,38 @@ export default function Footer() {
 
           {/* Navigation */}
           <div>
-            <h4 className="font-manrope text-[10px] tracking-[0.25em] uppercase text-champagne mb-6">Navigate</h4>
+            <h4 className="font-manrope text-[10px] tracking-[0.25em] uppercase text-champagne mb-6">Where to Stay</h4>
             <ul className="space-y-3">
+              {accommodations.map(stay => (
+                <li key={stay.slug}>
+                  <Link
+                    to={`/stays/${stay.slug}`}
+                    className="font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
+                  >
+                    {stay.name}
+                  </Link>
+                </li>
+              ))}
+              <li className="pt-2">
+                <Link
+                  to="/masters"
+                  className="font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
+                >
+                  Masters Week {businessConfig.masters.year}
+                </Link>
+              </li>
               {[
-                { label: 'The Property', href: '#property' },
-                { label: 'Amenities', href: '#amenities' },
-                { label: 'Gallery', href: '#gallery' },
-                { label: 'Reviews', href: '#reviews' },
-                { label: 'Location', href: '#location' },
-                { label: 'Book Your Stay', href: '#book' },
+                { label: 'Amenities', href: '/#amenities' },
+                { label: 'Reviews', href: '/#reviews' },
+                { label: 'Location', href: '/#location' },
               ].map(({ label, href }) => (
                 <li key={href}>
-                  <a
-                    href={href}
+                  <Link
+                    to={href}
                     className="font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
                   >
                     {label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -70,14 +87,13 @@ export default function Footer() {
             <h4 className="font-manrope text-[10px] tracking-[0.25em] uppercase text-champagne mb-6">Book & Connect</h4>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#book"
-                  onClick={(e) => { e.preventDefault(); document.querySelector('#book')?.scrollIntoView({ behavior: 'smooth' }); }}
+                <Link
+                  to="/#stays"
                   className="inline-flex items-center gap-2 font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
                 >
                   <ExternalLink size={12} />
-                  Book Direct
-                </a>
+                  Check Availability
+                </Link>
               </li>
               <li>
                 <a
@@ -149,7 +165,7 @@ export default function Footer() {
                     <strong className="text-ivory/70">Privacy:</strong> This website does not collect personal data, use tracking cookies, or share information with third parties. Contact information submitted via email or phone is used solely to respond to your enquiry about KJ Augusta Rentals.
                   </p>
                   <p className="font-manrope text-xs text-ivory/50 leading-relaxed mb-3">
-                    <strong className="text-ivory/70">Booking Disclaimer:</strong> Availability is confirmed directly with KJ by phone or email. A live booking calendar (powered by Bookee) is coming soon. No payment is collected on this website. The current booking form sends a direct inquiry to KJ Augusta Rentals.
+                    <strong className="text-ivory/70">Booking Disclaimer:</strong> Availability is confirmed directly with KJ Augusta Rentals by phone or email. No payment is collected on this website — the enquiry form sends your dates straight to us. Each accommodation is also listed on Airbnb if you prefer to book there.
                   </p>
                   <p className="font-manrope text-xs text-ivory/50 leading-relaxed">
                     <strong className="text-ivory/70">Property:</strong> The saltwater pool is available seasonally, April–October. Property amenities are subject to change. Photos are representative of the property. No exact address is published on this site for privacy reasons.

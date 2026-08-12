@@ -117,7 +117,7 @@ export default function BookingPanel() {
           <div className="mt-6 flex items-start gap-3 p-4 bg-champagne/10 border border-champagne/20 rounded-sm">
             <Zap size={14} className="text-champagne flex-shrink-0 mt-0.5" />
             <p className="font-manrope text-xs text-sage leading-relaxed">
-              <strong className="text-ink">Live calendar coming soon.</strong> A direct booking platform (Bookee) is being integrated — allowing instant booking with no third-party fees. Until then, use the form above or call KJ directly. No payment is collected on this site.
+              <strong className="text-ink">Booking direct saves you the platform commission.</strong> Send your dates using the form above or call KJ directly and we'll confirm availability the same day. No payment is collected on this site.
             </p>
           </div>
         </motion.div>

@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://zaddywebbuilds.github.io/KJ-Augusta-Rentals/</loc>
+    <loc>https://kjaugustarentals.com/</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://zaddywebbuilds.github.io/KJ-Augusta-Rentals/assets/img/social-card.jpg</image:loc>
-      <image:title>KJ's River House on the Savannah River, Augusta GA</image:title>
-    </image:image>
+  </url>
+  <url>
+    <loc>https://kjaugustarentals.com/masters</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kjaugustarentals.com/stays/entire-river-house</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kjaugustarentals.com/stays/upstairs-terrace</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kjaugustarentals.com/stays/riverside-lower-level</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>

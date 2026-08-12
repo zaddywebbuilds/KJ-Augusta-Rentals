@@ -1,15 +1,17 @@
 import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
 import { useCountUp } from '../hooks/useCountUp';
-import { Users, BedDouble, Bath, Maximize2, TreePine, Waves } from 'lucide-react';
+import { useGoToStays } from '../hooks/useGoToStays';
+import { Users, BedDouble, Bath, Ship, TreePine, Waves } from 'lucide-react';
 import { businessConfig } from '../data/businessConfig';
 
+// Whole-property figures — what a guest gets booking the entire River House.
 const stats = [
-  { label: 'Guests', value: 7, suffix: '', icon: Users },
-  { label: 'Bedrooms', value: 2, suffix: '', icon: BedDouble },
-  { label: 'Beds', value: 6, suffix: '', icon: BedDouble },
-  { label: 'Bathrooms', value: 2, suffix: '', icon: Bath },
-  { label: 'Sq Feet', value: 2638, suffix: '+', icon: Maximize2 },
+  { label: 'Guests', value: 16, suffix: '', icon: Users },
+  { label: 'Bedrooms', value: 3, suffix: '', icon: BedDouble },
+  { label: 'Beds', value: 9, suffix: '', icon: BedDouble },
+  { label: 'Bathrooms', value: 3, suffix: '', icon: Bath },
+  { label: 'Kayaks', value: 6, suffix: '', icon: Ship },
   { label: 'Acres', value: 3, suffix: '~', icon: TreePine },
 ];
 
@@ -34,6 +36,7 @@ function StatItem({ label, value, suffix, icon: Icon, inView }: {
 
 export default function PropertyStats() {
   const { ref, inView } = useInView();
+  const goToStays = useGoToStays();
 
   return (
     <section ref={ref as React.RefObject<HTMLElement>} className="py-16 md:py-20 bg-linen border-y border-champagne/20">
@@ -70,13 +73,12 @@ export default function PropertyStats() {
             </span>
             <Waves className="text-champagne" size={16} />
           </div>
-          <a
-            href="#book"
-            onClick={(e) => { e.preventDefault(); document.querySelector('#book')?.scrollIntoView({ behavior: 'smooth' }); }}
-            className="inline-flex items-center gap-2 px-8 py-3 bg-champagne text-ink font-manrope text-xs tracking-widest uppercase font-semibold hover:bg-clay hover:text-ivory transition-all duration-300 rounded-sm"
+          <button
+            onClick={goToStays}
+            className="inline-flex items-center gap-2 px-8 py-3 min-h-[44px] bg-champagne text-ink font-manrope text-xs tracking-widest uppercase font-semibold hover:bg-clay hover:text-ivory transition-all duration-300 rounded-sm"
           >
-            Book Direct
-          </a>
+            Check Availability
+          </button>
         </motion.div>
       </div>
     </section>

@@ -4,7 +4,13 @@ const BASE = '/KJ-Augusta-Rentals/assets/img';
 
 type Manifest = Record<
   string,
-  { width: number; height: number; aspect: number; srcset: { w: number; file: string }[] }
+  {
+    width: number;
+    height: number;
+    aspect: number;
+    srcset: { w: number; file: string }[];
+    alt?: string;
+  }
 >;
 
 const photos = manifest as Manifest;
@@ -12,7 +18,8 @@ const photos = manifest as Manifest;
 interface PhotoProps {
   /** Manifest key, e.g. "photo_05" */
   id: string;
-  alt: string;
+  /** Falls back to the host-written caption in the manifest when omitted. */
+  alt?: string;
   className?: string;
   /**
    * Rendered width hint so the browser can pick the right file before layout.
@@ -41,7 +48,7 @@ export default function Photo({
       src={fallback}
       srcSet={srcSet}
       sizes={sizes}
-      alt={alt}
+      alt={alt ?? meta.alt ?? ''}
       width={meta.width}
       height={meta.height}
       loading={priority ? 'eager' : 'lazy'}

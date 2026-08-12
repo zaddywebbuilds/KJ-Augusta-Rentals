@@ -9,40 +9,44 @@ import Photo from './Photo';
 
 const faqs = [
   {
-    q: 'How many guests can the property accommodate?',
-    a: "KJ's River House accommodates up to 7 guests across 2 bedrooms and 6 beds. The space is well-suited for families, friend groups, or small corporate teams.",
+    q: 'What are the three ways to stay?',
+    a: 'The River House can be booked as the entire property (up to 16 guests, 3 bedrooms, 9 beds), as the Upstairs Terrace on its own (up to 14 guests, 2 bedrooms), or as the Riverside Lower Level (up to 4 guests, 1 bedroom). Every option includes the river, dock, kayaks and pool.',
+  },
+  {
+    q: 'What is shared if I only book one level?',
+    a: 'Your indoor space is entirely private — separate entrance, own kitchen, own bathrooms. The outdoor amenities (saltwater pool, dock, kayaks, fire pit and grounds) are shared only if the other level happens to be booked at the same time. Book the entire River House and all three acres are exclusively yours.',
   },
   {
     q: 'Is the pool available year-round?',
-    a: 'The saltwater pool is available seasonally, typically April through October, when Augusta temperatures are suited for swimming. Off-season guests still enjoy the full river, dock, kayaks, and 2,600+ sq ft of interior space.',
+    a: 'The saltwater pool is open seasonally, roughly April through October, and is closed with an automatic hardtop cover from November to late March. It is not heated. Off-season guests still have the full river, dock, kayaks and interior. There is no lifeguard — swimming is at your own risk and children must be supervised outdoors at all times.',
   },
   {
     q: 'Can I access the Savannah River directly from the property?',
-    a: 'Yes. The property includes a private dock on the Savannah River with direct water access. Kayaks are available for guests to use.',
+    a: 'Yes. The property has private Savannah River frontage with its own dock, so you can fish or paddle straight from the grounds. Six kayaks are provided — four adult, two child — along with life vests.',
   },
   {
     q: 'How far is the property from Augusta National Golf Club?',
-    a: "The property is in the Augusta area and Augusta National Golf Club is conveniently accessible. We recommend using Google Maps for real-time directions from the property.",
+    a: 'About seven minutes by car. The property also sits adjacent to the IRONMAN 70.3 Augusta start line, and the Augusta Riverwalk is roughly a ten-minute walk, with downtown dining and attractions a few minutes further.',
   },
   {
     q: 'What is the check-in and check-out process?',
-    a: "Check-in is at 3:00 PM and check-out is at 11:00 AM. Full arrival details, including access codes and directions, are shared once your booking is confirmed.",
+    a: 'Check-in is from 4:00 PM and check-out is by 10:00 AM. Full arrival details, including access codes and directions, are shared once your booking is confirmed.',
   },
   {
     q: 'Is the property pet-friendly?',
-    a: 'The property is not pet-friendly. Please review the full house rules before booking.',
+    a: 'No — pets are not allowed at the property. Please review the full house rules before booking.',
   },
   {
     q: 'Is the exact address available before booking?',
-    a: 'For privacy and security, the exact street address is shared only after a confirmed booking. The property is located in Augusta, Georgia on the Savannah River.',
+    a: 'For privacy and security, the exact street address is shared only after a confirmed booking. The property is on the Savannah River in Augusta, Georgia.',
   },
   {
     q: 'How do I book and confirm availability?',
-    a: 'Use the booking form on this page to request your dates, or contact KJ directly by phone or email. A live direct-booking calendar (powered by Bookee) is coming soon — no third-party platform fees.',
+    a: 'Choose your stay, then send your dates through the enquiry form on that page or call KJ directly. Booking direct means no third-party platform commission. Each listing is also on Airbnb if you would rather book there.',
   },
   {
     q: 'Who do I contact if I have a question before or during my stay?',
-    a: `KJ is available directly by phone at ${businessConfig.contact.phoneDisplay} or by email at ${businessConfig.contact.email}.`,
+    a: `KJ Augusta Rentals is available directly by phone at ${businessConfig.contact.phoneDisplay} or by email at ${businessConfig.contact.email}.`,
   },
 ];
 
@@ -150,7 +154,7 @@ function BookingWidget() {
       <div className="flex items-start gap-2 p-3 bg-champagne/8 border border-champagne/15 rounded-sm">
         <Zap size={12} className="text-champagne flex-shrink-0 mt-0.5" />
         <p className="font-manrope text-[10px] text-ivory/50 leading-relaxed">
-          Live booking calendar (Bookee) launching soon — direct booking with no third-party fees. No payment is collected here.
+          Direct booking with no third-party commission. Dates are confirmed by KJ Augusta Rentals — no payment is collected on this website.
         </p>
       </div>
     </div>

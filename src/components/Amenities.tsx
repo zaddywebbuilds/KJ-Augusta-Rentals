@@ -12,10 +12,10 @@ const amenityGroups = [
     icon: Waves,
     image: 'photo_38',
     items: [
-      { icon: Anchor, label: 'Private dock on the Savannah River' },
-      { icon: Waves, label: 'Kayaks & river access' },
-      { icon: Sunset, label: 'Panoramic river views from deck' },
-      { icon: TreePine, label: '~3 acres of private waterfront land' },
+      { icon: Anchor, label: 'Private dock & boat slip on the Savannah River' },
+      { icon: Waves, label: '6 kayaks (4 adult, 2 child) with life vests' },
+      { icon: Sunset, label: 'Sunrise and sunset over the water' },
+      { icon: TreePine, label: '3 secluded acres of private waterfront' },
     ],
   },
   {
@@ -25,9 +25,9 @@ const amenityGroups = [
     note: '🌊 Saltwater pool open April – October',
     items: [
       { icon: Sun, label: 'Saltwater pool (seasonal, Apr–Oct)' },
-      { icon: Flame, label: 'Outdoor grill & fire pit area' },
-      { icon: TreePine, label: 'Expansive private grounds' },
-      { icon: Wind, label: 'Wrap-around deck & patio' },
+      { icon: Flame, label: 'Smokeless fire pit, propane & charcoal grills' },
+      { icon: TreePine, label: 'Outdoor bar, ping pong & cornhole' },
+      { icon: Wind, label: 'Covered deck, patios & private golf tee-off area' },
     ],
   },
   {
@@ -47,8 +47,8 @@ const amenityGroups = [
     icon: BedDouble,
     image: 'photo_47',
     items: [
-      { icon: BedDouble, label: '6 beds across 2 bedrooms' },
-      { icon: Bath, label: '2 full bathrooms' },
+      { icon: BedDouble, label: '9 beds across 3 bedrooms' },
+      { icon: Bath, label: '3 full bathrooms, jacuzzi tub in the master' },
       { icon: Shirt, label: 'Washer & dryer' },
       { icon: Car, label: 'Free parking on premises' },
       { icon: Wind, label: 'Air conditioning & heating' },

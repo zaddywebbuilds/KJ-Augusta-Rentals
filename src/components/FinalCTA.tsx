@@ -1,18 +1,23 @@
 import { motion } from 'framer-motion';
 import { Phone } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
+import { useGoToStays } from '../hooks/useGoToStays';
 import { businessConfig } from '../data/businessConfig';
-import { dockImages, outdoorImages, exteriorImages } from '../data/mediaConfig';
+import galleries from '../data/galleries.json';
 import Photo from './Photo';
 
+const g = galleries as Record<string, { photos: { id: string; alt: string; category: string }[] }>;
+const pick = (cat: string) => g['entire-house'].photos.find(p => p.category === cat)!;
+
 const parting = [
-  { src: dockImages[1], caption: 'The private dock' },
-  { src: outdoorImages[1], caption: 'Room to spread out' },
-  { src: exteriorImages[6], caption: 'Your place on the river' },
+  { src: pick('river').id, caption: 'The private dock' },
+  { src: pick('pool').id, caption: 'The saltwater pool' },
+  { src: pick('outdoor').id, caption: 'Room to spread out' },
 ];
 
 export default function FinalCTA() {
   const { ref, inView } = useInView(0.2);
+  const goToStays = useGoToStays();
 
   return (
     <section
@@ -71,13 +76,12 @@ export default function FinalCTA() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <a
-            href="#book"
-            onClick={(e) => { e.preventDefault(); document.querySelector('#book')?.scrollIntoView({ behavior: 'smooth' }); }}
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-champagne text-ink font-manrope text-sm tracking-widest uppercase font-semibold hover:bg-clay hover:text-ivory transition-all duration-300 rounded-sm"
+          <button
+            onClick={goToStays}
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 min-h-[44px] bg-champagne text-ink font-manrope text-sm tracking-widest uppercase font-semibold hover:bg-clay hover:text-ivory transition-all duration-300 rounded-sm"
           >
-            Book Direct
-          </a>
+            Check Availability
+          </button>
           <a
             href={`tel:${businessConfig.contact.phoneHref}`}
             className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-ivory/50 text-ivory font-manrope text-sm tracking-widest uppercase hover:border-champagne hover:text-champagne transition-all duration-300 rounded-sm"
