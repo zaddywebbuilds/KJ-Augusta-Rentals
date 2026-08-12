@@ -9,6 +9,10 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
+// Source folder names under photos/. These are deliberately NOT the public
+// slugs: photo files are named after their folder, so renaming a listing for
+// marketing reasons would otherwise invalidate every derivative in
+// public/assets/img. accommodations.ts maps a public slug to its source here.
 const LISTINGS = ['entire-house', 'upstairs-terrace'];
 
 // Earlier rule wins. Order here IS the gallery order.
@@ -22,9 +26,31 @@ const RULES = [
   ['bath',    /bath|shower|tub|vanity|jacuzzi/],
 ];
 
+// A photo's category is its SUBJECT, not everything its caption mentions.
+// "Bedroom with large windows offering beautiful water views" is a bedroom
+// shot; matching the whole string against the river rule filed it under
+// river, which is how an interior ended up captioned "Down to the water".
+// So the subject is read from the opening clause — what the photo is *of* —
+// and only falls through to the whole-string rules when that finds nothing.
+const SUBJECTS = [
+  ['bedroom', /\b(bedroom|master suite|primary suite|guest room|bunk room)\b/],
+  ['bath',    /\b(bathroom|en.?suite|shower|bathtub|vanity|jacuzzi)\b/],
+  ['kitchen', /\b(kitchen|kitchenette|dining (room|area|table)|breakfast)\b/],
+  ['living',  /\b(living room|lounge|sunroom|great room|family room|sitting area)\b/],
+  ['pool',    /\b(pool|saltwater)\b/],
+  ['river',   /\b(dock|kayak|boat slip|river ?bank|riverfront)\b/],
+  ['outdoor', /\b(patio|deck|balcony|terrace|fire ?pit|grill|lawn|yard|garden)\b/],
+];
+
+/** The opening clause names the subject; the rest usually describes the view. */
+const subjectOf = (alt) => alt.split(/[,;.]|\bwith\b|\bthat\b|\boffering\b/)[0];
+
 const classify = (alt = '') => {
-  const a = alt.toLowerCase();
-  for (const [name, re] of RULES) if (re.test(a)) return name;
+  const head = subjectOf(alt).toLowerCase();
+  for (const [name, re] of SUBJECTS) if (re.test(head)) return name;
+
+  const whole = alt.toLowerCase();
+  for (const [name, re] of RULES) if (re.test(whole)) return name;
   return 'other';
 };
 

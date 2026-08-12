@@ -1,10 +1,10 @@
 /**
  * Writes a real index.html for every route.
  *
- * GitHub Pages has no rewrite rule, so /stays/upstairs-terrace would fall
+ * GitHub Pages has no rewrite rule, so /stays/upstairs-river-house would fall
  * through to 404.html — it renders correctly for a human (the SPA boots and
  * the router resolves the path) but answers HTTP 404, and Google will not
- * index a 404. Emitting dist/stays/upstairs-terrace/index.html makes the URL
+ * index a 404. Emitting dist/stays/upstairs-river-house/index.html makes the URL
  * answer 200 with its own title, description and canonical already in the
  * markup, so crawlers get the right metadata without executing JavaScript.
  *

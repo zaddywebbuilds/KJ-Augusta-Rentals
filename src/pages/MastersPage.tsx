@@ -98,7 +98,7 @@ export default function MastersPage() {
             </h2>
             <p className="font-manrope text-base text-sage leading-relaxed mb-5">
               Hotel rooms scatter a group across floors and charge tournament-week rates for the
-              privilege. The entire River House puts everyone under one roof, with three
+              privilege. Entire River House puts everyone under one roof, with three
               bedrooms, nine beds, two kitchens and three riverfront acres to spread out on.
             </p>
             <p className="font-manrope text-base text-sage leading-relaxed mb-8">

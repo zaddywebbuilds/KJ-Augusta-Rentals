@@ -3,6 +3,7 @@ import { useInView } from '../hooks/useInView';
 import { Waves, Building2, Trophy, Plane, ExternalLink } from 'lucide-react';
 import { businessConfig } from '../data/businessConfig';
 import { dockImages, exteriorImages, detailImages } from '../data/mediaConfig';
+import { pickCaptioned } from '../data/pickPhoto';
 import Photo from './Photo';
 
 const destinations = [
@@ -32,11 +33,14 @@ const destinations = [
   },
 ];
 
-const scenes = [
-  { src: exteriorImages[7], caption: 'The approach' },
-  { src: dockImages[4], caption: 'Down to the water' },
-  { src: detailImages[3], caption: 'Room to breathe' },
-];
+// Sourced from the live listing photos, not the old site's set, and each
+// caption is tied to a word that has to appear in the photo's own
+// description — see pickCaptioned.
+const scenes = pickCaptioned('entire-house', [
+  { test: /front exterior|driveway|approach/, caption: 'The approach' },
+  { test: /dock/, caption: 'Down to the water' },
+  { test: /lawn|acre/, caption: 'Room to breathe' },
+]);
 
 export default function AugustaConnection() {
   const { ref, inView } = useInView();
@@ -207,17 +211,17 @@ export default function AugustaConnection() {
 
         {/* Scene strip */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
-          {scenes.map(({ src, caption }, i) => (
+          {scenes.map(({ id, alt, caption }, i) => (
             <motion.figure
-              key={src}
+              key={id}
               className="rounded-sm overflow-hidden bg-linen border border-champagne/20"
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.4 + i * 0.1 }}
             >
               <Photo
-                id={src}
-                alt={caption}
+                id={id}
+                alt={alt}
                 sizes="(max-width: 640px) 100vw, 400px"
                 className="w-full aspect-[4/3] object-contain"
               />

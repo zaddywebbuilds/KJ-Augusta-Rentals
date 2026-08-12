@@ -39,7 +39,7 @@ export const accommodations: Accommodation[] = [
     slug: 'entire-river-house',
     listingId: '1658102100640730741',
     airbnbUrl: 'https://www.airbnb.com/rooms/1658102100640730741',
-    name: 'The Entire River House',
+    name: 'Entire River House',
     tagline: 'The whole property, the complete experience',
     cardSummary:
       'Both levels, every room and the full run of the grounds. Built for families, reunions and groups who want the whole River House to themselves.',
@@ -83,10 +83,10 @@ export const accommodations: Accommodation[] = [
     status: 'live',
   },
   {
-    slug: 'upstairs-terrace',
+    slug: 'upstairs-river-house',
     listingId: '1658162430407855672',
     airbnbUrl: 'https://www.airbnb.com/rooms/1658162430407855672',
-    name: 'The Upstairs Terrace',
+    name: 'Upstairs River House',
     tagline: 'The upper level, with the best of the view',
     cardSummary:
       'The entire upper floor to yourself — vaulted living space, sunroom, master suite and a private waterfront terrace looking straight down the river.',
@@ -132,10 +132,10 @@ export const accommodations: Accommodation[] = [
     status: 'live',
   },
   {
-    slug: 'riverside-lower-level',
+    slug: 'downstairs-river-house',
     listingId: null,
     airbnbUrl: null,
-    name: 'The Riverside Lower Level',
+    name: 'Downstairs River House',
     tagline: 'Ground-floor living, straight onto the lawn',
     cardSummary:
       'The lower level opens directly onto the garden patio and the water — a king bedroom on the river, kitchenette and living area, steps from the dock.',

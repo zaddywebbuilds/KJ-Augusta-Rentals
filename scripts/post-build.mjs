@@ -1,6 +1,6 @@
 /**
  * GitHub Pages serves static files only — it has no server-side rewrite, so a
- * deep link like /stays/upstairs-terrace 404s before React Router ever loads.
+ * deep link like /stays/upstairs-river-house 404s before React Router ever loads.
  *
  * Pages does serve 404.html for any unmatched path, so copying index.html to
  * 404.html makes the SPA boot and the router resolve the URL client-side.

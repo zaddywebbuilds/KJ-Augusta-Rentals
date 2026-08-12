@@ -3,17 +3,17 @@ import { Phone } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import { useGoToStays } from '../hooks/useGoToStays';
 import { businessConfig } from '../data/businessConfig';
-import galleries from '../data/galleries.json';
+import { pickCaptioned } from '../data/pickPhoto';
 import Photo from './Photo';
 
-const g = galleries as Record<string, { photos: { id: string; alt: string; category: string }[] }>;
-const pick = (cat: string) => g['entire-house'].photos.find(p => p.category === cat)!;
-
-const parting = [
-  { src: pick('river').id, caption: 'The private dock' },
-  { src: pick('pool').id, caption: 'The saltwater pool' },
-  { src: pick('outdoor').id, caption: 'Room to spread out' },
-];
+// Deliberately different subjects to the "Where You'll Be" strip further up
+// the page — that one covers the approach, the dock and the lawn, so these
+// close on the pool, the kayaks and the deck rather than repeating them.
+const parting = pickCaptioned('entire-house', [
+  { test: /pool/, caption: 'The saltwater pool' },
+  { test: /kayak/, caption: 'Kayaks included' },
+  { test: /fire ?pit|deck|patio/, caption: 'Evenings outside' },
+]);
 
 export default function FinalCTA() {
   const { ref, inView } = useInView(0.2);
@@ -31,17 +31,17 @@ export default function FinalCTA() {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.9 }}
       >
-        {parting.map(({ src, caption }, i) => (
+        {parting.map(({ id, alt, caption }, i) => (
           <motion.figure
-            key={src}
+            key={id}
             className="rounded-sm overflow-hidden bg-ivory/5 border border-ivory/10"
             initial={{ opacity: 0, y: 24 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.1 * i }}
           >
             <Photo
-              id={src}
-              alt={caption}
+              id={id}
+              alt={alt}
               sizes="(max-width: 640px) 100vw, 400px"
               className="w-full aspect-[4/3] object-contain"
             />

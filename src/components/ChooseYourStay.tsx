@@ -29,7 +29,7 @@ export default function ChooseYourStay() {
           </h2>
           <p className="font-manrope text-base text-sage leading-relaxed">
             One riverfront property, three ways to experience it. Take the whole house,
-            the upper level, or the riverside lower level — the river, pool, dock and
+            the upper level, or Downstairs River House — the river, pool, dock and
             kayaks come with all of them.
           </p>
         </motion.div>
@@ -108,7 +108,7 @@ export default function ChooseYourStay() {
           transition={{ duration: 0.8, delay: 0.5 }}
         >
           When the upper and lower levels are booked separately, the pool, dock, kayaks and
-          grounds are shared between both sets of guests. Book the entire River House and
+          grounds are shared between both sets of guests. Book Entire River House and
           all three acres are exclusively yours.
         </motion.p>
       </div>

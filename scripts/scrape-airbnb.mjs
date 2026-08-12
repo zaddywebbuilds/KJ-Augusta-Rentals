@@ -11,7 +11,7 @@ import path from 'node:path';
 
 const LISTINGS = [
   { id: '1658102100640730741', slug: 'entire-house' },
-  { id: '1658162430407855672', slug: 'upstairs-terrace' },
+  { id: '1658162430407855672', slug: 'upstairs-river-house' },
 ];
 
 const HEADERS = {

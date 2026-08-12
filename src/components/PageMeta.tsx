@@ -19,7 +19,7 @@ export default function PageMeta({
 }: {
   title: string;
   description: string;
-  /** Route path, e.g. "/stays/upstairs-terrace". Canonicalised to kjaugustarentals.com. */
+  /** Route path, e.g. "/stays/upstairs-river-house". Canonicalised to kjaugustarentals.com. */
   path: string;
   /** Photo manifest id used for the social card. */
   image?: string;

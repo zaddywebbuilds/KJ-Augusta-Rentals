@@ -131,7 +131,7 @@ export default function StayPage() {
             </h2>
             <p className="font-manrope text-sm text-sage leading-relaxed mb-7 max-w-2xl">
               {stay.sharedSpaces.length === 0
-                ? 'Booking the entire River House means the whole property is yours. Nothing on these three acres is shared with anyone.'
+                ? 'Booking Entire River House means the whole property is yours. Nothing on these three acres is shared with anyone.'
                 : 'Your indoor space is completely private. The outdoor amenities below are shared only when the other level is separately booked — if you take the whole house, everything is exclusively yours.'}
             </p>
 

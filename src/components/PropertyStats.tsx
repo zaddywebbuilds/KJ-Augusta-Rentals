@@ -5,7 +5,7 @@ import { useGoToStays } from '../hooks/useGoToStays';
 import { Users, BedDouble, Bath, Ship, TreePine, Waves } from 'lucide-react';
 import { businessConfig } from '../data/businessConfig';
 
-// Whole-property figures — what a guest gets booking the entire River House.
+// Whole-property figures — what a guest gets booking Entire River House.
 const stats = [
   { label: 'Guests', value: 16, suffix: '', icon: Users },
   { label: 'Bedrooms', value: 3, suffix: '', icon: BedDouble },

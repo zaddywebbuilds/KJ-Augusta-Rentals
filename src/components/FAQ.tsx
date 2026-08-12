@@ -10,11 +10,11 @@ import Photo from './Photo';
 const faqs = [
   {
     q: 'What are the three ways to stay?',
-    a: 'The River House can be booked as the entire property (up to 16 guests, 3 bedrooms, 9 beds), as the Upstairs Terrace on its own (up to 14 guests, 2 bedrooms), or as the Riverside Lower Level (up to 4 guests, 1 bedroom). Every option includes the river, dock, kayaks and pool.',
+    a: 'The River House can be booked as the entire property (up to 16 guests, 3 bedrooms, 9 beds), as Upstairs River House on its own (up to 14 guests, 2 bedrooms), or as Downstairs River House (up to 4 guests, 1 bedroom). Every option includes the river, dock, kayaks and pool.',
   },
   {
     q: 'What is shared if I only book one level?',
-    a: 'Your indoor space is entirely private — separate entrance, own kitchen, own bathrooms. The outdoor amenities (saltwater pool, dock, kayaks, fire pit and grounds) are shared only if the other level happens to be booked at the same time. Book the entire River House and all three acres are exclusively yours.',
+    a: 'Your indoor space is entirely private — separate entrance, own kitchen, own bathrooms. The outdoor amenities (saltwater pool, dock, kayaks, fire pit and grounds) are shared only if the other level happens to be booked at the same time. Book Entire River House and all three acres are exclusively yours.',
   },
   {
     q: 'Is the pool available year-round?',
