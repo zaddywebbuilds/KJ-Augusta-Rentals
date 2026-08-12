@@ -40,7 +40,7 @@ export default function StayGallery({ stay }: { stay: Accommodation }) {
             <button
               key={c}
               onClick={() => setFilter(c)}
-              className={`px-4 min-h-[40px] font-manrope text-[11px] tracking-widest uppercase rounded-sm transition-colors ${
+              className={`px-4 min-h-[44px] font-manrope text-[11px] tracking-widest uppercase rounded-sm transition-colors ${
                 filter === c
                   ? 'bg-ink text-ivory'
                   : 'bg-linen text-sage border border-champagne/20 hover:border-champagne'

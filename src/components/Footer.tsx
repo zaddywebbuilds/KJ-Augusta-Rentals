@@ -29,18 +29,22 @@ export default function Footer() {
               <MapPin size={14} className="text-champagne flex-shrink-0" />
               <span className="font-manrope text-xs">Augusta, Georgia • Savannah River</span>
             </div>
-            <div className="flex items-center gap-2 mb-2">
+            {/* Phone and email are the primary contact path on a phone, so they
+                carry a full 44px target rather than bare text-link height. */}
+            <a
+              href={`tel:${businessConfig.contact.phoneHref}`}
+              className="flex items-center gap-2 min-h-[44px] font-manrope text-xs hover:text-champagne transition-colors"
+            >
               <Phone size={14} className="text-champagne flex-shrink-0" />
-              <a href={`tel:${businessConfig.contact.phoneHref}`} className="font-manrope text-xs hover:text-champagne transition-colors">
-                {businessConfig.contact.phoneDisplay}
-              </a>
-            </div>
-            <div className="flex items-center gap-2">
+              {businessConfig.contact.phoneDisplay}
+            </a>
+            <a
+              href={`mailto:${businessConfig.contact.email}`}
+              className="flex items-center gap-2 min-h-[44px] font-manrope text-xs hover:text-champagne transition-colors break-all"
+            >
               <Mail size={14} className="text-champagne flex-shrink-0" />
-              <a href={`mailto:${businessConfig.contact.email}`} className="font-manrope text-xs hover:text-champagne transition-colors">
-                {businessConfig.contact.email}
-              </a>
-            </div>
+              {businessConfig.contact.email}
+            </a>
           </div>
 
           {/* Navigation */}
@@ -51,7 +55,7 @@ export default function Footer() {
                 <li key={stay.slug}>
                   <Link
                     to={`/stays/${stay.slug}`}
-                    className="font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
+                    className="flex items-center min-h-[44px] font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
                   >
                     {stay.name}
                   </Link>
@@ -60,7 +64,7 @@ export default function Footer() {
               <li className="pt-2">
                 <Link
                   to="/masters"
-                  className="font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
+                  className="flex items-center min-h-[44px] font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
                 >
                   Masters Week {businessConfig.masters.year}
                 </Link>
@@ -73,7 +77,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     to={href}
-                    className="font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
+                    className="flex items-center min-h-[44px] font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
                   >
                     {label}
                   </Link>
@@ -89,7 +93,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/#stays"
-                  className="inline-flex items-center gap-2 font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
+                  className="inline-flex items-center gap-2 min-h-[44px] font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
                 >
                   <ExternalLink size={12} />
                   Check Availability
@@ -98,7 +102,7 @@ export default function Footer() {
               <li>
                 <a
                   href={`mailto:${businessConfig.contact.email}`}
-                  className="inline-flex items-center gap-2 font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
+                  className="inline-flex items-center gap-2 min-h-[44px] font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
                 >
                   <Mail size={12} />
                   Email KJ
@@ -109,7 +113,7 @@ export default function Footer() {
                   href={businessConfig.location.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
+                  className="inline-flex items-center gap-2 min-h-[44px] font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
                 >
                   <MapPin size={12} />
                   Google Maps
@@ -120,7 +124,7 @@ export default function Footer() {
                   href={businessConfig.social.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
+                  className="inline-flex items-center gap-2 min-h-[44px] font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
                 >
                   <Facebook size={12} />
                   Facebook
@@ -140,7 +144,7 @@ export default function Footer() {
             {/* Privacy drawer trigger */}
             <button
               onClick={() => setPrivacyOpen(!privacyOpen)}
-              className="inline-flex items-center gap-1 font-manrope text-xs text-ivory/40 hover:text-ivory/60 transition-colors"
+              className="inline-flex items-center gap-1 min-h-[44px] font-manrope text-xs text-ivory/40 hover:text-ivory/60 transition-colors"
             >
               Privacy & Disclaimer
               <ChevronDown

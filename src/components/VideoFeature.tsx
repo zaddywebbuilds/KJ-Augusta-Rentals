@@ -125,7 +125,7 @@ export default function VideoFeature() {
           {/* Mute control */}
           <button
             onClick={toggleMute}
-            className="absolute bottom-4 right-4 p-2 bg-ink/50 backdrop-blur-sm rounded-full text-ivory hover:bg-champagne transition-all"
+            className="absolute bottom-4 right-4 flex items-center justify-center w-12 h-12 bg-ink/50 backdrop-blur-sm rounded-full text-ivory hover:bg-champagne transition-all"
             aria-label={muted ? 'Unmute' : 'Mute'}
           >
             {muted ? <VolumeX size={18} /> : <Volume2 size={18} />}

@@ -40,7 +40,7 @@ export default function AvailabilityCalendar({ stay }: { stay: Accommodation }) 
             href={stay.airbnbUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-1.5 mt-4 font-manrope text-[11px] text-sage/70 hover:text-clay transition-colors"
+            className="flex items-center justify-center gap-1.5 min-h-[44px] mt-2 font-manrope text-[11px] text-sage/70 hover:text-clay transition-colors"
           >
             Prefer to book on Airbnb? View the listing
             <ExternalLink size={11} />
@@ -83,7 +83,7 @@ export default function AvailabilityCalendar({ stay }: { stay: Accommodation }) 
           href={stay.airbnbUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-1.5 mt-4 font-manrope text-[11px] text-sage/70 hover:text-clay transition-colors"
+          className="flex items-center justify-center gap-1.5 min-h-[44px] mt-2 font-manrope text-[11px] text-sage/70 hover:text-clay transition-colors"
         >
           Prefer to book on Airbnb? View the listing
           <ExternalLink size={11} />

@@ -128,7 +128,7 @@ export default function Hero() {
 
       <motion.button
         onClick={scrollToStays}
-        className="mx-auto mt-12 flex flex-col items-center gap-2 text-ivory/50 hover:text-champagne transition-colors"
+        className="mx-auto mt-12 flex flex-col items-center justify-center gap-2 min-h-[44px] px-4 text-ivory/50 hover:text-champagne transition-colors"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}

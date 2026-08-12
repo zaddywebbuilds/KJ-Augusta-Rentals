@@ -102,7 +102,7 @@ export default function BookingActivityPopup() {
             <button
               onClick={dismiss}
               aria-label="Dismiss notification"
-              className="absolute top-2.5 right-2.5 p-1 text-gray-400 hover:text-gray-700 transition-colors z-10 rounded-full hover:bg-gray-100"
+              className="absolute top-1 right-1 flex items-center justify-center w-12 h-12 text-gray-400 hover:text-gray-700 transition-colors z-10 rounded-full hover:bg-gray-100"
             >
               <X size={13} />
             </button>

@@ -34,7 +34,7 @@ export default function StayPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             to="/#stays"
-            className="inline-flex items-center gap-1.5 font-manrope text-[11px] tracking-widest uppercase text-sage hover:text-clay transition-colors mb-6"
+            className="inline-flex items-center gap-1.5 min-h-[44px] font-manrope text-[11px] tracking-widest uppercase text-sage hover:text-clay transition-colors mb-2"
           >
             <ArrowLeft size={13} />
             All three stays

@@ -82,7 +82,7 @@ export default function ReviewPopup() {
             <button
               onClick={dismiss}
               aria-label="Dismiss guest reviews"
-              className="absolute top-2.5 right-2.5 p-1 text-sage/50 hover:text-ink transition-colors rounded-sm"
+              className="absolute top-1 right-1 flex items-center justify-center w-12 h-12 text-sage/50 hover:text-ink transition-colors rounded-sm"
             >
               <X size={14} />
             </button>
