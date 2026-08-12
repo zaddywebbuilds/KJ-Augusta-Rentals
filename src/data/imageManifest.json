@@ -1313,6 +1313,486 @@
    }
   ]
  },
+ "downstairs-river-house_01": {
+  "width": 2560,
+  "height": 1708,
+  "aspect": 1.4988,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_01-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_01-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_01-1600.webp"
+   }
+  ],
+  "alt": "Bright and comfortable bedroom with stylish décor, soft bedding, and a TV for relaxing evenings during your stay."
+ },
+ "downstairs-river-house_02": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_02-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_02-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_02-1600.webp"
+   }
+  ],
+  "alt": "Cozy living area with comfortable seating and warm décor, offering a relaxing space to unwind after a day of exploring."
+ },
+ "downstairs-river-house_03": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_03-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_03-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_03-1600.webp"
+   }
+  ],
+  "alt": "Convenient laundry area with washer and dryer, perfect for longer stays and keeping up with travel laundry."
+ },
+ "downstairs-river-house_04": {
+  "width": 2560,
+  "height": 1711,
+  "aspect": 1.4962,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_04-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_04-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_04-1600.webp"
+   }
+  ],
+  "alt": "Bright and cozy bedroom with a comfortable king bed, soft lighting, and peaceful décor; perfect for a relaxing night after exploring Augusta."
+ },
+ "downstairs-river-house_05": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_05-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_05-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_05-1600.webp"
+   }
+  ],
+  "alt": "Additional bedroom space with simple and comfortable furnishings, ideal for a restful stay."
+ },
+ "downstairs-river-house_06": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_06-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_06-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_06-1600.webp"
+   }
+  ],
+  "alt": "Clean and well-equipped bathroom with shower and complimentary body and hand soap, shampoo and conditioner for a convenient and comfortable stay."
+ },
+ "downstairs-river-house_07": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_07-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_07-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_07-1600.webp"
+   }
+  ],
+  "alt": "Lawn games and outdoor space by the water; great for relaxing, playing games, and enjoying the peaceful natural setting."
+ },
+ "downstairs-river-house_08": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_08-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_08-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_08-1600.webp"
+   }
+  ],
+  "alt": "Waterfront fire pit lounge with comfortable seating; perfect for evening gatherings, conversations, and enjoying the peaceful lake view."
+ },
+ "downstairs-river-house_09": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_09-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_09-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_09-1600.webp"
+   }
+  ],
+  "alt": "Peaceful waterfront dock area with beautiful lake views; perfect for quiet moments, photos, or simply enjoying the natural scenery."
+ },
+ "downstairs-river-house_10": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_10-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_10-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_10-1600.webp"
+   }
+  ],
+  "alt": "Lakeside seating deck with Adirondack chairs and fire pit; an inviting space to gather, relax, and enjoy stunning waterfront sunsets."
+ },
+ "downstairs-river-house_11": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_11-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_11-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_11-1600.webp"
+   }
+  ],
+  "alt": "Fun mini golf putting area by the water, offering a unique outdoor activity with scenic lake views for guests to enjoy."
+ },
+ "downstairs-river-house_12": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_12-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_12-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_12-1600.webp"
+   }
+  ],
+  "alt": "Private Boat Slip or Fishing Dock on the Savannah River"
+ },
+ "downstairs-river-house_13": {
+  "width": 2560,
+  "height": 1703,
+  "aspect": 1.5032,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_13-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_13-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_13-1600.webp"
+   }
+  ],
+  "alt": "Covered patio seating area overlooking the water; an ideal spot for morning coffee, evening drinks, and relaxing outdoor conversations."
+ },
+ "downstairs-river-house_14": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_14-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_14-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_14-1600.webp"
+   }
+  ],
+  "alt": "Outdoor bar-style seating area under the patio; great for casual drinks, conversation, and enjoying the open-air entertainment space."
+ },
+ "downstairs-river-house_15": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_15-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_15-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_15-1600.webp"
+   }
+  ],
+  "alt": "Covered patio with ping pong table and outdoor seating, offering a fun and shaded space to enjoy games and scenic waterfront views."
+ },
+ "downstairs-river-house_16": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_16-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_16-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_16-1600.webp"
+   }
+  ],
+  "alt": "Large covered deck with outdoor seating, providing a comfortable shaded space to unwind while enjoying the beautiful waterfront surroundings."
+ },
+ "downstairs-river-house_17": {
+  "width": 2560,
+  "height": 1920,
+  "aspect": 1.3333,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_17-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_17-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_17-1600.webp"
+   }
+  ],
+  "alt": "Enjoy a private BBQ with Riverfront views"
+ },
+ "downstairs-river-house_18": {
+  "width": 2560,
+  "height": 1715,
+  "aspect": 1.4927,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_18-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_18-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_18-1600.webp"
+   }
+  ],
+  "alt": "Spacious waterfront home with large outdoor entertainment area, perfect for gathering with friends and enjoying the peaceful lake views."
+ },
+ "downstairs-river-house_19": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_19-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_19-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_19-1600.webp"
+   }
+  ],
+  "alt": "Front view of the spacious waterfront property with large outdoor areas and easy access to the pool and entertainment spaces."
+ },
+ "downstairs-river-house_20": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_20-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_20-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_20-1600.webp"
+   }
+  ],
+  "alt": "Welcoming driveway entrance surrounded by greenery, providing easy parking and convenient access to the home."
+ },
+ "downstairs-river-house_21": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_21-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_21-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_21-1600.webp"
+   }
+  ],
+  "alt": "Private swimming pool with plenty of lounge space; ideal for cooling off, relaxing in the sun, and enjoying a refreshing swim."
+ },
+ "downstairs-river-house_22": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_22-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_22-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_22-1600.webp"
+   }
+  ],
+  "alt": "Sparkling outdoor swimming pool surrounded by lounge chairs - perfect for sunbathing, swimming, and relaxing during your stay."
+ },
+ "downstairs-river-house_23": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_23-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_23-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_23-1600.webp"
+   }
+  ],
+  "alt": "Another view of the refreshing private pool area, offering plenty of space to relax and enjoy sunny days outdoors."
+ },
+ "downstairs-river-house_24": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "downstairs-river-house_24-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "downstairs-river-house_24-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "downstairs-river-house_24-1600.webp"
+   }
+  ],
+  "alt": "Private Riverfront Oasis"
+ },
  "entire-house_01": {
   "width": 2560,
   "height": 1704,
@@ -2512,6 +2992,886 @@
    }
   ],
   "alt": "Mini putting green by the water for a fun outdoor activity while enjoying beautiful lake views."
+ },
+ "upstairs-river-house_01": {
+  "width": 2560,
+  "height": 1704,
+  "aspect": 1.5023,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_01-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_01-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_01-1600.webp"
+   }
+  ],
+  "alt": "Comfortable living room with cozy seating and a hanging fireplace; perfect for relaxing after a day of exploring."
+ },
+ "upstairs-river-house_02": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_02-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_02-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_02-1600.webp"
+   }
+  ],
+  "alt": "Spacious lounge area with stylish seating and TV, offering a relaxing space for entertainment and conversation."
+ },
+ "upstairs-river-house_03": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_03-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_03-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_03-1600.webp"
+   }
+  ],
+  "alt": "Another view of the open kitchen and living area, creating a welcoming space for gathering and dining."
+ },
+ "upstairs-river-house_04": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_04-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_04-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_04-1600.webp"
+   }
+  ],
+  "alt": "Bright upstairs living area with large windows and beautiful water views filling the space with natural light."
+ },
+ "upstairs-river-house_05": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_05-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_05-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_05-1600.webp"
+   }
+  ],
+  "alt": "Room that offers unmatchable view."
+ },
+ "upstairs-river-house_06": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_06-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_06-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_06-1600.webp"
+   }
+  ],
+  "alt": "Bright sunroom with large windows overlooking the water; perfect for relaxing with beautiful views."
+ },
+ "upstairs-river-house_07": {
+  "width": 2560,
+  "height": 1705,
+  "aspect": 1.5015,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_07-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_07-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_07-1600.webp"
+   }
+  ],
+  "alt": "Open living space with large glass doors leading to the patio and scenic waterfront views."
+ },
+ "upstairs-river-house_08": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_08-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_08-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_08-1600.webp"
+   }
+  ],
+  "alt": "Modern kitchen with bar seating and stainless appliances; perfect for casual meals and entertaining."
+ },
+ "upstairs-river-house_09": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_09-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_09-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_09-1600.webp"
+   }
+  ],
+  "alt": "Bright kitchen with modern appliances and plenty of counter space for preparing meals."
+ },
+ "upstairs-river-house_10": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_10-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_10-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_10-1600.webp"
+   }
+  ],
+  "alt": "Fully equipped kitchen with modern appliances and ample counter space for cooking during your stay."
+ },
+ "upstairs-river-house_11": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_11-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_11-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_11-1600.webp"
+   }
+  ],
+  "alt": "Coffee station with coffee maker and essentials so guests can easily enjoy their morning coffee."
+ },
+ "upstairs-river-house_12": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_12-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_12-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_12-1600.webp"
+   }
+  ],
+  "alt": "Dining area with wooden table and chairs, ideal for shared meals and group gatherings."
+ },
+ "upstairs-river-house_13": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_13-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_13-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_13-1600.webp"
+   }
+  ],
+  "alt": "Another view of the open space room."
+ },
+ "upstairs-river-house_14": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_14-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_14-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_14-1600.webp"
+   }
+  ],
+  "alt": "Spacious bedroom with comfortable beds, soft lighting, and a relaxing layout - perfect for a restful stay with beautiful natural light."
+ },
+ "upstairs-river-house_15": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_15-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_15-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_15-1600.webp"
+   }
+  ],
+  "alt": "Large upstairs bedroom with multiple beds and scenic waterfront views."
+ },
+ "upstairs-river-house_16": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_16-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_16-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_16-1600.webp"
+   }
+  ],
+  "alt": "Spacious bedroom with comfortable bed and large windows offering relaxing natural light."
+ },
+ "upstairs-river-house_17": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_17-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_17-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_17-1600.webp"
+   }
+  ],
+  "alt": "Master bathroom featuring double vanity and spacious layout for added comfort."
+ },
+ "upstairs-river-house_18": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_18-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_18-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_18-1600.webp"
+   }
+  ],
+  "alt": "Bedroom with beautiful waterfront view and direct access to the outdoor balcony."
+ },
+ "upstairs-river-house_19": {
+  "width": 2560,
+  "height": 1705,
+  "aspect": 1.5015,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_19-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_19-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_19-1600.webp"
+   }
+  ],
+  "alt": "Cozy bedroom with soft bedding and relaxing interior design for a restful night’s sleep."
+ },
+ "upstairs-river-house_20": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_20-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_20-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_20-1600.webp"
+   }
+  ],
+  "alt": "Clean bathroom with modern fixtures and bathtub for a comfortable stay."
+ },
+ "upstairs-river-house_21": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_21-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_21-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_21-1600.webp"
+   }
+  ],
+  "alt": "Walk-in tiled shower with modern finishes and spacious design."
+ },
+ "upstairs-river-house_22": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_22-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_22-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_22-1600.webp"
+   }
+  ],
+  "alt": "Walk in design with modern design."
+ },
+ "upstairs-river-house_23": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_23-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_23-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_23-1600.webp"
+   }
+  ],
+  "alt": "2nd bathroom in the hallway for use with complimentary body and hand soap, shampoo and conditioner."
+ },
+ "upstairs-river-house_24": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_24-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_24-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_24-1600.webp"
+   }
+  ],
+  "alt": "Small workspace desk area for guests who need a quiet place to work during their stay."
+ },
+ "upstairs-river-house_25": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_25-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_25-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_25-1600.webp"
+   }
+  ],
+  "alt": "Lawn games and open outdoor space by the water; perfect for relaxing or enjoying friendly games."
+ },
+ "upstairs-river-house_26": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_26-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_26-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_26-1600.webp"
+   }
+  ],
+  "alt": "Lakeside deck with Adirondack chairs; perfect for relaxing, chatting with friends, or enjoying sunset views."
+ },
+ "upstairs-river-house_27": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_27-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_27-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_27-1600.webp"
+   }
+  ],
+  "alt": "Mini golf putting area by the water offering a fun outdoor activity with scenic lake views."
+ },
+ "upstairs-river-house_28": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_28-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_28-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_28-1600.webp"
+   }
+  ],
+  "alt": "Private dock on the lake, providing a peaceful place to enjoy the natural beauty and waterfront atmosphere."
+ },
+ "upstairs-river-house_29": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_29-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_29-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_29-1600.webp"
+   }
+  ],
+  "alt": "Lakeside fire pit seating area with Adirondack chairs; perfect for cozy evenings and relaxing conversations."
+ },
+ "upstairs-river-house_30": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_30-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_30-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_30-1600.webp"
+   }
+  ],
+  "alt": "Private Boat Slip or Fishing Dock on Savannah River"
+ },
+ "upstairs-river-house_31": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_31-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_31-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_31-1600.webp"
+   }
+  ],
+  "alt": "Beautiful waterfront deck seating area offering stunning lake views and a peaceful place to relax outdoors."
+ },
+ "upstairs-river-house_32": {
+  "width": 2560,
+  "height": 1708,
+  "aspect": 1.4988,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_32-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_32-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_32-1600.webp"
+   }
+  ],
+  "alt": "Waterfront patio seating with cozy cushions; perfect for morning coffee while enjoying peaceful lake views."
+ },
+ "upstairs-river-house_33": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_33-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_33-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_33-1600.webp"
+   }
+  ],
+  "alt": "Outdoor dining table on the patio overlooking the water; great for meals with a view."
+ },
+ "upstairs-river-house_34": {
+  "width": 2560,
+  "height": 1703,
+  "aspect": 1.5032,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_34-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_34-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_34-1600.webp"
+   }
+  ],
+  "alt": "Covered waterfront patio with comfortable seating; an ideal place to unwind and enjoy the peaceful surroundings."
+ },
+ "upstairs-river-house_35": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_35-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_35-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_35-1600.webp"
+   }
+  ],
+  "alt": "Covered patio with ping pong table and outdoor seating, offering a fun hangout spot with scenic waterfront views."
+ },
+ "upstairs-river-house_36": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_36-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_36-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_36-1600.webp"
+   }
+  ],
+  "alt": "Outdoor bar seating area under the patio, perfect for casual drinks, conversations, and enjoying the open-air space."
+ },
+ "upstairs-river-house_37": {
+  "width": 2560,
+  "height": 1715,
+  "aspect": 1.4927,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_37-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_37-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_37-1600.webp"
+   }
+  ],
+  "alt": "Spacious view of the waterfront home featuring outdoor entertainment areas and scenic surroundings."
+ },
+ "upstairs-river-house_38": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_38-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_38-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_38-1600.webp"
+   }
+  ],
+  "alt": "Front exterior view of the spacious waterfront home with easy driveway access and parking."
+ },
+ "upstairs-river-house_39": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_39-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_39-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_39-1600.webp"
+   }
+  ],
+  "alt": "Welcoming driveway entrance surrounded by greenery and landscaping for easy property access."
+ },
+ "upstairs-river-house_40": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_40-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_40-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_40-1600.webp"
+   }
+  ],
+  "alt": "Private swimming pool with spacious deck area, ideal for relaxing, sunbathing, and cooling off on warm Augusta days."
+ },
+ "upstairs-river-house_41": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_41-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_41-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_41-1600.webp"
+   }
+  ],
+  "alt": "Another view of the refreshing outdoor pool surrounded by lounge chairs - perfect for relaxing and enjoying the sunny weather."
+ },
+ "upstairs-river-house_42": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_42-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_42-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_42-1600.webp"
+   }
+  ],
+  "alt": "Inviting swimming pool with plenty of space to lounge and enjoy a refreshing swim during your stay."
+ },
+ "upstairs-river-house_43": {
+  "width": 2560,
+  "height": 1706,
+  "aspect": 1.5006,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_43-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_43-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_43-1600.webp"
+   }
+  ],
+  "alt": "Another angle of the sparkling swimming pool with lounge seating for relaxing afternoons in the sun."
+ },
+ "upstairs-river-house_44": {
+  "width": 2560,
+  "height": 1707,
+  "aspect": 1.4997,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "upstairs-river-house_44-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "upstairs-river-house_44-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "upstairs-river-house_44-1600.webp"
+   }
+  ],
+  "alt": "Private Pool and Fire pit w/ RiverFront dock"
  },
  "upstairs-terrace_01": {
   "width": 2560,

@@ -668,5 +668,170 @@
    ]
   },
   "count": 44
+ },
+ "downstairs-river-house": {
+  "photos": [
+   {
+    "id": "downstairs-river-house_09",
+    "alt": "Peaceful waterfront dock area with beautiful lake views; perfect for quiet moments, photos, or simply enjoying the natural scenery.",
+    "category": "river"
+   },
+   {
+    "id": "downstairs-river-house_12",
+    "alt": "Private Boat Slip or Fishing Dock on the Savannah River",
+    "category": "river"
+   },
+   {
+    "id": "downstairs-river-house_17",
+    "alt": "Enjoy a private BBQ with Riverfront views",
+    "category": "river"
+   },
+   {
+    "id": "downstairs-river-house_18",
+    "alt": "Spacious waterfront home with large outdoor entertainment area, perfect for gathering with friends and enjoying the peaceful lake views.",
+    "category": "river"
+   },
+   {
+    "id": "downstairs-river-house_19",
+    "alt": "Front view of the spacious waterfront property with large outdoor areas and easy access to the pool and entertainment spaces.",
+    "category": "river"
+   },
+   {
+    "id": "downstairs-river-house_24",
+    "alt": "Private Riverfront Oasis",
+    "category": "river"
+   },
+   {
+    "id": "downstairs-river-house_21",
+    "alt": "Private swimming pool with plenty of lounge space; ideal for cooling off, relaxing in the sun, and enjoying a refreshing swim.",
+    "category": "pool"
+   },
+   {
+    "id": "downstairs-river-house_23",
+    "alt": "Another view of the refreshing private pool area, offering plenty of space to relax and enjoy sunny days outdoors.",
+    "category": "pool"
+   },
+   {
+    "id": "downstairs-river-house_07",
+    "alt": "Lawn games and outdoor space by the water; great for relaxing, playing games, and enjoying the peaceful natural setting.",
+    "category": "outdoor"
+   },
+   {
+    "id": "downstairs-river-house_10",
+    "alt": "Lakeside seating deck with Adirondack chairs and fire pit; an inviting space to gather, relax, and enjoy stunning waterfront sunsets.",
+    "category": "outdoor"
+   },
+   {
+    "id": "downstairs-river-house_11",
+    "alt": "Fun mini golf putting area by the water, offering a unique outdoor activity with scenic lake views for guests to enjoy.",
+    "category": "outdoor"
+   },
+   {
+    "id": "downstairs-river-house_13",
+    "alt": "Covered patio seating area overlooking the water; an ideal spot for morning coffee, evening drinks, and relaxing outdoor conversations.",
+    "category": "outdoor"
+   },
+   {
+    "id": "downstairs-river-house_14",
+    "alt": "Outdoor bar-style seating area under the patio; great for casual drinks, conversation, and enjoying the open-air entertainment space.",
+    "category": "outdoor"
+   },
+   {
+    "id": "downstairs-river-house_15",
+    "alt": "Covered patio with ping pong table and outdoor seating, offering a fun and shaded space to enjoy games and scenic waterfront views.",
+    "category": "outdoor"
+   },
+   {
+    "id": "downstairs-river-house_16",
+    "alt": "Large covered deck with outdoor seating, providing a comfortable shaded space to unwind while enjoying the beautiful waterfront surroundings.",
+    "category": "outdoor"
+   },
+   {
+    "id": "downstairs-river-house_02",
+    "alt": "Cozy living area with comfortable seating and warm décor, offering a relaxing space to unwind after a day of exploring.",
+    "category": "living"
+   },
+   {
+    "id": "downstairs-river-house_08",
+    "alt": "Waterfront fire pit lounge with comfortable seating; perfect for evening gatherings, conversations, and enjoying the peaceful lake view.",
+    "category": "living"
+   },
+   {
+    "id": "downstairs-river-house_22",
+    "alt": "Sparkling outdoor swimming pool surrounded by lounge chairs - perfect for sunbathing, swimming, and relaxing during your stay.",
+    "category": "living"
+   },
+   {
+    "id": "downstairs-river-house_01",
+    "alt": "Bright and comfortable bedroom with stylish décor, soft bedding, and a TV for relaxing evenings during your stay.",
+    "category": "bedroom"
+   },
+   {
+    "id": "downstairs-river-house_04",
+    "alt": "Bright and cozy bedroom with a comfortable king bed, soft lighting, and peaceful décor; perfect for a relaxing night after exploring Augusta.",
+    "category": "bedroom"
+   },
+   {
+    "id": "downstairs-river-house_05",
+    "alt": "Additional bedroom space with simple and comfortable furnishings, ideal for a restful stay.",
+    "category": "bedroom"
+   },
+   {
+    "id": "downstairs-river-house_06",
+    "alt": "Clean and well-equipped bathroom with shower and complimentary body and hand soap, shampoo and conditioner for a convenient and comfortable stay.",
+    "category": "bath"
+   },
+   {
+    "id": "downstairs-river-house_03",
+    "alt": "Convenient laundry area with washer and dryer, perfect for longer stays and keeping up with travel laundry.",
+    "category": "other"
+   },
+   {
+    "id": "downstairs-river-house_20",
+    "alt": "Welcoming driveway entrance surrounded by greenery, providing easy parking and convenient access to the home.",
+    "category": "other"
+   }
+  ],
+  "byCategory": {
+   "river": [
+    "downstairs-river-house_09",
+    "downstairs-river-house_12",
+    "downstairs-river-house_17",
+    "downstairs-river-house_18",
+    "downstairs-river-house_19",
+    "downstairs-river-house_24"
+   ],
+   "pool": [
+    "downstairs-river-house_21",
+    "downstairs-river-house_23"
+   ],
+   "outdoor": [
+    "downstairs-river-house_07",
+    "downstairs-river-house_10",
+    "downstairs-river-house_11",
+    "downstairs-river-house_13",
+    "downstairs-river-house_14",
+    "downstairs-river-house_15",
+    "downstairs-river-house_16"
+   ],
+   "living": [
+    "downstairs-river-house_02",
+    "downstairs-river-house_08",
+    "downstairs-river-house_22"
+   ],
+   "bedroom": [
+    "downstairs-river-house_01",
+    "downstairs-river-house_04",
+    "downstairs-river-house_05"
+   ],
+   "bath": [
+    "downstairs-river-house_06"
+   ],
+   "other": [
+    "downstairs-river-house_03",
+    "downstairs-river-house_20"
+   ]
+  },
+  "count": 24
  }
 }
