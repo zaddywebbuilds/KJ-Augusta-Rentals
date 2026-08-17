@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: 'How far is the property from Augusta National Golf Club?',
-    a: 'About seven minutes by car. The property also sits adjacent to the IRONMAN 70.3 Augusta start line, and the Augusta Riverwalk is roughly a ten-minute walk, with downtown dining and attractions a few minutes further.',
+    a: 'Under 15 minutes by car, via a back route KJ shares directions for with every guest. Approaching from this direction avoids the Masters traffic that holds guests coming from the main corridor up for two hours or more. The property also sits adjacent to the IRONMAN 70.3 Augusta start line, and the Augusta Riverwalk is roughly a ten-minute walk, with downtown dining a few minutes further.',
   },
   {
     q: 'What is the check-in and check-out process?',

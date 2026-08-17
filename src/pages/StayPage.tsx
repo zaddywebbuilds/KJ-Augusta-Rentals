@@ -137,7 +137,7 @@ export default function StayPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
               <div className="border border-champagne/40 rounded-sm p-6 bg-linen">
-                <p className="font-manrope text-[10px] tracking-[0.22em] uppercase text-clay mb-4">
+                <p className="font-manrope text-[10px] tracking-[0.22em] uppercase text-clay font-semibold mb-4">
                   Private to your booking
                 </p>
                 <ul className="space-y-2.5">

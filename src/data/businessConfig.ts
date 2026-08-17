@@ -42,7 +42,7 @@ export const businessConfig = {
     googleReviewCount: 22,
     airbnbRating: 5.0,
     airbnbReviewCount: 22,
-    yearsHosting: 11
+    yearsHosting: 18
   },
   // The Masters is played the first full week of April. Update `year` each
   // spring; `enabled` hides the banner entirely once the week has passed.

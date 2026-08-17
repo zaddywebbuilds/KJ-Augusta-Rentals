@@ -11,7 +11,7 @@ const g = galleries as Record<string, { photos: { id: string; alt: string; categ
 const riverShots = g['entire-house'].photos.filter(p => p.category === 'river').slice(0, 3);
 
 const nearby = [
-  { icon: Clock, title: '7 minutes to Augusta National', detail: 'Straight run to the tournament gates — no interstate, no downtown traffic.' },
+  { icon: Clock, title: 'Under 15 minutes to Augusta National', detail: 'Via the back route KJ gives every guest — while traffic from the main direction holds others up for two hours or more.' },
   { icon: MapPin, title: '10 minutes to downtown', detail: 'Dining, the Riverwalk and James Brown Arena for the evenings after play.' },
   { icon: Users, title: 'Sleeps up to 16', detail: 'Nine beds across the whole house — a full group under one roof.' },
   { icon: Waves, title: 'Somewhere to decompress', detail: 'Pool, dock and kayaks for the hours between rounds.' },
@@ -41,13 +41,14 @@ export default function MastersPage() {
               Masters Week {year} · Augusta, Georgia
             </p>
             <h1 className="font-cormorant text-4xl md:text-6xl lg:text-7xl text-ivory leading-none mb-6">
-              Seven minutes from the first tee.<br />
-              <em className="text-champagne not-italic">Three acres from everything else.</em>
+              Under 15 minutes from the first tee.<br />
+              <em className="text-champagne not-italic">Zero traffic from this direction.</em>
             </h1>
             <p className="font-manrope text-base md:text-lg text-ivory/75 leading-relaxed mb-9">
-              Masters week fills Augusta years in advance. The River House sits on the Savannah
-              River minutes from Augusta National — close enough for an easy morning run to the
-              gates, far enough that the evenings are quiet, private and entirely yours.
+              Masters week traffic backs up for miles — but not from this side. The River House
+              sits on the Savannah River and guests approach Augusta National on back roads KJ
+              shares with every booking. While others sit in two hours of stop-start traffic, you're
+              pulling into the grounds in under 15 minutes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -108,7 +109,7 @@ export default function MastersPage() {
 
             <ul className="space-y-3 mb-10">
               {[
-                'Seven minutes to Augusta National, ten to downtown',
+                'Under 15 minutes to Augusta National via KJ\'s back route — no traffic',
                 'Adjacent to the IRONMAN 70.3 Augusta start line',
                 'Free parking on site for the whole group',
                 'Saltwater pool, private dock, six kayaks and a fire pit',

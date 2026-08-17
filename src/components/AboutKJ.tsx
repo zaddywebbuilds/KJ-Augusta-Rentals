@@ -30,7 +30,7 @@ export default function AboutKJ() {
                 <Star className="text-champagne fill-champagne/50" size={20} />
                 <div>
                   <p className="font-cormorant text-xl text-ink">5.0 Rated</p>
-                  <p className="font-manrope text-xs text-sage">11 years hosting</p>
+                  <p className="font-manrope text-xs text-sage">18 years hosting</p>
                 </div>
               </div>
             </div>
@@ -57,7 +57,7 @@ export default function AboutKJ() {
                 the priority.
               </p>
               <p>
-                With over 11 years of hosting and a perfect 5-star rating across
+                With 18 years of hosting and a perfect 5-star rating across
                 22+ Google reviews, KJ's reputation has been earned stay by stay.
                 Guests consistently highlight the ease of check-in, the
                 responsiveness of the host, and the quality of the property itself.

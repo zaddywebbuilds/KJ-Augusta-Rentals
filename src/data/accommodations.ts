@@ -75,7 +75,7 @@ export const accommodations: Accommodation[] = [
     highlights: [
       { title: 'The whole property', detail: 'Three acres, both levels, no other guests on site' },
       { title: 'Sleeps up to 16', detail: 'Nine beds across three bedrooms and shared living spaces' },
-      { title: 'Seven minutes to Augusta National', detail: 'And ten minutes on foot to the Augusta Riverwalk' },
+      { title: 'Under 15 minutes to Augusta National', detail: 'Via KJ\'s back route — no Masters traffic while others wait hours.' },
     ],
     heroPhoto: g['entire-house'].photos[0].id,
     photos: g['entire-house'].photos,
