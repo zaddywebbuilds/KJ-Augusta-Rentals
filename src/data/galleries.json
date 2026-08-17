@@ -833,5 +833,118 @@
    ]
   },
   "count": 24
+ },
+ "new-2026": {
+  "photos": [
+   {
+    "id": "new-2026_01",
+    "alt": "Aerial view of the River House on its three riverfront acres, showing the saltwater pool, the house and the Savannah River curving past the treeline",
+    "category": "river"
+   },
+   {
+    "id": "new-2026_06",
+    "alt": "A largemouth bass caught from the private dock on the Savannah River",
+    "category": "river"
+   },
+   {
+    "id": "new-2026_08",
+    "alt": "The River House directional sign at the entrance to the property driveway",
+    "category": "river"
+   },
+   {
+    "id": "new-2026_10",
+    "alt": "The spiral staircase connecting the two levels of the River House, with tiled landing below",
+    "category": "river"
+   },
+   {
+    "id": "new-2026_02",
+    "alt": "The saltwater pool in front of the two-storey River House, with the Savannah River and Adirondack chairs beyond",
+    "category": "pool"
+   },
+   {
+    "id": "new-2026_03",
+    "alt": "Wide view of the saltwater pool and the River House, with the river and lawn stretching out behind",
+    "category": "pool"
+   },
+   {
+    "id": "new-2026_04",
+    "alt": "The River House seen across the pool, with its upper balcony, exterior staircase and covered lower deck",
+    "category": "pool"
+   },
+   {
+    "id": "new-2026_05",
+    "alt": "The saltwater pool looking out over the Savannah River, with lawn, Adirondack chairs and the dock beyond",
+    "category": "pool"
+   },
+   {
+    "id": "new-2026_07",
+    "alt": "The Welcome to The River House sign set among flowering shrubs on the lawn",
+    "category": "outdoor"
+   },
+   {
+    "id": "new-2026_09",
+    "alt": "Entry hall with a baker's rack, opening through to the bathroom and the spiral staircase",
+    "category": "bath"
+   },
+   {
+    "id": "new-2026_11",
+    "alt": "Landing with the spiral staircase, fresh towels on a stand and the bathroom beyond",
+    "category": "bath"
+   },
+   {
+    "id": "new-2026_12",
+    "alt": "Entrance area with a full-length mirror, stacked towels and the bathroom doorway",
+    "category": "bath"
+   },
+   {
+    "id": "new-2026_13",
+    "alt": "Bathroom with a tiled tub and shower and fresh towels on the rail",
+    "category": "bath"
+   },
+   {
+    "id": "new-2026_14",
+    "alt": "Walk-in closet with fitted shelving, hanging rails and folded linens",
+    "category": "other"
+   },
+   {
+    "id": "new-2026_15",
+    "alt": "Laundry area with a full-size washer and dryer beneath fitted cabinets",
+    "category": "other"
+   },
+   {
+    "id": "new-2026_16",
+    "alt": "Second laundry area with washer, dryer, utility sink and worktop",
+    "category": "other"
+   }
+  ],
+  "byCategory": {
+   "river": [
+    "new-2026_01",
+    "new-2026_06",
+    "new-2026_08",
+    "new-2026_10"
+   ],
+   "pool": [
+    "new-2026_02",
+    "new-2026_03",
+    "new-2026_04",
+    "new-2026_05"
+   ],
+   "outdoor": [
+    "new-2026_07"
+   ],
+   "bath": [
+    "new-2026_09",
+    "new-2026_11",
+    "new-2026_12",
+    "new-2026_13"
+   ],
+   "other": [
+    "new-2026_14",
+    "new-2026_15",
+    "new-2026_16"
+   ]
+  },
+  "count": 16
  }
 }

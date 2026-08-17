@@ -8,33 +8,35 @@ const VISIBLE_MS = 7_000;
 const GAP_MS = 14_000;
 const BASE_IMG = '/KJ-Augusta-Rentals/assets/img';
 
+// Thumbnails come from the current 2026 set rather than the old site's
+// photos, so the toast never shows a room that no longer looks like that.
 const activities = [
   {
-    photo: 'photo_03',
+    photo: 'new-2026_01',
     headline: 'A returning guest from Atlanta',
     detail: 'booked their 3rd summer stay',
     ago: '2 days ago',
   },
   {
-    photo: 'photo_08',
+    photo: 'new-2026_02',
     headline: 'A family from Nashville',
     detail: 'reserved Masters Week 2027',
     ago: '4 days ago',
   },
   {
-    photo: 'photo_62',
+    photo: 'new-2026_06',
     headline: 'A group from Miami',
     detail: 'booked the full property',
     ago: '5 days ago',
   },
   {
-    photo: 'photo_29',
+    photo: 'new-2026_05',
     headline: 'A couple from Charlotte',
     detail: 'extended their stay by 2 nights',
     ago: '1 week ago',
   },
   {
-    photo: 'photo_16',
+    photo: 'new-2026_03',
     headline: 'A guest from Washington, D.C.',
     detail: 'enquired about New Year\'s weekend',
     ago: '3 days ago',

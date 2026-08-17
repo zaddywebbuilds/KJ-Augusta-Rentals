@@ -3,15 +3,21 @@ import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 import { videos, videoPosters } from '../data/mediaConfig';
 import galleries from '../data/galleries.json';
+import { pickPhoto } from '../data/pickPhoto';
 import Photo from './Photo';
 
 const g = galleries as Record<string, { photos: { id: string; alt: string; category: string }[] }>;
 
 // The river and pool shots lead — they are what distinguish this property.
+// Hero resolves first (App imports it before the lower sections), so claiming
+// here reserves the four strongest shots for the top of the page and pushes
+// every later section onto different photos.
 const showcase = [
-  ...g['entire-house'].photos.filter(p => p.category === 'river'),
-  ...g['entire-house'].photos.filter(p => p.category === 'pool'),
-].slice(0, 4);
+  pickPhoto('new-2026', /aerial/),
+  pickPhoto('new-2026', /pool/),
+  pickPhoto('entire-house', /dock/),
+  pickPhoto('new-2026', /sign/),
+].filter((p): p is NonNullable<typeof p> => Boolean(p));
 
 export default function Hero() {
   const scrollToStays = () =>
@@ -97,15 +103,21 @@ export default function Hero() {
             transition={{ duration: 1.1, delay: 0.4, ease: 'easeOut' }}
           >
             <div className="relative rounded-sm overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.65)]">
+              {/* Phones take the 960px cut (1.3 MB) rather than the desktop
+                  one (4 MB). The browser picks before it starts downloading,
+                  so the saving is real bandwidth, not just decode work. */}
               <video
                 className="w-full h-auto max-h-[46vh] lg:max-h-[62vh] object-cover"
-                src={videos.hero}
                 poster={videoPosters.hero}
                 autoPlay
                 muted
                 loop
                 playsInline
-              />
+                preload="metadata"
+              >
+                <source src={videos.heroMobile} type="video/mp4" media="(max-width: 768px)" />
+                <source src={videos.hero} type="video/mp4" />
+              </video>
               <div className="absolute inset-0 ring-1 ring-champagne/20 pointer-events-none" />
             </div>
 

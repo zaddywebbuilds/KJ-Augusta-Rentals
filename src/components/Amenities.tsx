@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
 import Photo from './Photo';
+import { pickPhoto } from '../data/pickPhoto';
 import {
   Waves, Flame, Wind, Wifi, Car, Utensils, Tv, Dumbbell,
   Sun, Anchor, TreePine, Coffee, Sunset, Bath, BedDouble, Shirt
@@ -10,7 +11,7 @@ const amenityGroups = [
   {
     category: 'On the Water',
     icon: Waves,
-    image: 'photo_38',
+    match: /dock/,
     items: [
       { icon: Anchor, label: 'Private dock & boat slip on the Savannah River' },
       { icon: Waves, label: '6 kayaks (4 adult, 2 child) with life vests' },
@@ -21,7 +22,7 @@ const amenityGroups = [
   {
     category: 'Outdoors',
     icon: Sun,
-    image: 'photo_29',
+    match: /pool/,
     note: '🌊 Saltwater pool open April – October',
     items: [
       { icon: Sun, label: 'Saltwater pool (seasonal, Apr–Oct)' },
@@ -33,7 +34,7 @@ const amenityGroups = [
   {
     category: 'Inside',
     icon: Utensils,
-    image: 'photo_34',
+    match: /kitchen/,
     items: [
       { icon: Utensils, label: 'Fully equipped kitchen' },
       { icon: Tv, label: 'Smart TV / streaming' },
@@ -45,7 +46,7 @@ const amenityGroups = [
   {
     category: 'Rest & Refresh',
     icon: BedDouble,
-    image: 'photo_47',
+    match: /bedroom|master/,
     items: [
       { icon: BedDouble, label: '9 beds across 3 bedrooms' },
       { icon: Bath, label: '3 full bathrooms, jacuzzi tub in the master' },
@@ -55,6 +56,14 @@ const amenityGroups = [
     ],
   },
 ];
+
+// Each card resolves to a photo whose own description contains the matching
+// word, so a card can never illustrate itself with the wrong room. Cards with
+// no match render without an image rather than with a misleading one.
+const groups = amenityGroups.map(({ match, ...rest }) => ({
+  ...rest,
+  photo: pickPhoto('entire-house', match) ?? pickPhoto('new-2026', match),
+}));
 
 export default function Amenities() {
   const { ref, inView } = useInView();
@@ -90,7 +99,7 @@ export default function Amenities() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {amenityGroups.map(({ category, icon: Icon, image, note, items }, groupIdx) => (
+          {groups.map(({ category, icon: Icon, photo, note, items }, groupIdx) => (
             <motion.div
               key={category}
               className="bg-linen rounded-sm overflow-hidden border border-champagne/20 hover:shadow-lg transition-shadow duration-300"
@@ -98,11 +107,11 @@ export default function Amenities() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.1 * groupIdx }}
             >
-              {image && (
+              {photo && (
                 <div className="bg-ivory">
                   <Photo
-                    id={image}
-                    alt={`${category} at KJ's River House`}
+                    id={photo.id}
+                    alt={photo.alt}
                     sizes="(max-width: 768px) 100vw, 560px"
                     className="w-full aspect-[4/3] object-contain"
                   />

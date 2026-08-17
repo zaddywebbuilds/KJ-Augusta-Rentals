@@ -30,3 +30,9 @@ dist-ssr
 # streetview/ alone is ~300 MB of unprocessed panoramas.
 streetview/
 new making/
+
+# Raw originals staged from the owner before processing. The web-ready
+# derivatives live in public/assets (photos/new-2026 and assets/videos), and
+# the source files here exceed GitHub's 100 MB per-file hard limit.
+newimagesvideos/
+

@@ -13,7 +13,7 @@ import path from 'node:path';
 // slugs: photo files are named after their folder, so renaming a listing for
 // marketing reasons would otherwise invalidate every derivative in
 // public/assets/img. accommodations.ts maps a public slug to its source here.
-const LISTINGS = ['entire-house', 'upstairs-terrace', 'downstairs-river-house'];
+const LISTINGS = ['entire-house', 'upstairs-terrace', 'downstairs-river-house', 'new-2026'];
 
 // Earlier rule wins. Order here IS the gallery order.
 const RULES = [
