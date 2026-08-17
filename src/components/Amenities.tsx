@@ -32,9 +32,12 @@ const amenityGroups = [
     ],
   },
   {
+    // KJ, Aug 2026: the kitchen/great-room shot this resolved to predates her
+    // renovation — new sofa, new paint throughout — so it misrepresents the
+    // house. Held text-only until she supplies post-renovation interiors.
     category: 'Inside',
     icon: Utensils,
-    match: /kitchen/,
+    match: null,
     items: [
       { icon: Utensils, label: 'Fully equipped kitchen' },
       { icon: Tv, label: 'Smart TV / streaming' },
@@ -44,9 +47,11 @@ const amenityGroups = [
     ],
   },
   {
+    // KJ, Aug 2026: same reason — the master bedroom photo here is pre-renovation
+    // and she asked for it to come out rather than be reworded.
     category: 'Rest & Refresh',
     icon: BedDouble,
-    match: /bedroom|master/,
+    match: null,
     items: [
       { icon: BedDouble, label: '9 beds across 3 bedrooms' },
       { icon: Bath, label: '3 full bathrooms, jacuzzi tub in the master' },
@@ -58,11 +63,15 @@ const amenityGroups = [
 ];
 
 // Each card resolves to a photo whose own description contains the matching
-// word, so a card can never illustrate itself with the wrong room. Cards with
-// no match render without an image rather than with a misleading one.
+// word, so a card can never illustrate itself with the wrong room. The 2026
+// owner-supplied set is preferred over the older Airbnb scrape so cards show
+// the house as it stands today. A null match renders text-only rather than
+// reaching for a photo KJ has withdrawn.
 const groups = amenityGroups.map(({ match, ...rest }) => ({
   ...rest,
-  photo: pickPhoto('entire-house', match) ?? pickPhoto('new-2026', match),
+  photo: match
+    ? pickPhoto('new-2026', match) ?? pickPhoto('entire-house', match)
+    : undefined,
 }));
 
 export default function Amenities() {

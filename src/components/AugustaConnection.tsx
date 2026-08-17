@@ -33,10 +33,11 @@ const destinations = [
   },
 ];
 
-// Sourced from the live listing photos, not the old site's set, and each
-// caption is tied to a word that has to appear in the photo's own
-// description — see pickCaptioned.
-const scenes = pickCaptioned('entire-house', [
+// Sourced from the 2026 owner-supplied set, and each caption is tied to a word
+// that has to appear in the photo's own description — see pickCaptioned. KJ
+// flagged the old "approach" shot as out of date since she repainted the deck,
+// so these resolve against new-2026 rather than the older Airbnb scrape.
+const scenes = pickCaptioned('new-2026', [
   { test: /front exterior|driveway|approach/, caption: 'The approach' },
   { test: /dock/, caption: 'Down to the water' },
   { test: /lawn|acre/, caption: 'Room to breathe' },

@@ -137,14 +137,17 @@ export default function StayPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
               <div className="border border-champagne/40 rounded-sm p-6 bg-linen">
-                <p className="font-manrope text-[10px] tracking-[0.22em] uppercase text-clay font-semibold mb-4">
+                {/* KJ read this block as "shaded out" and hard to view. Clay on
+                    linen measured 2.17:1 and sage 3.52:1 — both under the 4.5:1
+                    AA floor — so label and items sit on ink instead. */}
+                <p className="font-manrope text-[11px] tracking-[0.22em] uppercase text-ink font-semibold mb-4">
                   Private to your booking
                 </p>
                 <ul className="space-y-2.5">
                   {stay.privateSpaces.map(s => (
                     <li key={s} className="flex items-start gap-2.5">
                       <Check size={14} className="text-champagne flex-shrink-0 mt-0.5" />
-                      <span className="font-manrope text-sm text-sage leading-snug">{s}</span>
+                      <span className="font-manrope text-sm text-ink leading-snug">{s}</span>
                     </li>
                   ))}
                 </ul>
@@ -152,14 +155,14 @@ export default function StayPage() {
 
               {stay.sharedSpaces.length > 0 && (
                 <div className="border border-sage/25 rounded-sm p-6 bg-ivory">
-                  <p className="font-manrope text-[10px] tracking-[0.22em] uppercase text-sage mb-4">
+                  <p className="font-manrope text-[11px] tracking-[0.22em] uppercase text-ink font-semibold mb-4">
                     Shared if the other level is booked
                   </p>
                   <ul className="space-y-2.5">
                     {stay.sharedSpaces.map(s => (
                       <li key={s} className="flex items-start gap-2.5">
                         <Waves size={14} className="text-sage flex-shrink-0 mt-0.5" />
-                        <span className="font-manrope text-sm text-sage leading-snug">{s}</span>
+                        <span className="font-manrope text-sm text-ink leading-snug">{s}</span>
                       </li>
                     ))}
                   </ul>
