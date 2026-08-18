@@ -10,7 +10,7 @@
     "build": "npm run seo && tsc && vite build && node scripts/post-build.mjs",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "node -e \"console.error('Nothing to run. Pages builds from .github/workflows/deploy.yml on push to main, so publishing is: git push origin main'); process.exit(1)\""
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.0",
@@ -30,7 +30,6 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
-    "gh-pages": "^6.3.0",
     "postcss": "^8.4.39",
     "sharp": "^0.35.3",
     "tailwindcss": "^3.4.6",
