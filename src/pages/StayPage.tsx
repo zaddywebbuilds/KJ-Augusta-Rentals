@@ -2,6 +2,7 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Users, BedDouble, Bath, DoorClosed, Star, Waves, Check, ArrowLeft } from 'lucide-react';
 import { bySlug } from '../data/accommodations';
+import { pickRoomThumbs } from '../data/pickPhoto';
 import Photo from '../components/Photo';
 import StayGallery from '../components/StayGallery';
 import AvailabilityCalendar from '../components/AvailabilityCalendar';
@@ -12,6 +13,8 @@ export default function StayPage() {
   const stay = slug ? bySlug(slug) : undefined;
 
   if (!stay) return <Navigate to="/" replace />;
+
+  const roomThumbs = pickRoomThumbs(stay.photos, stay.sleeping);
 
   const stats = [
     { icon: Users, label: `Up to ${stay.guests} guests` },
@@ -117,12 +120,28 @@ export default function StayPage() {
               Where you'll sleep
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-14">
-              {stay.sleeping.map(s => (
-                <div key={s.room} className="border border-linen rounded-sm p-5 bg-linen/40">
-                  <p className="font-manrope text-sm text-ink font-semibold mb-1">{s.room}</p>
-                  <p className="font-manrope text-sm text-sage">{s.beds}</p>
-                </div>
-              ))}
+              {stay.sleeping.map(s => {
+                const thumb = roomThumbs[s.room];
+                return (
+                  <div
+                    key={s.room}
+                    className="border border-linen rounded-sm bg-linen/40 overflow-hidden"
+                  >
+                    {thumb && (
+                      <Photo
+                        id={thumb.id}
+                        alt={thumb.alt}
+                        sizes="(max-width: 768px) 100vw, 260px"
+                        className="w-full aspect-[4/3] object-cover"
+                      />
+                    )}
+                    <div className="p-5">
+                      <p className="font-manrope text-sm text-ink font-semibold mb-1">{s.room}</p>
+                      <p className="font-manrope text-sm text-sage">{s.beds}</p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
 
             {/* Private vs shared — the distinction KJ asked to make explicit */}

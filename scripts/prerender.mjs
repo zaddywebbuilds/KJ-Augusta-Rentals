@@ -34,8 +34,8 @@ const routes = [
   })),
   {
     path: '/masters',
-    title: `Masters Week ${mastersYear} Rental — Riverfront House 7 Minutes from Augusta National`,
-    description: `Private Savannah River home sleeping up to 16, seven minutes from Augusta National. Saltwater pool, dock and kayaks. Now booking Masters week ${mastersYear} — direct, no platform fees.`,
+    title: `Masters Week ${mastersYear} Rental — Riverfront House Under 15 Minutes from Augusta National`,
+    description: `Private Savannah River home sleeping up to 16, under 15 minutes from Augusta National by KJ's back route. Saltwater pool, dock and kayaks. Now booking Masters week ${mastersYear} — direct, no platform fees.`,
   },
 ];
 
