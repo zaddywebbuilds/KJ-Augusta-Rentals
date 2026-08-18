@@ -29,8 +29,12 @@ export default function AboutKJ() {
               <div className="flex items-center gap-3">
                 <Star className="text-champagne fill-champagne/50" size={20} />
                 <div>
-                  <p className="font-cormorant text-xl text-ink">5.0 Rated</p>
-                  <p className="font-manrope text-xs text-sage">18 years hosting</p>
+                  <p className="font-cormorant text-xl text-ink">
+                    {businessConfig.trustSignals.googleRating} Rated
+                  </p>
+                  <p className="font-manrope text-xs text-sage">
+                    {businessConfig.trustSignals.yearsHosting} years hosting
+                  </p>
                 </div>
               </div>
             </div>
