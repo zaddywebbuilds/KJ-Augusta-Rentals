@@ -37,6 +37,51 @@ export function pickPhoto(
   return photo;
 }
 
+/**
+ * Pairs each sleeping area with a photo of that same room.
+ *
+ * KJ asked twice for a thumbnail beside every sleeping area, so a guest reading
+ * "Bedroom 2 — Downstairs Primary" can see which level it belongs to. Room
+ * labels are free text, so each maps to a word that has to appear in the
+ * photo's own description — the same contract pickPhoto enforces. A room with
+ * no confident match renders without a thumbnail rather than borrowing another
+ * room's picture, which is the failure she was already unhappy about.
+ */
+// `avoid` matters more than it looks: "Master Suite" happily matched "Master
+// bathroom featuring double vanity", putting a sink beside a bed count.
+const roomMatchers: { when: RegExp; needs: RegExp; avoid?: RegExp }[] = [
+  { when: /master/i, needs: /master|primary/, avoid: /bath|shower|vanity/ },
+  { when: /sunroom|sun room/i, needs: /sunroom|sun room/ },
+  { when: /living/i, needs: /living/ },
+  { when: /bedroom/i, needs: /bedroom/, avoid: /bath|shower|vanity/ },
+];
+
+export function pickRoomThumbs(
+  photos: GalleryPhoto[],
+  rooms: { room: string }[]
+): Record<string, GalleryPhoto> {
+  const used = new Set<string>();
+  const out: Record<string, GalleryPhoto> = {};
+
+  for (const { room } of rooms) {
+    // Every rule the label satisfies, most specific first, so "Bedroom 1 —
+    // Master Suite" falls back to any bedroom when the listing has no photo
+    // captioned "master" that isn't the en suite.
+    for (const matcher of roomMatchers.filter(m => m.when.test(room))) {
+      const hit = photos.find(p => {
+        const alt = p.alt.toLowerCase();
+        if (used.has(p.id) || !matcher.needs.test(alt)) return false;
+        return !matcher.avoid?.test(alt);
+      });
+      if (!hit) continue;
+      used.add(hit.id);
+      out[room] = hit;
+      break;
+    }
+  }
+  return out;
+}
+
 /** Resolves captioned slots in order, never reusing a photo across slots. */
 export function pickCaptioned(
   listing: string,

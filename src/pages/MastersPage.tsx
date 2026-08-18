@@ -4,6 +4,7 @@ import { Clock, MapPin, Users, Waves, Check } from 'lucide-react';
 import { accommodations } from '../data/accommodations';
 import { businessConfig } from '../data/businessConfig';
 import Photo from '../components/Photo';
+import MastersRouteMap from '../components/MastersRouteMap';
 import PageMeta from '../components/PageMeta';
 import galleries from '../data/galleries.json';
 
@@ -23,8 +24,8 @@ export default function MastersPage() {
   return (
     <>
       <PageMeta
-        title={`Masters Week ${year} Rental — Riverfront House 7 Minutes from Augusta National`}
-        description={`Private Savannah River home sleeping up to 16, seven minutes from Augusta National. Saltwater pool, dock and kayaks. Now booking Masters week ${year} — direct, no platform fees.`}
+        title={`Masters Week ${year} Rental — Riverfront House Under 15 Minutes from Augusta National`}
+        description={`Private Savannah River home sleeping up to 16, under 15 minutes from Augusta National by KJ's back route. Saltwater pool, dock and kayaks. Now booking Masters week ${year} — direct, no platform fees.`}
         path="/masters"
         image={riverShots[0]?.id}
       />
@@ -91,6 +92,21 @@ export default function MastersPage() {
                 />
               </figure>
             ))}
+          </div>
+
+          {/* The first question every Masters guest asks — KJ asked for it in
+              map form rather than another line of prose. */}
+          <div className="max-w-3xl mb-14">
+            <h2 className="font-cormorant text-3xl md:text-5xl text-ink mb-6">
+              How far out are you, really?
+            </h2>
+            <p className="font-manrope text-base text-sage leading-relaxed mb-7">
+              The River House sits southeast of Augusta National, on the far side of the
+              traffic. Guests coming from the main corridor can sit for two hours or more
+              on tournament days; from here it is a back-road run of under fifteen minutes
+              to the parking gates.
+            </p>
+            <MastersRouteMap />
           </div>
 
           <div className="max-w-3xl">

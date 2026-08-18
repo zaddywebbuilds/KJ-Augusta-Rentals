@@ -27,11 +27,6 @@
     "category": "river"
    },
    {
-    "id": "entire-house_59",
-    "alt": "Private dock on the lake surrounded by nature, offering peaceful waterfront views and a quiet place to unwind.",
-    "category": "river"
-   },
-   {
     "id": "entire-house_46",
     "alt": "Another view of the refreshing private pool area with plenty of space to unwind and enjoy warm Georgia days.",
     "category": "pool"
@@ -92,11 +87,6 @@
     "category": "outdoor"
    },
    {
-    "id": "entire-house_40",
-    "alt": "Covered patio with ping pong table offering fun entertainment for guests of all ages.",
-    "category": "outdoor"
-   },
-   {
     "id": "entire-house_51",
     "alt": "Lakeside fire pit seating area with Adirondack chairs; perfect for evening conversations and relaxing by the water.",
     "category": "outdoor"
@@ -107,18 +97,8 @@
     "category": "outdoor"
    },
    {
-    "id": "entire-house_54",
-    "alt": "Lakeside deck with Adirondack chairs and fire pit; perfect for gathering, relaxing, and enjoying beautiful sunsets.",
-    "category": "outdoor"
-   },
-   {
     "id": "entire-house_55",
     "alt": "Outdoor bar seating area under the patio, perfect for casual drinks and socializing in the open-air entertainment space.",
-    "category": "outdoor"
-   },
-   {
-    "id": "entire-house_56",
-    "alt": "Lakeside seating deck with Adirondack chairs, a peaceful place to relax and enjoy the scenic waterfront.",
     "category": "outdoor"
    },
    {
@@ -179,11 +159,6 @@
    {
     "id": "entire-house_45",
     "alt": "Sparkling outdoor pool surrounded by lounge chairs and greenery, ideal for relaxing under the sun during your stay.",
-    "category": "living"
-   },
-   {
-    "id": "entire-house_47",
-    "alt": "Another view of the refreshing pool surrounded by lounge chairs and sunny outdoor space.",
     "category": "living"
    },
    {
@@ -308,8 +283,7 @@
     "entire-house_42",
     "entire-house_44",
     "entire-house_52",
-    "entire-house_57",
-    "entire-house_59"
+    "entire-house_57"
    ],
    "pool": [
     "entire-house_46",
@@ -326,12 +300,9 @@
     "entire-house_36",
     "entire-house_38",
     "entire-house_39",
-    "entire-house_40",
     "entire-house_51",
     "entire-house_53",
-    "entire-house_54",
     "entire-house_55",
-    "entire-house_56",
     "entire-house_58",
     "entire-house_60"
    ],
@@ -345,8 +316,7 @@
     "entire-house_09",
     "entire-house_16",
     "entire-house_37",
-    "entire-house_45",
-    "entire-house_47"
+    "entire-house_45"
    ],
    "kitchen": [
     "entire-house_10",
@@ -380,7 +350,7 @@
     "entire-house_43"
    ]
   },
-  "count": 60
+  "count": 55
  },
  "upstairs-terrace": {
   "photos": [
