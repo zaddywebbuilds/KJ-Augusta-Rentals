@@ -32,9 +32,10 @@ const amenityGroups = [
     ],
   },
   {
-    // KJ, Aug 2026: the kitchen/great-room shot this resolved to predates her
-    // renovation — new sofa, new paint throughout — so it misrepresents the
-    // house. Held text-only until she supplies post-renovation interiors.
+    // Still text-only. The walk-through video that rescued Rest & Refresh covers
+    // bedrooms, bathrooms and the grounds — it never enters the kitchen or the
+    // living room, so there is still no post-renovation shot of the "new sofa,
+    // new paint" KJ described. Restore the /kitchen/ match once she sends one.
     category: 'Inside',
     icon: Utensils,
     match: null,
@@ -47,11 +48,12 @@ const amenityGroups = [
     ],
   },
   {
-    // KJ, Aug 2026: same reason — the master bedroom photo here is pre-renovation
-    // and she asked for it to come out rather than be reworded.
+    // Back in service: new-2026_17 is a frame from the walk-through video KJ sent
+    // after her review, so this card now shows the master suite as it stands
+    // rather than the pre-renovation shot she asked to have pulled.
     category: 'Rest & Refresh',
     icon: BedDouble,
-    match: null,
+    match: /bedroom|master/,
     items: [
       { icon: BedDouble, label: '9 beds across 3 bedrooms' },
       { icon: Bath, label: '3 full bathrooms, jacuzzi tub in the master' },

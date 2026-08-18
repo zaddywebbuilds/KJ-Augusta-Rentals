@@ -852,6 +852,21 @@
     "category": "outdoor"
    },
    {
+    "id": "new-2026_17",
+    "alt": "The master suite after its refurbishment, with a king bed, a sitting area by the river-facing windows and freshly painted walls",
+    "category": "bedroom"
+   },
+   {
+    "id": "new-2026_18",
+    "alt": "Guest bedroom with a writing desk under the window, white wicker storage and a view across the river",
+    "category": "bedroom"
+   },
+   {
+    "id": "new-2026_20",
+    "alt": "Second bedroom with two single beds, framed prints and soft grey walls",
+    "category": "bedroom"
+   },
+   {
     "id": "new-2026_09",
     "alt": "Entry hall with a baker's rack, opening through to the bathroom and the spiral staircase",
     "category": "bath"
@@ -869,6 +884,11 @@
    {
     "id": "new-2026_13",
     "alt": "Bathroom with a tiled tub and shower and fresh towels on the rail",
+    "category": "bath"
+   },
+   {
+    "id": "new-2026_19",
+    "alt": "Master bathroom with a jetted jacuzzi tub, a double vanity and a tiled walk-in shower",
     "category": "bath"
    },
    {
@@ -903,11 +923,17 @@
    "outdoor": [
     "new-2026_07"
    ],
+   "bedroom": [
+    "new-2026_17",
+    "new-2026_18",
+    "new-2026_20"
+   ],
    "bath": [
     "new-2026_09",
     "new-2026_11",
     "new-2026_12",
-    "new-2026_13"
+    "new-2026_13",
+    "new-2026_19"
    ],
    "other": [
     "new-2026_14",
@@ -915,6 +941,6 @@
     "new-2026_16"
    ]
   },
-  "count": 16
+  "count": 20
  }
 }

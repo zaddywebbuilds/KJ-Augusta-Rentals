@@ -3213,6 +3213,86 @@
   ],
   "alt": "Second laundry area with washer, dryer, utility sink and worktop"
  },
+ "new-2026_17": {
+  "width": 1920,
+  "height": 1080,
+  "aspect": 1.7778,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "new-2026_17-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "new-2026_17-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "new-2026_17-1600.webp"
+   }
+  ],
+  "alt": "The master suite after its refurbishment, with a king bed, a sitting area by the river-facing windows and freshly painted walls"
+ },
+ "new-2026_18": {
+  "width": 1920,
+  "height": 1080,
+  "aspect": 1.7778,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "new-2026_18-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "new-2026_18-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "new-2026_18-1600.webp"
+   }
+  ],
+  "alt": "Guest bedroom with a writing desk under the window, white wicker storage and a view across the river"
+ },
+ "new-2026_19": {
+  "width": 1920,
+  "height": 1080,
+  "aspect": 1.7778,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "new-2026_19-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "new-2026_19-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "new-2026_19-1600.webp"
+   }
+  ],
+  "alt": "Master bathroom with a jetted jacuzzi tub, a double vanity and a tiled walk-in shower"
+ },
+ "new-2026_20": {
+  "width": 1920,
+  "height": 1080,
+  "aspect": 1.7778,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "new-2026_20-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "new-2026_20-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "new-2026_20-1600.webp"
+   }
+  ],
+  "alt": "Second bedroom with two single beds, framed prints and soft grey walls"
+ },
  "upstairs-terrace_01": {
   "width": 2560,
   "height": 1704,
