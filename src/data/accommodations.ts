@@ -174,7 +174,13 @@ export const accommodations: Accommodation[] = [
       { title: 'Right-sized for couples', detail: 'King bedroom on the river, with room for three more' },
       { title: 'Cook for yourself', detail: 'Kitchenette with cooktop, oven, fridge and coffee maker' },
     ],
-    heroPhoto: g['downstairs-river-house'].photos[0].id,
+    // KJ: this led with the dock, and she said a guest reading it "wants to
+    // really know, well, what's the downstairs look like" — the dock is shared
+    // ground, not the space being booked. Lead with the living area instead.
+    heroPhoto: (
+      g['downstairs-river-house'].photos.find(p => /living/i.test(p.alt)) ??
+      g['downstairs-river-house'].photos[0]
+    ).id,
     photos: g['downstairs-river-house'].photos,
     googleCalendarId: null,
     status: 'live',
