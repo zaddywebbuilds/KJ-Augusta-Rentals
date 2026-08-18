@@ -55,6 +55,15 @@ export const videos = {
   heroMobile: `${BASE}/videos/aerial-2026-mobile.mp4`,
   feature: `${BASE}/videos/video_02.mp4`,
   vertical: `${BASE}/videos/video_03.mp4`,
+  /**
+   * Sent by KJ after her August 2026 review, asking for the site to show "more
+   * of an experience than just a bunch of still photos". The interior walk-through
+   * is the only footage of the house since she repainted and refurnished, which
+   * is why it earns a slot of its own. Source was HEVC and would not have decoded
+   * in Chrome; both are re-encoded to H.264 at roughly 1–2 Mbps.
+   */
+  interiorTour: `${BASE}/videos/interior-tour-2026.mp4`,
+  aerialWide: `${BASE}/videos/aerial-wide-2026.mp4`,
 };
 
 // Poster frames are drawn from the current set so the still a guest sees before
@@ -63,6 +72,10 @@ export const videoPosters = {
   hero: `${BASE}/img/new-2026_01-800.webp`,
   feature: `${BASE}/img/entire-house_01-800.webp`,
   vertical: `${BASE}/img/new-2026_02-800.webp`,
+  // Pulled from the clips themselves — there is no still of the repainted
+  // interior in the photo set, which is the whole reason the tour is here.
+  interiorTour: `${BASE}/img/video-poster-interior-800.webp`,
+  aerialWide: `${BASE}/img/video-poster-aerial-800.webp`,
 };
 
 export const galleryCategories = [

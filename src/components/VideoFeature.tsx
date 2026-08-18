@@ -8,6 +8,8 @@ const clips = [
   { src: videos.hero, poster: videoPosters.hero, label: 'The Property' },
   { src: videos.feature, poster: videoPosters.feature, label: 'The River' },
   { src: videos.vertical, poster: videoPosters.vertical, label: 'The Pool & Deck' },
+  { src: videos.interiorTour, poster: videoPosters.interiorTour, label: 'Inside the House' },
+  { src: videos.aerialWide, poster: videoPosters.aerialWide, label: 'From the Air' },
 ];
 
 export default function VideoFeature() {
@@ -73,7 +75,8 @@ export default function VideoFeature() {
         </motion.div>
 
         {/* Clip selector */}
-        <div className="flex justify-center gap-3 mb-8">
+        {/* Wraps because the clip list grew past what one phone-width row holds */}
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8">
           {clips.map((clip, i) => (
             <button
               key={clip.label}
