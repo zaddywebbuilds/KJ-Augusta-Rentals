@@ -57,10 +57,12 @@ export default function AboutKJ() {
                 the priority.
               </p>
               <p>
-                With 18 years of hosting and a perfect 5-star rating across
-                22+ Google reviews, KJ's reputation has been earned stay by stay.
-                Guests consistently highlight the ease of check-in, the
-                responsiveness of the host, and the quality of the property itself.
+                With {businessConfig.trustSignals.yearsHosting} years of hosting and a{' '}
+                {businessConfig.trustSignals.googleRating} rating across{' '}
+                {businessConfig.trustSignals.googleReviewCount} Google reviews, KJ's
+                reputation has been earned stay by stay. Guests consistently highlight
+                the ease of check-in, the responsiveness of the host, and the quality of
+                the property itself.
               </p>
               <p>
                 Have a question about the area, the property, or upcoming availability?
@@ -71,8 +73,10 @@ export default function AboutKJ() {
             {/* Badges */}
             <div className="flex flex-wrap gap-4 mb-8">
               {[
-                { icon: Star, label: '5.0 on Google' },
-                { icon: Shield, label: '11+ Years Hosting' },
+                // Both were hard-coded and both were wrong: the badge claimed
+                // 11+ years while the paragraph above it said 18.
+                { icon: Star, label: `${businessConfig.trustSignals.googleRating} on Google` },
+                { icon: Shield, label: `${businessConfig.trustSignals.yearsHosting}+ Years Hosting` },
                 { icon: Home, label: 'Military Veteran' },
               ].map(({ icon: Icon, label }) => (
                 <div key={label} className="flex items-center gap-2 px-4 py-2 bg-ivory rounded-full border border-champagne/20">

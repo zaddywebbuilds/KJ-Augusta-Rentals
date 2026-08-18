@@ -38,8 +38,13 @@ export const businessConfig = {
     waterfront: true
   },
   trustSignals: {
-    googleRating: 5.0,
-    googleReviewCount: 22,
+    // Mirrors the Google Business Profile, because that is the figure a guest
+    // can click through and check. KJ flagged the site showing 5.0/22 while
+    // Google showed 4.8/24 — a number nobody can verify is worth less than a
+    // slightly lower one they can. Hand-maintained: re-read it off the GBP
+    // dashboard when it moves, since nothing here polls Google.
+    googleRating: 4.8,
+    googleReviewCount: 24,
     airbnbRating: 5.0,
     airbnbReviewCount: 22,
     yearsHosting: 18

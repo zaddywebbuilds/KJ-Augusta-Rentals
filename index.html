@@ -42,7 +42,11 @@
     <!-- LCP hint: the hero video's poster frame -->
     <link rel="preload" as="image" href="/KJ-Augusta-Rentals/assets/img/new-2026_01-800.webp" fetchpriority="high" />
 
-    <!-- Property + accommodation structured data -->
+    <!-- Property + accommodation structured data.
+         aggregateRating must match businessConfig.trustSignals. This is plain
+         HTML and cannot import it, and the app is client-rendered, so this is
+         the rating a crawler reads before any JavaScript runs — if the two
+         drift apart, Google sees a different score than the visitor does. -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -69,8 +73,8 @@
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "22",
+        "ratingValue": "4.8",
+        "reviewCount": "24",
         "bestRating": "5",
         "worstRating": "1"
       },

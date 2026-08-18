@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
 import { riverViews, exteriorImages } from '../data/mediaConfig';
+import { businessConfig } from '../data/businessConfig';
 import Photo from './Photo';
 
 export default function Introduction() {
@@ -48,11 +49,15 @@ export default function Introduction() {
             <div className="mt-10 flex items-center gap-4">
               <div className="flex items-center gap-2">
                 <span className="text-champagne text-xl">★</span>
-                <span className="font-cormorant text-3xl text-ink">5.0</span>
+                <span className="font-cormorant text-3xl text-ink">
+                  {businessConfig.trustSignals.googleRating.toFixed(1)}
+                </span>
                 <span className="font-manrope text-sm text-sage">· Google Reviews</span>
               </div>
               <span className="w-px h-8 bg-linen" />
-              <span className="font-manrope text-sm text-sage">22+ guest reviews</span>
+              <span className="font-manrope text-sm text-sage">
+                {businessConfig.trustSignals.googleReviewCount} guest reviews
+              </span>
               <span className="w-px h-8 bg-linen" />
               <span className="font-manrope text-sm font-medium text-champagne">Verified Host</span>
             </div>
