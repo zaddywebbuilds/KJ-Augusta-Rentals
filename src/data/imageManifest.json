@@ -3293,6 +3293,26 @@
   ],
   "alt": "Second bedroom with two single beds, framed prints and soft grey walls"
  },
+ "new-2026_21": {
+  "width": 6000,
+  "height": 4000,
+  "aspect": 1.5,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "new-2026_21-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "new-2026_21-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "new-2026_21-1600.webp"
+   }
+  ],
+  "alt": "The great room, with a sectional beneath the vaulted beamed ceiling, the hanging fireplace and the open kitchen beyond"
+ },
  "upstairs-terrace_01": {
   "width": 2560,
   "height": 1704,

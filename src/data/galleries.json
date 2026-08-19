@@ -852,6 +852,11 @@
     "category": "outdoor"
    },
    {
+    "id": "new-2026_21",
+    "alt": "The great room, with a sectional beneath the vaulted beamed ceiling, the hanging fireplace and the open kitchen beyond",
+    "category": "living"
+   },
+   {
     "id": "new-2026_17",
     "alt": "The master suite after its refurbishment, with a king bed, a sitting area by the river-facing windows and freshly painted walls",
     "category": "bedroom"
@@ -923,6 +928,9 @@
    "outdoor": [
     "new-2026_07"
    ],
+   "living": [
+    "new-2026_21"
+   ],
    "bedroom": [
     "new-2026_17",
     "new-2026_18",
@@ -941,6 +949,6 @@
     "new-2026_16"
    ]
   },
-  "count": 20
+  "count": 21
  }
 }

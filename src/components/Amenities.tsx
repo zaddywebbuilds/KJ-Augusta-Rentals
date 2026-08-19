@@ -32,13 +32,12 @@ const amenityGroups = [
     ],
   },
   {
-    // Still text-only. The walk-through video that rescued Rest & Refresh covers
-    // bedrooms, bathrooms and the grounds — it never enters the kitchen or the
-    // living room, so there is still no post-renovation shot of the "new sofa,
-    // new paint" KJ described. Restore the /kitchen/ match once she sends one.
+    // Back in service on new-2026_21, the great room shot KJ sent after being
+    // asked for one: the walk-through video never entered this room, so until
+    // it arrived the only living-room photos on file predated her work here.
     category: 'Inside',
     icon: Utensils,
-    match: null,
+    match: /kitchen|great room/,
     items: [
       { icon: Utensils, label: 'Fully equipped kitchen' },
       { icon: Tv, label: 'Smart TV / streaming' },
