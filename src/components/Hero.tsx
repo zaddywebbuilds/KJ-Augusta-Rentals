@@ -12,11 +12,15 @@ const g = galleries as Record<string, { photos: { id: string; alt: string; categ
 // Hero resolves first (App imports it before the lower sections), so claiming
 // here reserves the four strongest shots for the top of the page and pushes
 // every later section onto different photos.
+//
+// The last two slots show what a guest actually books: the covered deck and a
+// sleeping area. KJ asked for the reed-bank dock shot and the driveway sign to
+// come out — neither sells the stay.
 const showcase = [
   pickPhoto('new-2026', /aerial/),
   pickPhoto('new-2026', /pool/),
-  pickPhoto('entire-house', /dock/),
-  pickPhoto('new-2026', /sign/),
+  pickPhoto('downstairs-river-house', /large covered deck/),
+  pickPhoto('upstairs-terrace', /upstairs bedroom with multiple beds/),
 ].filter((p): p is NonNullable<typeof p> => Boolean(p));
 
 export default function Hero() {
@@ -26,7 +30,7 @@ export default function Hero() {
   return (
     <section className="relative bg-ink pt-28 pb-14 lg:pt-32 lg:pb-20">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-[46%_1fr] gap-10 lg:gap-14 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[44%_1fr] gap-10 lg:gap-14 items-center">
           {/* Copy */}
           <div>
             <motion.p
@@ -121,15 +125,18 @@ export default function Hero() {
               <div className="absolute inset-0 ring-1 ring-champagne/20 pointer-events-none" />
             </div>
 
-            <div className="grid grid-cols-4 gap-2.5 mt-3">
+            {/* Square on desktop: the 4:3 strip left a band of dead ink below
+                the column on wider screens, and these are 3:2 originals so a
+                centre crop to square costs nothing at the edges. */}
+            <div className="grid grid-cols-4 gap-2.5 lg:gap-3 mt-3">
               {showcase.map(p => (
                 <div key={p.id} className="rounded-sm overflow-hidden bg-ink/40">
                   <Photo
                     id={p.id}
                     alt={p.alt}
-                    sizes="(max-width: 1024px) 24vw, 160px"
+                    sizes="(max-width: 1024px) 24vw, 180px"
                     priority
-                    className="w-full aspect-[4/3] object-cover"
+                    className="w-full aspect-[4/3] lg:aspect-square object-cover"
                   />
                 </div>
               ))}

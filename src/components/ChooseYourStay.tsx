@@ -3,7 +3,17 @@ import { motion } from 'framer-motion';
 import { Users, BedDouble, Bath, ArrowRight, Star } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import { accommodations } from '../data/accommodations';
+import { labelForPhoto } from '../data/photoLabel';
 import Photo from './Photo';
+
+// Each card's cover shot, labelled once at module scope so the badge text is
+// derived from the same rules as the gallery tiles rather than hand-written.
+const heroLabels: Record<string, string | undefined> = Object.fromEntries(
+  accommodations.map(stay => {
+    const photo = stay.photos.find(p => p.id === stay.heroPhoto);
+    return [stay.slug, photo ? labelForPhoto(photo.id, photo.alt) : undefined];
+  })
+);
 
 export default function ChooseYourStay() {
   const { ref, inView } = useInView();
@@ -43,12 +53,22 @@ export default function ChooseYourStay() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.12 * i }}
             >
-              <Link to={`/stays/${stay.slug}`} className="block bg-ink/5 overflow-hidden">
+              <Link
+                to={`/stays/${stay.slug}`}
+                className="relative block bg-ink/5 overflow-hidden"
+              >
                 <Photo
                   id={stay.heroPhoto}
                   sizes="(max-width: 1024px) 100vw, 420px"
                   className="w-full aspect-[4/3] object-cover group-hover:scale-[1.03] transition-transform duration-700"
                 />
+                {heroLabels[stay.slug] && (
+                  <span className="absolute inset-x-0 bottom-0 pt-8 pb-3 px-4 bg-gradient-to-t from-ink/85 via-ink/45 to-transparent pointer-events-none">
+                    <span className="block font-manrope text-[10px] tracking-[0.14em] uppercase text-ivory">
+                      {heroLabels[stay.slug]}
+                    </span>
+                  </span>
+                )}
               </Link>
 
               <div className="flex flex-col flex-1 p-7">

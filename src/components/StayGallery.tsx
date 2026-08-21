@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import Photo from './Photo';
+import { labelForPhoto } from '../data/photoLabel';
 import type { Accommodation } from '../data/accommodations';
 
 const LABELS: Record<string, string> = {
@@ -52,21 +53,34 @@ export default function StayGallery({ stay }: { stay: Accommodation }) {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-          {shown.map((p, i) => (
-            <button
-              key={p.id}
-              onClick={() => setLightbox(i)}
-              className="group relative bg-linen rounded-sm overflow-hidden aspect-[4/3]"
-              aria-label={`View larger: ${p.alt}`}
-            >
-              <Photo
-                id={p.id}
-                alt={p.alt}
-                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 300px"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            </button>
-          ))}
+          {shown.map((p, i) => {
+            const label = labelForPhoto(p.id, p.alt);
+            return (
+              <button
+                key={p.id}
+                onClick={() => setLightbox(i)}
+                className="group relative bg-linen rounded-sm overflow-hidden aspect-[4/3]"
+                aria-label={`View larger: ${p.alt}`}
+              >
+                <Photo
+                  id={p.id}
+                  alt={p.alt}
+                  sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 300px"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                {/* Which part of the house this is. Sits over a gradient rather
+                    than a solid pill so it stays readable on both a bright pool
+                    shot and a dim interior. */}
+                {label && (
+                  <span className="absolute inset-x-0 bottom-0 pt-6 pb-2 px-2.5 bg-gradient-to-t from-ink/85 via-ink/45 to-transparent pointer-events-none">
+                    <span className="block font-manrope text-[10px] leading-tight tracking-[0.12em] uppercase text-ivory text-left truncate">
+                      {label}
+                    </span>
+                  </span>
+                )}
+              </button>
+            );
+          })}
         </div>
       </div>
 
@@ -118,6 +132,11 @@ export default function StayGallery({ stay }: { stay: Accommodation }) {
                 className="w-full max-h-[78vh] object-contain rounded-sm"
               />
               <figcaption className="text-center font-manrope text-xs text-ivory/70 mt-4 px-4">
+                {labelForPhoto(shown[lightbox].id, shown[lightbox].alt) && (
+                  <span className="block text-champagne text-[10px] tracking-[0.18em] uppercase mb-1.5">
+                    {labelForPhoto(shown[lightbox].id, shown[lightbox].alt)}
+                  </span>
+                )}
                 {shown[lightbox].alt}
                 <span className="block text-ivory/40 mt-1.5">
                   {lightbox + 1} / {shown.length}
