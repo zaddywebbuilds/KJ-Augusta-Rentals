@@ -760,6 +760,16 @@
     "id": "downstairs-river-house_20",
     "alt": "Welcoming driveway entrance surrounded by greenery, providing easy parking and convenient access to the home.",
     "category": "other"
+   },
+   {
+    "id": "downstairs-river-house_25",
+    "alt": "Downstairs River House sitting room with a green sofa, side lamp and coffee table — a relaxed lounge area off the main bedroom",
+    "category": "living"
+   },
+   {
+    "id": "downstairs-river-house_26",
+    "alt": "Downstairs River House flex room with a daybed, wall-mounted TV and natural light — works as a second sleeping space or media room",
+    "category": "bedroom"
    }
   ],
   "byCategory": {
@@ -910,6 +920,51 @@
     "id": "new-2026_16",
     "alt": "Second laundry area with washer, dryer, utility sink and worktop",
     "category": "other"
+   },
+   {
+    "id": "new-2026_22",
+    "alt": "Aerial view of the River House from across the river, showing the saltwater pool, private dock and Savannah River in one frame",
+    "category": "river"
+   },
+   {
+    "id": "new-2026_23",
+    "alt": "Overhead drone view of the River House on its three riverfront acres, with the saltwater pool and treeline visible from directly above",
+    "category": "outdoor"
+   },
+   {
+    "id": "new-2026_24",
+    "alt": "Aerial front view of the River House showing the private dock, the saltwater pool and the property surrounded by the Savannah River",
+    "category": "river"
+   },
+   {
+    "id": "new-2026_25",
+    "alt": "Front exterior of the River House showing both the upstairs level with its balcony and the downstairs level with its covered deck",
+    "category": "outdoor"
+   },
+   {
+    "id": "new-2026_26",
+    "alt": "The long covered deck running the full length of the River House, with outdoor seating arranged for views over the lawn and river",
+    "category": "outdoor"
+   },
+   {
+    "id": "new-2026_27",
+    "alt": "The saltwater pool in the late afternoon with the River House behind it and the Savannah River stretching out beyond",
+    "category": "pool"
+   },
+   {
+    "id": "new-2026_28",
+    "alt": "Master bedroom with a king bed, rattan headboard, teal linen drapes and river-facing windows flooding the room with natural light",
+    "category": "bedroom"
+   },
+   {
+    "id": "new-2026_29",
+    "alt": "A largemouth bass freshly caught from the private dock on the Savannah River, resting on the weathered dock planks",
+    "category": "river"
+   },
+   {
+    "id": "new-2026_30",
+    "alt": "The driveway approach to the River House with the Welcome to the River House sign set among flowering shrubs at the entrance",
+    "category": "outdoor"
    }
   ],
   "byCategory": {
