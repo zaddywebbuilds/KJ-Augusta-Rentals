@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 import { videos, videoPosters } from '../data/mediaConfig';
 import galleries from '../data/galleries.json';
-import { pickPhoto } from '../data/pickPhoto';
+import { pickPhoto, claimPhoto } from '../data/pickPhoto';
 import Photo from './Photo';
 
 const g = galleries as Record<string, { photos: { id: string; alt: string; category: string }[] }>;
@@ -13,14 +13,21 @@ const g = galleries as Record<string, { photos: { id: string; alt: string; categ
 // here reserves the four strongest shots for the top of the page and pushes
 // every later section onto different photos.
 //
-// The last two slots show what a guest actually books: the covered deck and a
-// sleeping area. KJ asked for the reed-bank dock shot and the driveway sign to
-// come out — neither sells the stay.
+// The video's poster frame is a rendered image like any other, so claim it
+// before the strip resolves. Without this the aerial appeared twice, directly
+// above itself: its caption mentions the pool, so the pool slot matched it.
+// Derived from the poster URL rather than hard-coded, so changing the poster
+// keeps the strip honest.
+claimPhoto(videoPosters.hero.split('/').pop()!.replace(/-\d+\.webp$/, ''));
+
+// Four rooms a guest actually books: pool, covered deck, a sleeping area and
+// the master bath. KJ asked for the reed-bank dock shot and the driveway sign
+// to come out as well — neither sells the stay.
 const showcase = [
-  pickPhoto('new-2026', /aerial/),
   pickPhoto('new-2026', /pool/),
   pickPhoto('downstairs-river-house', /large covered deck/),
   pickPhoto('upstairs-terrace', /upstairs bedroom with multiple beds/),
+  pickPhoto('new-2026', /jacuzzi|jetted/),
 ].filter((p): p is NonNullable<typeof p> => Boolean(p));
 
 export default function Hero() {

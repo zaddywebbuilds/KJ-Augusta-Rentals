@@ -4,12 +4,16 @@ import { Users, BedDouble, Bath, ArrowRight, Star } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import { accommodations } from '../data/accommodations';
 import { labelForPhoto } from '../data/photoLabel';
+import { claimPhoto } from '../data/pickPhoto';
 import Photo from './Photo';
 
 // Each card's cover shot, labelled once at module scope so the badge text is
 // derived from the same rules as the gallery tiles rather than hand-written.
+// Claiming them here keeps the sections below from picking the same picture
+// again — the listings share photographs under different ids.
 const heroLabels: Record<string, string | undefined> = Object.fromEntries(
   accommodations.map(stay => {
+    claimPhoto(stay.heroPhoto);
     const photo = stay.photos.find(p => p.id === stay.heroPhoto);
     return [stay.slug, photo ? labelForPhoto(photo.id, photo.alt) : undefined];
   })

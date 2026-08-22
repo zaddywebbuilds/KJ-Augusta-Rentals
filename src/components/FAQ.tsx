@@ -5,7 +5,14 @@ import { ChevronDown, Calendar, Users, Phone, Mail, Zap } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import { businessConfig } from '../data/businessConfig';
 import { poolImages, dockImages } from '../data/mediaConfig';
+import { pickPhoto } from '../data/pickPhoto';
 import Photo from './Photo';
+
+// dockImages[0] is the aerial, which is already the hero video's poster frame.
+// Resolving through pickPhoto instead takes a genuine dock photo and respects
+// what earlier sections have claimed, so this slot cannot repeat one of them.
+const dockPhoto =
+  pickPhoto('entire-house', /\bdock\b/) ?? pickPhoto('upstairs-terrace', /\bdock\b/);
 
 const faqs = [
   {
@@ -212,8 +219,8 @@ export default function FAQ() {
 
             <div className="overflow-hidden rounded-sm bg-ivory">
               <Photo
-                id={dockImages[0]}
-                alt="Private dock on the Savannah River"
+                id={dockPhoto?.id ?? dockImages[0]}
+                alt={dockPhoto?.alt ?? 'Private dock on the Savannah River'}
                 sizes="260px"
                 className="w-full aspect-[4/3] object-contain"
               />
