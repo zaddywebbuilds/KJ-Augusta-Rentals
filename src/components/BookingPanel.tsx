@@ -1,14 +1,17 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Users, Mail, Phone, Zap } from 'lucide-react';
+import { Calendar, Users, Mail, Phone, Zap, CreditCard } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import { businessConfig } from '../data/businessConfig';
+import { directPayment } from '../data/bookingConfig';
 
 export default function BookingPanel() {
   const { ref, inView } = useInView();
   const [checkIn, setCheckIn] = useState('');
   const [checkOut, setCheckOut] = useState('');
   const [guests, setGuests] = useState(2);
+
+  const takesDeposit = directPayment.enabled && Boolean(directPayment.depositUrl);
 
   const buildMailto = () => {
     const subject = encodeURIComponent("Booking Request — KJ's River House");
@@ -112,12 +115,42 @@ export default function BookingPanel() {
               <Phone size={16} />
               Call KJ — {businessConfig.contact.phoneDisplay}
             </a>
+
+            {takesDeposit && (
+              <>
+                <div className="flex items-center gap-3 pt-1">
+                  <span className="flex-1 h-px bg-linen" />
+                  <span className="font-manrope text-[10px] tracking-widest uppercase text-sage">
+                    or hold your dates now
+                  </span>
+                  <span className="flex-1 h-px bg-linen" />
+                </div>
+                <a
+                  href={directPayment.depositUrl}
+                  className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-ink text-ivory font-manrope text-sm tracking-widest uppercase font-semibold hover:bg-sage transition-all duration-300 rounded-sm"
+                >
+                  <CreditCard size={16} />
+                  {directPayment.depositLabel}
+                </a>
+                {directPayment.paypalUrl && (
+                  <a
+                    href={directPayment.paypalUrl}
+                    className="w-full flex items-center justify-center gap-2 px-8 py-3 border border-sage text-sage font-manrope text-sm tracking-widest uppercase hover:border-ink hover:text-ink transition-all duration-300 rounded-sm"
+                  >
+                    Pay with PayPal instead
+                  </a>
+                )}
+              </>
+            )}
           </div>
 
           <div className="mt-6 flex items-start gap-3 p-4 bg-champagne/10 border border-champagne/20 rounded-sm">
             <Zap size={14} className="text-champagne flex-shrink-0 mt-0.5" />
             <p className="font-manrope text-xs text-sage leading-relaxed">
-              <strong className="text-ink">Booking direct saves you the platform commission.</strong> Send your dates using the form above or call KJ directly and we'll confirm availability the same day. No payment is collected on this site.
+              <strong className="text-ink">Booking direct saves you the platform commission.</strong>{' '}
+              {takesDeposit
+                ? "Send your dates and we'll confirm availability the same day, or hold them now with a deposit. Payments are processed securely by Stripe."
+                : "Send your dates using the form above or call KJ directly and we'll confirm availability the same day. No payment is collected on this site."}
             </p>
           </div>
         </motion.div>
