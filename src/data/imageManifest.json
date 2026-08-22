@@ -4412,5 +4412,38 @@
    }
   ],
   "alt": "Downstairs River House flex room with a daybed, wall-mounted TV and natural light — works as a second sleeping space or media room"
+ },
+ "new-2026_31": {
+  "width": 3000,
+  "height": 2247,
+  "aspect": 1.335,
+  "srcset": [
+   { "w": 400, "file": "new-2026_31-400.webp" },
+   { "w": 800, "file": "new-2026_31-800.webp" },
+   { "w": 1600, "file": "new-2026_31-1600.webp" }
+  ],
+  "alt": "Aerial view of River House showing the full three-acre property — house, saltwater pool, private dock, lawn and Savannah River frontage"
+ },
+ "entire-house_56": {
+  "width": 3000,
+  "height": 1686,
+  "aspect": 1.7794,
+  "srcset": [
+   { "w": 400, "file": "entire-house_56-400.webp" },
+   { "w": 800, "file": "entire-house_56-800.webp" },
+   { "w": 1600, "file": "entire-house_56-1600.webp" }
+  ],
+  "alt": "Saltwater pool and River House exterior with Savannah River visible behind — pool chairs, lawn and the full property in one frame"
+ },
+ "downstairs-river-house_27": {
+  "width": 4000,
+  "height": 3000,
+  "aspect": 1.3333,
+  "srcset": [
+   { "w": 400, "file": "downstairs-river-house_27-400.webp" },
+   { "w": 800, "file": "downstairs-river-house_27-800.webp" },
+   { "w": 1600, "file": "downstairs-river-house_27-1600.webp" }
+  ],
+  "alt": "Private deck off Downstairs River House with lounge chairs overlooking the Savannah River — afternoon light, river views, total seclusion"
  }
 }

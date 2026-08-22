@@ -275,6 +275,11 @@
     "id": "entire-house_43",
     "alt": "Welcoming driveway entrance surrounded by greenery for easy access and convenient parking.",
     "category": "other"
+   },
+   {
+    "id": "entire-house_56",
+    "alt": "Saltwater pool and River House exterior with Savannah River visible behind — pool chairs, lawn and the full property in one frame",
+    "category": "pool"
    }
   ],
   "byCategory": {
@@ -289,7 +294,8 @@
     "entire-house_46",
     "entire-house_48",
     "entire-house_49",
-    "entire-house_50"
+    "entire-house_50",
+    "entire-house_56"
    ],
    "outdoor": [
     "entire-house_30",
@@ -350,7 +356,7 @@
     "entire-house_43"
    ]
   },
-  "count": 55
+  "count": 56
  },
  "upstairs-terrace": {
   "photos": [
@@ -770,6 +776,11 @@
     "id": "downstairs-river-house_26",
     "alt": "Downstairs River House flex room with a daybed, wall-mounted TV and natural light — works as a second sleeping space or media room",
     "category": "bedroom"
+   },
+   {
+    "id": "downstairs-river-house_27",
+    "alt": "Private deck off Downstairs River House with lounge chairs overlooking the Savannah River — afternoon light, river views, total seclusion",
+    "category": "river"
    }
   ],
   "byCategory": {
@@ -779,7 +790,8 @@
     "downstairs-river-house_17",
     "downstairs-river-house_18",
     "downstairs-river-house_19",
-    "downstairs-river-house_24"
+    "downstairs-river-house_24",
+    "downstairs-river-house_27"
    ],
    "pool": [
     "downstairs-river-house_21",
@@ -812,7 +824,7 @@
     "downstairs-river-house_20"
    ]
   },
-  "count": 24
+  "count": 27
  },
  "new-2026": {
   "photos": [
@@ -965,6 +977,11 @@
     "id": "new-2026_30",
     "alt": "The driveway approach to the River House with the Welcome to the River House sign set among flowering shrubs at the entrance",
     "category": "outdoor"
+   },
+   {
+    "id": "new-2026_31",
+    "alt": "Aerial view of River House showing the full three-acre property — house, saltwater pool, private dock, lawn and Savannah River frontage",
+    "category": "outdoor"
    }
   ],
   "byCategory": {
@@ -981,7 +998,8 @@
     "new-2026_05"
    ],
    "outdoor": [
-    "new-2026_07"
+    "new-2026_07",
+    "new-2026_31"
    ],
    "living": [
     "new-2026_21"
@@ -1004,6 +1022,6 @@
     "new-2026_16"
    ]
   },
-  "count": 21
+  "count": 31
  }
 }
