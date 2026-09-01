@@ -12,11 +12,6 @@
     "category": "river"
    },
    {
-    "id": "entire-house_44",
-    "alt": "Waterfront home with private swimming pool and beautiful lake views; perfect for relaxing, swimming, and enjoying a peaceful Augusta getaway.",
-    "category": "river"
-   },
-   {
     "id": "entire-house_52",
     "alt": "Kayaks included with your stay, as well as life jackets",
     "category": "river"
@@ -27,11 +22,6 @@
     "category": "river"
    },
    {
-    "id": "entire-house_46",
-    "alt": "Another view of the refreshing private pool area with plenty of space to unwind and enjoy warm Georgia days.",
-    "category": "pool"
-   },
-   {
     "id": "entire-house_48",
     "alt": "Private swimming pool with plenty of space to relax, swim, and enjoy your waterfront stay.",
     "category": "pool"
@@ -40,16 +30,6 @@
     "id": "entire-house_49",
     "alt": "Private swimming pool with clear blue water and lounge space; perfect for relaxing and cooling off on warm days.",
     "category": "pool"
-   },
-   {
-    "id": "entire-house_50",
-    "alt": "Another view of the refreshing pool area surrounded by greenery and open outdoor space.",
-    "category": "pool"
-   },
-   {
-    "id": "entire-house_30",
-    "alt": "Large lawn area by the water perfect for outdoor games, relaxing, and enjoying the open space.",
-    "category": "outdoor"
    },
    {
     "id": "entire-house_31",
@@ -67,11 +47,6 @@
     "category": "outdoor"
    },
    {
-    "id": "entire-house_34",
-    "alt": "Waterfront patio seating with comfortable cushions and peaceful lake views.",
-    "category": "outdoor"
-   },
-   {
     "id": "entire-house_36",
     "alt": "Covered patio with outdoor seating offering a shaded space to relax while enjoying scenic waterfront views.",
     "category": "outdoor"
@@ -82,23 +57,8 @@
     "category": "outdoor"
    },
    {
-    "id": "entire-house_39",
-    "alt": "Covered waterfront patio seating area perfect for relaxing and enjoying peaceful lake views.",
-    "category": "outdoor"
-   },
-   {
     "id": "entire-house_51",
     "alt": "Lakeside fire pit seating area with Adirondack chairs; perfect for evening conversations and relaxing by the water.",
-    "category": "outdoor"
-   },
-   {
-    "id": "entire-house_53",
-    "alt": "Mini golf putting area by the water offering a fun outdoor activity with beautiful lake views.",
-    "category": "outdoor"
-   },
-   {
-    "id": "entire-house_55",
-    "alt": "Outdoor bar seating area under the patio, perfect for casual drinks and socializing in the open-air entertainment space.",
     "category": "outdoor"
    },
    {
@@ -117,23 +77,8 @@
     "category": "living"
    },
    {
-    "id": "entire-house_02",
-    "alt": "Comfortable living area with cozy seating and TV, perfect for relaxing after a day exploring Augusta.",
-    "category": "living"
-   },
-   {
     "id": "entire-house_03",
     "alt": "Bright living space with modern seating and large windows bringing in natural light and scenic views.",
-    "category": "living"
-   },
-   {
-    "id": "entire-house_04",
-    "alt": "Open living room with comfortable seating and entertainment space for gathering with family and friends.",
-    "category": "living"
-   },
-   {
-    "id": "entire-house_06",
-    "alt": "Cozy living area with comfortable seating and TV, offering a relaxing space to unwind after a day out.",
     "category": "living"
    },
    {
@@ -149,16 +94,6 @@
    {
     "id": "entire-house_16",
     "alt": "Open dining and living area with fireplace creating a warm and welcoming gathering space.",
-    "category": "living"
-   },
-   {
-    "id": "entire-house_37",
-    "alt": "Covered waterfront lounge area with comfortable seating, ideal for morning coffee or evening conversations.",
-    "category": "living"
-   },
-   {
-    "id": "entire-house_45",
-    "alt": "Sparkling outdoor pool surrounded by lounge chairs and greenery, ideal for relaxing under the sun during your stay.",
     "category": "living"
    },
    {
@@ -197,11 +132,6 @@
     "category": "bedroom"
    },
    {
-    "id": "entire-house_17",
-    "alt": "Spacious bedroom with comfortable bedding and large windows offering beautiful views.",
-    "category": "bedroom"
-   },
-   {
     "id": "entire-house_18",
     "alt": "Peaceful bedroom with soft lighting and comfortable bedding for restful nights.",
     "category": "bedroom"
@@ -222,38 +152,13 @@
     "category": "bedroom"
    },
    {
-    "id": "entire-house_22",
-    "alt": "Spacious bedroom with simple décor and comfortable bed designed for a relaxing stay.",
-    "category": "bedroom"
-   },
-   {
-    "id": "entire-house_23",
-    "alt": "Large bedroom with cozy beds and natural light creating a relaxing atmosphere.",
-    "category": "bedroom"
-   },
-   {
-    "id": "entire-house_24",
-    "alt": "Comfortable bedroom with multiple beds ideal for families or groups.",
-    "category": "bedroom"
-   },
-   {
     "id": "entire-house_25",
     "alt": "Large bathroom with soaking tub and double vanity for added comfort and convenience.",
     "category": "bath"
    },
    {
-    "id": "entire-house_26",
-    "alt": "Clean and spacious bathroom with double sinks and plenty of counter space.",
-    "category": "bath"
-   },
-   {
     "id": "entire-house_27",
     "alt": "Walk-in tiled shower with modern design and spacious layout.",
-    "category": "bath"
-   },
-   {
-    "id": "entire-house_28",
-    "alt": "Clean and modern bathroom with shower and essential amenities for a comfortable stay.",
     "category": "bath"
    },
    {
@@ -275,54 +180,35 @@
     "id": "entire-house_43",
     "alt": "Welcoming driveway entrance surrounded by greenery for easy access and convenient parking.",
     "category": "other"
-   },
-   {
-    "id": "entire-house_56",
-    "alt": "Saltwater pool and River House exterior with Savannah River visible behind — pool chairs, lawn and the full property in one frame",
-    "category": "pool"
    }
   ],
   "byCategory": {
    "river": [
     "entire-house_41",
     "entire-house_42",
-    "entire-house_44",
     "entire-house_52",
     "entire-house_57"
    ],
    "pool": [
-    "entire-house_46",
     "entire-house_48",
-    "entire-house_49",
-    "entire-house_50",
-    "entire-house_56"
+    "entire-house_49"
    ],
    "outdoor": [
-    "entire-house_30",
     "entire-house_31",
     "entire-house_32",
     "entire-house_33",
-    "entire-house_34",
     "entire-house_36",
     "entire-house_38",
-    "entire-house_39",
     "entire-house_51",
-    "entire-house_53",
-    "entire-house_55",
     "entire-house_58",
     "entire-house_60"
    ],
    "living": [
     "entire-house_01",
-    "entire-house_02",
     "entire-house_03",
-    "entire-house_04",
-    "entire-house_06",
     "entire-house_08",
     "entire-house_09",
-    "entire-house_16",
-    "entire-house_37",
-    "entire-house_45"
+    "entire-house_16"
    ],
    "kitchen": [
     "entire-house_10",
@@ -334,20 +220,14 @@
    "bedroom": [
     "entire-house_05",
     "entire-house_07",
-    "entire-house_17",
     "entire-house_18",
     "entire-house_19",
     "entire-house_20",
-    "entire-house_21",
-    "entire-house_22",
-    "entire-house_23",
-    "entire-house_24"
+    "entire-house_21"
    ],
    "bath": [
     "entire-house_25",
-    "entire-house_26",
-    "entire-house_27",
-    "entire-house_28"
+    "entire-house_27"
    ],
    "other": [
     "entire-house_13",
@@ -356,7 +236,7 @@
     "entire-house_43"
    ]
   },
-  "count": 56
+  "count": 36
  },
  "upstairs-terrace": {
   "photos": [
@@ -396,18 +276,8 @@
     "category": "pool"
    },
    {
-    "id": "upstairs-terrace_42",
-    "alt": "Inviting swimming pool with plenty of space to lounge and enjoy a refreshing swim during your stay.",
-    "category": "pool"
-   },
-   {
     "id": "upstairs-terrace_43",
     "alt": "Another angle of the sparkling swimming pool with lounge seating for relaxing afternoons in the sun.",
-    "category": "pool"
-   },
-   {
-    "id": "upstairs-terrace_44",
-    "alt": "Private Pool and Fire pit w/ RiverFront dock",
     "category": "pool"
    },
    {
@@ -431,18 +301,8 @@
     "category": "outdoor"
    },
    {
-    "id": "upstairs-terrace_31",
-    "alt": "Beautiful waterfront deck seating area offering stunning lake views and a peaceful place to relax outdoors.",
-    "category": "outdoor"
-   },
-   {
     "id": "upstairs-terrace_32",
     "alt": "Waterfront patio seating with cozy cushions; perfect for morning coffee while enjoying peaceful lake views.",
-    "category": "outdoor"
-   },
-   {
-    "id": "upstairs-terrace_34",
-    "alt": "Covered waterfront patio with comfortable seating; an ideal place to unwind and enjoy the peaceful surroundings.",
     "category": "outdoor"
    },
    {
@@ -461,38 +321,13 @@
     "category": "living"
    },
    {
-    "id": "upstairs-terrace_02",
-    "alt": "Spacious lounge area with stylish seating and TV, offering a relaxing space for entertainment and conversation.",
-    "category": "living"
-   },
-   {
     "id": "upstairs-terrace_06",
     "alt": "Bright sunroom with large windows overlooking the water; perfect for relaxing with beautiful views.",
     "category": "living"
    },
    {
-    "id": "upstairs-terrace_41",
-    "alt": "Another view of the refreshing outdoor pool surrounded by lounge chairs - perfect for relaxing and enjoying the sunny weather.",
-    "category": "living"
-   },
-   {
-    "id": "upstairs-terrace_03",
-    "alt": "Another view of the open kitchen and living area, creating a welcoming space for gathering and dining.",
-    "category": "kitchen"
-   },
-   {
     "id": "upstairs-terrace_08",
     "alt": "Modern kitchen with bar seating and stainless appliances; perfect for casual meals and entertaining.",
-    "category": "kitchen"
-   },
-   {
-    "id": "upstairs-terrace_09",
-    "alt": "Bright kitchen with modern appliances and plenty of counter space for preparing meals.",
-    "category": "kitchen"
-   },
-   {
-    "id": "upstairs-terrace_10",
-    "alt": "Fully equipped kitchen with modern appliances and ample counter space for cooking during your stay.",
     "category": "kitchen"
    },
    {
@@ -516,28 +351,13 @@
     "category": "bedroom"
    },
    {
-    "id": "upstairs-terrace_16",
-    "alt": "Spacious bedroom with comfortable bed and large windows offering relaxing natural light.",
-    "category": "bedroom"
-   },
-   {
     "id": "upstairs-terrace_18",
     "alt": "Bedroom with beautiful waterfront view and direct access to the outdoor balcony.",
     "category": "bedroom"
    },
    {
-    "id": "upstairs-terrace_19",
-    "alt": "Cozy bedroom with soft bedding and relaxing interior design for a restful night’s sleep.",
-    "category": "bedroom"
-   },
-   {
     "id": "upstairs-terrace_17",
     "alt": "Master bathroom featuring double vanity and spacious layout for added comfort.",
-    "category": "bath"
-   },
-   {
-    "id": "upstairs-terrace_20",
-    "alt": "Clean bathroom with modern fixtures and bathtub for a comfortable stay.",
     "category": "bath"
    },
    {
@@ -558,16 +378,6 @@
    {
     "id": "upstairs-terrace_11",
     "alt": "Coffee station with coffee maker and essentials so guests can easily enjoy their morning coffee.",
-    "category": "other"
-   },
-   {
-    "id": "upstairs-terrace_13",
-    "alt": "Another view of the open space room.",
-    "category": "other"
-   },
-   {
-    "id": "upstairs-terrace_22",
-    "alt": "Walk in design with modern design.",
     "category": "other"
    },
    {
@@ -592,58 +402,44 @@
    ],
    "pool": [
     "upstairs-terrace_40",
-    "upstairs-terrace_42",
-    "upstairs-terrace_43",
-    "upstairs-terrace_44"
+    "upstairs-terrace_43"
    ],
    "outdoor": [
     "upstairs-terrace_25",
     "upstairs-terrace_26",
     "upstairs-terrace_27",
     "upstairs-terrace_29",
-    "upstairs-terrace_31",
     "upstairs-terrace_32",
-    "upstairs-terrace_34",
     "upstairs-terrace_35",
     "upstairs-terrace_36"
    ],
    "living": [
     "upstairs-terrace_01",
-    "upstairs-terrace_02",
-    "upstairs-terrace_06",
-    "upstairs-terrace_41"
+    "upstairs-terrace_06"
    ],
    "kitchen": [
-    "upstairs-terrace_03",
     "upstairs-terrace_08",
-    "upstairs-terrace_09",
-    "upstairs-terrace_10",
     "upstairs-terrace_12",
     "upstairs-terrace_33"
    ],
    "bedroom": [
     "upstairs-terrace_14",
     "upstairs-terrace_15",
-    "upstairs-terrace_16",
-    "upstairs-terrace_18",
-    "upstairs-terrace_19"
+    "upstairs-terrace_18"
    ],
    "bath": [
     "upstairs-terrace_17",
-    "upstairs-terrace_20",
     "upstairs-terrace_21",
     "upstairs-terrace_23"
    ],
    "other": [
     "upstairs-terrace_05",
     "upstairs-terrace_11",
-    "upstairs-terrace_13",
-    "upstairs-terrace_22",
     "upstairs-terrace_24",
     "upstairs-terrace_39"
    ]
   },
-  "count": 44
+  "count": 30
  },
  "downstairs-river-house": {
   "photos": [
@@ -683,11 +479,6 @@
     "category": "pool"
    },
    {
-    "id": "downstairs-river-house_23",
-    "alt": "Another view of the refreshing private pool area, offering plenty of space to relax and enjoy sunny days outdoors.",
-    "category": "pool"
-   },
-   {
     "id": "downstairs-river-house_07",
     "alt": "Lawn games and outdoor space by the water; great for relaxing, playing games, and enjoying the peaceful natural setting.",
     "category": "outdoor"
@@ -703,11 +494,6 @@
     "category": "outdoor"
    },
    {
-    "id": "downstairs-river-house_13",
-    "alt": "Covered patio seating area overlooking the water; an ideal spot for morning coffee, evening drinks, and relaxing outdoor conversations.",
-    "category": "outdoor"
-   },
-   {
     "id": "downstairs-river-house_14",
     "alt": "Outdoor bar-style seating area under the patio; great for casual drinks, conversation, and enjoying the open-air entertainment space.",
     "category": "outdoor"
@@ -715,11 +501,6 @@
    {
     "id": "downstairs-river-house_15",
     "alt": "Covered patio with ping pong table and outdoor seating, offering a fun and shaded space to enjoy games and scenic waterfront views.",
-    "category": "outdoor"
-   },
-   {
-    "id": "downstairs-river-house_16",
-    "alt": "Large covered deck with outdoor seating, providing a comfortable shaded space to unwind while enjoying the beautiful waterfront surroundings.",
     "category": "outdoor"
    },
    {
@@ -731,16 +512,6 @@
     "id": "downstairs-river-house_08",
     "alt": "Waterfront fire pit lounge with comfortable seating; perfect for evening gatherings, conversations, and enjoying the peaceful lake view.",
     "category": "living"
-   },
-   {
-    "id": "downstairs-river-house_22",
-    "alt": "Sparkling outdoor swimming pool surrounded by lounge chairs - perfect for sunbathing, swimming, and relaxing during your stay.",
-    "category": "living"
-   },
-   {
-    "id": "downstairs-river-house_01",
-    "alt": "Bright and comfortable bedroom with stylish décor, soft bedding, and a TV for relaxing evenings during your stay.",
-    "category": "bedroom"
    },
    {
     "id": "downstairs-river-house_04",
@@ -766,21 +537,6 @@
     "id": "downstairs-river-house_20",
     "alt": "Welcoming driveway entrance surrounded by greenery, providing easy parking and convenient access to the home.",
     "category": "other"
-   },
-   {
-    "id": "downstairs-river-house_25",
-    "alt": "Downstairs River House sitting room with a green sofa, side lamp and coffee table — a relaxed lounge area off the main bedroom",
-    "category": "living"
-   },
-   {
-    "id": "downstairs-river-house_26",
-    "alt": "Downstairs River House flex room with a daybed, wall-mounted TV and natural light — works as a second sleeping space or media room",
-    "category": "bedroom"
-   },
-   {
-    "id": "downstairs-river-house_27",
-    "alt": "Private deck off Downstairs River House with lounge chairs overlooking the Savannah River — afternoon light, river views, total seclusion",
-    "category": "river"
    }
   ],
   "byCategory": {
@@ -790,29 +546,23 @@
     "downstairs-river-house_17",
     "downstairs-river-house_18",
     "downstairs-river-house_19",
-    "downstairs-river-house_24",
-    "downstairs-river-house_27"
+    "downstairs-river-house_24"
    ],
    "pool": [
-    "downstairs-river-house_21",
-    "downstairs-river-house_23"
+    "downstairs-river-house_21"
    ],
    "outdoor": [
     "downstairs-river-house_07",
     "downstairs-river-house_10",
     "downstairs-river-house_11",
-    "downstairs-river-house_13",
     "downstairs-river-house_14",
-    "downstairs-river-house_15",
-    "downstairs-river-house_16"
+    "downstairs-river-house_15"
    ],
    "living": [
     "downstairs-river-house_02",
-    "downstairs-river-house_08",
-    "downstairs-river-house_22"
+    "downstairs-river-house_08"
    ],
    "bedroom": [
-    "downstairs-river-house_01",
     "downstairs-river-house_04",
     "downstairs-river-house_05"
    ],
@@ -824,7 +574,7 @@
     "downstairs-river-house_20"
    ]
   },
-  "count": 27
+  "count": 19
  },
  "new-2026": {
   "photos": [
@@ -932,56 +682,6 @@
     "id": "new-2026_16",
     "alt": "Second laundry area with washer, dryer, utility sink and worktop",
     "category": "other"
-   },
-   {
-    "id": "new-2026_22",
-    "alt": "Aerial view of the River House from across the river, showing the saltwater pool, private dock and Savannah River in one frame",
-    "category": "river"
-   },
-   {
-    "id": "new-2026_23",
-    "alt": "Overhead drone view of the River House on its three riverfront acres, with the saltwater pool and treeline visible from directly above",
-    "category": "outdoor"
-   },
-   {
-    "id": "new-2026_24",
-    "alt": "Aerial front view of the River House showing the private dock, the saltwater pool and the property surrounded by the Savannah River",
-    "category": "river"
-   },
-   {
-    "id": "new-2026_25",
-    "alt": "Front exterior of the River House showing both the upstairs level with its balcony and the downstairs level with its covered deck",
-    "category": "outdoor"
-   },
-   {
-    "id": "new-2026_26",
-    "alt": "The long covered deck running the full length of the River House, with outdoor seating arranged for views over the lawn and river",
-    "category": "outdoor"
-   },
-   {
-    "id": "new-2026_27",
-    "alt": "The saltwater pool in the late afternoon with the River House behind it and the Savannah River stretching out beyond",
-    "category": "pool"
-   },
-   {
-    "id": "new-2026_28",
-    "alt": "Master bedroom with a king bed, rattan headboard, teal linen drapes and river-facing windows flooding the room with natural light",
-    "category": "bedroom"
-   },
-   {
-    "id": "new-2026_29",
-    "alt": "A largemouth bass freshly caught from the private dock on the Savannah River, resting on the weathered dock planks",
-    "category": "river"
-   },
-   {
-    "id": "new-2026_30",
-    "alt": "The driveway approach to the River House with the Welcome to the River House sign set among flowering shrubs at the entrance",
-    "category": "outdoor"
-   },
-   {
-    "id": "new-2026_31",
-    "alt": "Aerial view of River House showing the full three-acre property — house, saltwater pool, private dock, lawn and Savannah River frontage",
-    "category": "outdoor"
    }
   ],
   "byCategory": {
@@ -998,8 +698,7 @@
     "new-2026_05"
    ],
    "outdoor": [
-    "new-2026_07",
-    "new-2026_31"
+    "new-2026_07"
    ],
    "living": [
     "new-2026_21"
@@ -1022,6 +721,6 @@
     "new-2026_16"
    ]
   },
-  "count": 31
+  "count": 21
  }
 }
