@@ -2,7 +2,7 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Users, BedDouble, Bath, DoorClosed, Star, Waves, Check, ArrowLeft } from 'lucide-react';
 import { bySlug } from '../data/accommodations';
-import { pickRoomThumbs } from '../data/pickPhoto';
+import { pickRoomThumbs, claimPhoto } from '../data/pickPhoto';
 import Photo from '../components/Photo';
 import StayGallery from '../components/StayGallery';
 import AvailabilityCalendar from '../components/AvailabilityCalendar';
@@ -14,6 +14,7 @@ export default function StayPage() {
 
   if (!stay) return <Navigate to="/" replace />;
 
+  claimPhoto(stay.heroPhoto);
   const roomThumbs = pickRoomThumbs(stay.photos, stay.sleeping);
 
   const stats = [

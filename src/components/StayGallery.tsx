@@ -20,8 +20,11 @@ export default function StayGallery({ stay }: { stay: Accommodation }) {
   const [filter, setFilter] = useState<string>('all');
   const [lightbox, setLightbox] = useState<number | null>(null);
 
-  const categories = [...new Set(stay.photos.map(p => p.category))];
-  const shown = filter === 'all' ? stay.photos : stay.photos.filter(p => p.category === filter);
+  // Exclude the hero from the gallery — it fills the large image above, so
+  // showing it again in the grid immediately below reads as a duplicate.
+  const galleryPhotos = stay.photos.filter(p => p.id !== stay.heroPhoto);
+  const categories = [...new Set(galleryPhotos.map(p => p.category))];
+  const shown = filter === 'all' ? galleryPhotos : galleryPhotos.filter(p => p.category === filter);
 
   const step = (dir: number) =>
     setLightbox(i => (i === null ? null : (i + dir + shown.length) % shown.length));
@@ -47,7 +50,7 @@ export default function StayGallery({ stay }: { stay: Accommodation }) {
                   : 'bg-linen text-sage border border-champagne/20 hover:border-champagne'
               }`}
             >
-              {c === 'all' ? `All ${stay.photos.length}` : LABELS[c] ?? c}
+              {c === 'all' ? `All ${galleryPhotos.length}` : LABELS[c] ?? c}
             </button>
           ))}
         </div>
