@@ -492,6 +492,11 @@
     "category": "outdoor"
    },
    {
+    "id": "entire-house_07",
+    "alt": "Living room with large windows and glass doors opening to the private garden patio",
+    "category": "living"
+   },
+   {
     "id": "downstairs-river-house_02",
     "alt": "Cozy living area with comfortable seating and warm décor, offering a relaxing space to unwind after a day of exploring.",
     "category": "living"
@@ -547,6 +552,7 @@
     "downstairs-river-house_15"
    ],
    "living": [
+    "entire-house_07",
     "downstairs-river-house_02",
     "downstairs-river-house_08"
    ],
@@ -562,7 +568,7 @@
     "downstairs-river-house_20"
    ]
   },
-  "count": 19
+  "count": 20
  },
  "new-2026": {
   "photos": [
