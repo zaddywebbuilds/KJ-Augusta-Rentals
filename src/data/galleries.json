@@ -142,18 +142,18 @@
     "category": "bedroom"
    },
    {
-    "id": "entire-house_20",
-    "alt": "Bright bedroom with multiple beds providing comfortable sleeping space for guests.",
-    "category": "bedroom"
-   },
-   {
     "id": "entire-house_21",
     "alt": "Comfortable bedroom with king bed and large windows bringing in natural light.",
     "category": "bedroom"
    },
    {
-    "id": "entire-house_25",
-    "alt": "Large bathroom with soaking tub and double vanity for added comfort and convenience.",
+    "id": "new-2026_17",
+    "alt": "The master suite after its refurbishment, with a king bed, a sitting area by the river-facing windows and freshly painted walls",
+    "category": "bedroom"
+   },
+   {
+    "id": "new-2026_19",
+    "alt": "Master bathroom with a jetted jacuzzi tub, a double vanity and a tiled walk-in shower",
     "category": "bath"
    },
    {
@@ -222,11 +222,11 @@
     "entire-house_07",
     "entire-house_18",
     "entire-house_19",
-    "entire-house_20",
-    "entire-house_21"
+    "entire-house_21",
+    "new-2026_17"
    ],
    "bath": [
-    "entire-house_25",
+    "new-2026_19",
     "entire-house_27"
    ],
    "other": [
@@ -346,11 +346,6 @@
     "category": "bedroom"
    },
    {
-    "id": "upstairs-terrace_15",
-    "alt": "Large upstairs bedroom with multiple beds and scenic waterfront views.",
-    "category": "bedroom"
-   },
-   {
     "id": "upstairs-terrace_18",
     "alt": "Bedroom with beautiful waterfront view and direct access to the outdoor balcony.",
     "category": "bedroom"
@@ -424,7 +419,6 @@
    ],
    "bedroom": [
     "upstairs-terrace_14",
-    "upstairs-terrace_15",
     "upstairs-terrace_18"
    ],
    "bath": [
@@ -439,7 +433,7 @@
     "upstairs-terrace_39"
    ]
   },
-  "count": 30
+  "count": 29
  },
  "downstairs-river-house": {
   "photos": [
