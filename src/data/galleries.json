@@ -147,16 +147,6 @@
     "category": "bedroom"
    },
    {
-    "id": "new-2026_17",
-    "alt": "The master suite after its refurbishment, with a king bed, a sitting area by the river-facing windows and freshly painted walls",
-    "category": "bedroom"
-   },
-   {
-    "id": "new-2026_19",
-    "alt": "Master bathroom with a jetted jacuzzi tub, a double vanity and a tiled walk-in shower",
-    "category": "bath"
-   },
-   {
     "id": "entire-house_27",
     "alt": "Walk-in tiled shower with modern design and spacious layout.",
     "category": "bath"
@@ -222,11 +212,9 @@
     "entire-house_07",
     "entire-house_18",
     "entire-house_19",
-    "entire-house_21",
-    "new-2026_17"
+    "entire-house_21"
    ],
    "bath": [
-    "new-2026_19",
     "entire-house_27"
    ],
    "other": [
@@ -236,7 +224,7 @@
     "entire-house_43"
    ]
   },
-  "count": 36
+  "count": 34
  },
  "upstairs-terrace": {
   "photos": [

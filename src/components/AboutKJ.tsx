@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
 import { Phone, Mail, Star, Shield, Home } from 'lucide-react';
 import { businessConfig } from '../data/businessConfig';
-import { detailImages } from '../data/mediaConfig';
 import Photo from './Photo';
 
 export default function AboutKJ() {
@@ -20,8 +19,8 @@ export default function AboutKJ() {
             transition={{ duration: 0.8 }}
           >
             <Photo
-              id={detailImages[1]}
-              alt="KJ Augusta Rentals property"
+              id="new-2026_21"
+              alt="The great room at KJ Augusta Rentals — vaulted beamed ceiling, sectional sofa and open kitchen"
               sizes="(max-width: 1024px) 100vw, 560px"
               className="w-full aspect-[4/3] object-contain bg-linen rounded-sm shadow-xl"
             />
