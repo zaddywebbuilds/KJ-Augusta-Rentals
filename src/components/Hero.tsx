@@ -26,7 +26,7 @@ claimPhoto(videoPosters.hero.split('/').pop()!.replace(/-\d+\.webp$/, ''));
 const showcase = [
   pickPhoto('new-2026', /pool/),
   pickPhoto('downstairs-river-house', /large covered deck/),
-  pickPhoto('upstairs-terrace', /upstairs bedroom with multiple beds/),
+  pickPhoto('new-2026', /master suite/),
   pickPhoto('new-2026', /jacuzzi|jetted/),
 ].filter((p): p is NonNullable<typeof p> => Boolean(p));
 
