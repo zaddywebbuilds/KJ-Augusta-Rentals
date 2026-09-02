@@ -25,9 +25,9 @@ claimPhoto(videoPosters.hero.split('/').pop()!.replace(/-\d+\.webp$/, ''));
 // to come out as well — neither sells the stay.
 const showcase = [
   pickPhoto('new-2026', /pool/),
-  pickPhoto('downstairs-river-house', /large covered deck/),
   pickPhoto('new-2026', /master suite/),
-  pickPhoto('new-2026', /jacuzzi|jetted/),
+  pickPhoto('new-2026', /great room/),
+  pickPhoto('new-2026', /adirondack|dock beyond/),
 ].filter((p): p is NonNullable<typeof p> => Boolean(p));
 
 export default function Hero() {
