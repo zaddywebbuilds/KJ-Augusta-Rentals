@@ -30,7 +30,7 @@ export default function StayGallery({ stay }: { stay: Accommodation }) {
     setLightbox(i => (i === null ? null : (i + dir + shown.length) % shown.length));
 
   return (
-    <section className="py-14 md:py-20 bg-ivory">
+    <section className="pt-2 pb-14 md:pt-4 md:pb-20 bg-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="font-manrope text-[10px] tracking-[0.3em] uppercase text-clay mb-4">
           The Gallery

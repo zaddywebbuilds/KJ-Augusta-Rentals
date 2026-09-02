@@ -132,6 +132,11 @@
     "category": "bedroom"
    },
    {
+    "id": "upstairs-terrace_18",
+    "alt": "Bedroom with two double beds, large river-view windows and warm natural light",
+    "category": "bedroom"
+   },
+   {
     "id": "entire-house_18",
     "alt": "Peaceful bedroom with soft lighting and comfortable bedding for restful nights.",
     "category": "bedroom"
@@ -210,6 +215,7 @@
    "bedroom": [
     "entire-house_05",
     "entire-house_07",
+    "upstairs-terrace_18",
     "entire-house_18",
     "entire-house_19",
     "entire-house_21"
@@ -224,7 +230,7 @@
     "entire-house_43"
    ]
   },
-  "count": 34
+  "count": 35
  },
  "upstairs-terrace": {
   "photos": [
