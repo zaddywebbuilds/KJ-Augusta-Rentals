@@ -24,7 +24,7 @@ const activities = [
     ago: '4 days ago',
   },
   {
-    photo: 'new-2026_06',
+    photo: 'new-2026_05',
     headline: 'A group from Miami',
     detail: 'booked the full property',
     ago: '5 days ago',

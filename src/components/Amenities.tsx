@@ -7,11 +7,14 @@ import {
   Sun, Anchor, TreePine, Coffee, Sunset, Bath, BedDouble, Shirt
 } from 'lucide-react';
 
+const ON_WATER_VIDEO = '/KJ-Augusta-Rentals/assets/video/dock-fishing.mp4';
+
 const amenityGroups = [
   {
     category: 'On the Water',
     icon: Waves,
     match: /dock/,
+    video: ON_WATER_VIDEO,
     items: [
       { icon: Anchor, label: 'Private dock & boat slip on the Savannah River' },
       { icon: Waves, label: '6 kayaks (4 adult, 2 child) with life vests' },
@@ -68,9 +71,10 @@ const amenityGroups = [
 // owner-supplied set is preferred over the older Airbnb scrape so cards show
 // the house as it stands today. A null match renders text-only rather than
 // reaching for a photo KJ has withdrawn.
-const groups = amenityGroups.map(({ match, ...rest }) => ({
+const groups = amenityGroups.map(({ match, video, ...rest }) => ({
   ...rest,
-  photo: match
+  video: video ?? undefined,
+  photo: !video && match
     ? pickPhoto('new-2026', match) ?? pickPhoto('entire-house', match)
     : undefined,
 }));
@@ -117,7 +121,16 @@ export default function Amenities() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.1 * groupIdx }}
             >
-              {photo && (
+              {video ? (
+                <video
+                  src={video}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full aspect-[4/3] object-cover"
+                />
+              ) : photo ? (
                 <div className="bg-ivory">
                   <Photo
                     id={photo.id}
@@ -126,7 +139,7 @@ export default function Amenities() {
                     className="w-full aspect-[4/3] object-contain"
                   />
                 </div>
-              )}
+              ) : null}
               <div className="p-8">
                 <div className="flex items-center gap-3 mb-6">
                   <Icon className="text-champagne" size={20} />
