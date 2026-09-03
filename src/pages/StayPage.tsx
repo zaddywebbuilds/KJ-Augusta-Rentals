@@ -5,8 +5,32 @@ import { bySlug } from '../data/accommodations';
 import { pickRoomThumbs, claimPhoto } from '../data/pickPhoto';
 import Photo from '../components/Photo';
 import StayGallery from '../components/StayGallery';
+import StayVideos, { type VideoClip } from '../components/StayVideos';
 import AvailabilityCalendar from '../components/AvailabilityCalendar';
 import PageMeta from '../components/PageMeta';
+
+const REEL = '/KJ-Augusta-Rentals/assets/video';
+const DOCK_VIDEO = `${REEL}/dock-fishing.mp4`;
+
+const REEL_CLIPS: VideoClip[] = [
+  { src: `${REEL}/reel-living-room.mp4`,   poster: '', label: 'Living Room' },
+  { src: `${REEL}/reel-open-plan.mp4`,     poster: '', label: 'Great Room' },
+  { src: `${REEL}/reel-master-suite.mp4`,  poster: '', label: 'Master Suite' },
+  { src: `${REEL}/reel-guest-bedroom.mp4`, poster: '', label: 'Guest Bedroom' },
+  { src: `${REEL}/reel-kitchen.mp4`,       poster: '', label: 'Kitchen' },
+  { src: `${REEL}/reel-river-doorway.mp4`, poster: '', label: 'River Doorway' },
+  { src: `${REEL}/reel-spa-shower.mp4`,    poster: '', label: 'Spa Shower' },
+  { src: `${REEL}/reel-exterior-cta.mp4`,  poster: '', label: 'Full Property' },
+];
+
+const STAY_CLIPS: Record<string, VideoClip[]> = {
+  'entire-river-house': REEL_CLIPS,
+  'upstairs-river-house': REEL_CLIPS.slice(0, 7),
+  'downstairs-river-house': [
+    { src: `${REEL}/reel-exterior-cta.mp4`, poster: '', label: 'Full Property' },
+    { src: DOCK_VIDEO, poster: '', label: 'On the Dock' },
+  ],
+};
 
 export default function StayPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -197,6 +221,8 @@ export default function StayPage() {
           </aside>
         </div>
       </section>
+
+      {STAY_CLIPS[stay.slug] && <StayVideos clips={STAY_CLIPS[stay.slug]} />}
 
       <StayGallery stay={stay} />
     </>
