@@ -122,18 +122,23 @@
     "category": "kitchen"
    },
    {
+    "id": "new-2026_17",
+    "alt": "The upstairs master suite, with a king bed, a sitting area by the river-facing windows and a private river view",
+    "category": "bedroom"
+   },
+   {
     "id": "entire-house_05",
-    "alt": "Bright bedroom with comfortable bedding and natural light, perfect for a peaceful night’s rest.",
+    "alt": "The downstairs second bedroom, with two twin beds, navy drapes and French doors onto the patio",
     "category": "bedroom"
    },
    {
     "id": "entire-house_07",
-    "alt": "Bedroom with large windows and balcony access offering beautiful waterfront views.",
-    "category": "bedroom"
+    "alt": "The upstairs sunroom, with a fold-out sofa bed and a wall of windows over the river",
+    "category": "living"
    },
    {
     "id": "upstairs-terrace_18",
-    "alt": "Bedroom with two double beds, large river-view windows and warm natural light",
+    "alt": "The upstairs guest bedroom, with two double beds and large river-view windows",
     "category": "bedroom"
    },
    {
@@ -143,12 +148,12 @@
    },
    {
     "id": "entire-house_19",
-    "alt": "Spacious bedroom suite with sitting area and comfortable bedding.",
+    "alt": "The upstairs suite seen from its sitting area, with the king bed beyond the open columns",
     "category": "bedroom"
    },
    {
     "id": "entire-house_21",
-    "alt": "Comfortable bedroom with king bed and large windows bringing in natural light.",
+    "alt": "The downstairs primary bedroom, with a king bed, woven headboard and windows facing the river",
     "category": "bedroom"
    },
    {
@@ -230,7 +235,7 @@
     "entire-house_43"
    ]
   },
-  "count": 35
+  "count": 36
  },
  "upstairs-terrace": {
   "photos": [
@@ -503,23 +508,18 @@
     "category": "outdoor"
    },
    {
-    "id": "entire-house_07",
-    "alt": "Living room with large windows and glass doors opening to the private garden patio",
-    "category": "living"
-   },
-   {
     "id": "downstairs-river-house_02",
     "alt": "Cozy living area with comfortable seating and warm décor, offering a relaxing space to unwind after a day of exploring.",
     "category": "living"
    },
    {
     "id": "downstairs-river-house_04",
-    "alt": "Bright and cozy bedroom with a comfortable king bed, soft lighting, and peaceful décor; perfect for a relaxing night after exploring Augusta.",
+    "alt": "The downstairs primary bedroom, with a king bed, woven headboard and windows facing the river",
     "category": "bedroom"
    },
    {
     "id": "downstairs-river-house_05",
-    "alt": "Additional bedroom space with simple and comfortable furnishings, ideal for a restful stay.",
+    "alt": "The downstairs bedroom's workspace corner, with a desk, wicker storage and closet",
     "category": "bedroom"
    },
    {
@@ -574,7 +574,7 @@
     "downstairs-river-house_20"
    ]
   },
-  "count": 20
+  "count": 19
  },
  "new-2026": {
   "photos": [

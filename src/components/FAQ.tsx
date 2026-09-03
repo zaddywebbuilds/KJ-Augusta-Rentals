@@ -17,7 +17,7 @@ const dockPhoto =
 const faqs = [
   {
     q: 'What are the three ways to stay?',
-    a: 'The River House can be booked as the entire property (up to 16 guests, 3 bedrooms, 9 beds), as Upstairs River House on its own (up to 14 guests, 2 bedrooms), or as Downstairs River House (up to 4 guests, 1 bedroom). Every option includes the river, dock, kayaks and pool.',
+    a: 'The River House can be booked as the entire property (up to 16 guests, 4 bedrooms, 9 beds), as Upstairs River House on its own (up to 14 guests, 2 bedrooms), or as Downstairs River House (up to 4 guests, 1 bedroom). Every option includes the river, dock, kayaks and pool.',
   },
   {
     q: 'What is shared if I only book one level?',

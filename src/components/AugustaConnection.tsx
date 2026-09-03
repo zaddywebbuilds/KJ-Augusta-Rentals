@@ -3,7 +3,7 @@ import { useInView } from '../hooks/useInView';
 import { Waves, Building2, Trophy, Plane, ExternalLink } from 'lucide-react';
 import { businessConfig } from '../data/businessConfig';
 import { dockImages, exteriorImages, detailImages } from '../data/mediaConfig';
-import { pickCaptioned } from '../data/pickPhoto';
+import { pickCaptioned, pickPhoto } from '../data/pickPhoto';
 import Photo from './Photo';
 
 const destinations = [
@@ -35,21 +35,27 @@ const destinations = [
 
 const DOCK_VIDEO = '/KJ-Augusta-Rentals/assets/video/dock-fishing.mp4';
 
-// Photo slots: approach (driveway sign) and acres aerial (shows the 3-acre scope).
-// The dock slot is a video — dock-fishing.mp4 — so no photo claim needed there.
-const photoScenes = pickCaptioned('new-2026', [
-  { test: /front exterior|driveway|approach/, caption: 'The approach' },
-  { test: /acre/, caption: 'Room to breathe' },
-]);
+// The lead slot was the driveway sign, which sells the arrival rather than the
+// stay. KJ asked for the terrace happy hour instead — it lives in the
+// upstairs-terrace set, so it is picked separately from the acres aerial.
+const happyHour = pickPhoto('upstairs-terrace', /happy hour|charcuterie/);
+const acresScene = pickCaptioned('new-2026', [{ test: /acre/, caption: 'Room to breathe' }]);
 
 type SceneItem =
   | { type: 'photo'; id: string; alt: string; caption: string }
   | { type: 'video'; src: string; caption: string };
 
 const sceneItems: SceneItem[] = [
-  { type: 'photo', ...photoScenes[0] },
+  ...(happyHour
+    ? [{
+        type: 'photo' as const,
+        id: happyHour.id,
+        alt: happyHour.alt,
+        caption: 'Happy hour over the river',
+      }]
+    : []),
   { type: 'video', src: DOCK_VIDEO, caption: 'Down to the water' },
-  { type: 'photo', ...photoScenes[1] },
+  { type: 'photo', ...acresScene[0] },
 ];
 
 export default function AugustaConnection() {

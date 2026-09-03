@@ -7,14 +7,14 @@ import {
   Sun, Anchor, TreePine, Coffee, Sunset, Bath, BedDouble, Shirt
 } from 'lucide-react';
 
-const ON_WATER_VIDEO = '/KJ-Augusta-Rentals/assets/video/dock-fishing.mp4';
-
 const amenityGroups = [
   {
+    // The fishing clip moved down to the "Down to the water" scene, which is
+    // where KJ wants it. This card now shows guests actually on the river in
+    // front of the house, so the amenity list has the house behind it.
     category: 'On the Water',
     icon: Waves,
-    match: /dock/,
-    video: ON_WATER_VIDEO,
+    match: /jet ski/,
     items: [
       { icon: Anchor, label: 'Private dock & boat slip on the Savannah River' },
       { icon: Waves, label: '6 kayaks (4 adult, 2 child) with life vests' },
@@ -50,14 +50,14 @@ const amenityGroups = [
     ],
   },
   {
-    // Back in service: new-2026_17 is a frame from the walk-through video KJ sent
-    // after her review, so this card now shows the master suite as it stands
-    // rather than the pre-renovation shot she asked to have pulled.
+    // Pinned to the upstairs master by phrase, not by category: /bedroom|master/
+    // was landing on the downstairs room's workspace corner, which KJ read as a
+    // card promising the master suite and showing a desk on the lower floor.
     category: 'Rest & Refresh',
     icon: BedDouble,
-    match: /bedroom|master/,
+    match: /upstairs master suite/,
     items: [
-      { icon: BedDouble, label: '9 beds across 3 bedrooms' },
+      { icon: BedDouble, label: '9 beds across 4 bedrooms' },
       { icon: Bath, label: '3 full bathrooms, jacuzzi tub in the master' },
       { icon: Shirt, label: 'Washer & dryer' },
       { icon: Car, label: 'Free parking on premises' },
@@ -71,12 +71,9 @@ const amenityGroups = [
 // owner-supplied set is preferred over the older Airbnb scrape so cards show
 // the house as it stands today. A null match renders text-only rather than
 // reaching for a photo KJ has withdrawn.
-const groups = amenityGroups.map(({ match, video, ...rest }) => ({
+const groups = amenityGroups.map(({ match, ...rest }) => ({
   ...rest,
-  video: video ?? undefined,
-  photo: !video && match
-    ? pickPhoto('new-2026', match) ?? pickPhoto('entire-house', match)
-    : undefined,
+  photo: pickPhoto('new-2026', match) ?? pickPhoto('entire-house', match),
 }));
 
 export default function Amenities() {
@@ -113,7 +110,7 @@ export default function Amenities() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {groups.map(({ category, icon: Icon, photo, note, video, items }, groupIdx) => (
+          {groups.map(({ category, icon: Icon, photo, note, items }, groupIdx) => (
             <motion.div
               key={category}
               className="bg-linen rounded-sm overflow-hidden border border-champagne/20 hover:shadow-lg transition-shadow duration-300"
@@ -121,16 +118,7 @@ export default function Amenities() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.1 * groupIdx }}
             >
-              {video ? (
-                <video
-                  src={video}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className="w-full aspect-[4/3] object-cover"
-                />
-              ) : photo ? (
+              {photo ? (
                 <div className="bg-ivory">
                   <Photo
                     id={photo.id}

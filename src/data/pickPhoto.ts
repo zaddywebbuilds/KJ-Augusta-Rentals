@@ -71,10 +71,16 @@ export function pickPhoto(
  */
 // `avoid` matters more than it looks: "Master Suite" happily matched "Master
 // bathroom featuring double vanity", putting a sink beside a bed count.
+// The level rules matter as much as the room ones: "Bedroom 3 — Upstairs" and
+// "Bedroom 4 — Downstairs Second" both fall through to the generic bedroom rule,
+// which then hands out photos in array order and put a downstairs room under the
+// upstairs label. Matching the level word keeps each card on its own floor.
 const roomMatchers: { when: RegExp; needs: RegExp; avoid?: RegExp }[] = [
-  { when: /master/i, needs: /master|primary/, avoid: /bath|shower|vanity/ },
+  { when: /master|primary/i, needs: /master|primary/, avoid: /bath|shower|vanity/ },
   { when: /sunroom|sun room/i, needs: /sunroom|sun room/ },
   { when: /living/i, needs: /living/ },
+  { when: /upstairs/i, needs: /(?=.*upstairs)(?=.*bedroom)/, avoid: /bath|shower|vanity/ },
+  { when: /downstairs/i, needs: /(?=.*downstairs)(?=.*bedroom)/, avoid: /bath|shower|vanity/ },
   { when: /bedroom/i, needs: /bedroom/, avoid: /bath|shower|vanity/ },
 ];
 

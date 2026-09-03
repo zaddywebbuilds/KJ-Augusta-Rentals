@@ -6,8 +6,11 @@ import { videos, videoPosters } from '../data/mediaConfig';
 
 const REEL = '/KJ-Augusta-Rentals/assets/video';
 
+// "The Property" used to replay videos.hero — the same file the page opens
+// with — and "Reel · Full Property" was a third aerial on top of "From the Air".
+// Both slots now carry KJ's 2026 drone footage instead of repeating the hero.
 const clips = [
-  { src: videos.hero, poster: videoPosters.hero, label: 'The Property' },
+  { src: `${REEL}/aerial-boat-river-2026.mp4`, poster: videoPosters.hero, label: 'Boats on the River' },
   { src: videos.feature, poster: videoPosters.feature, label: 'The River' },
   { src: videos.vertical, poster: videoPosters.vertical, label: 'The Pool & Deck' },
   { src: videos.interiorTour, poster: videoPosters.interiorTour, label: 'Inside the House' },
@@ -20,7 +23,7 @@ const clips = [
   { src: `${REEL}/reel-kitchen.mp4`,       poster: '', label: 'Reel · Kitchen' },
   { src: `${REEL}/reel-river-doorway.mp4`, poster: '', label: 'Reel · River Doorway' },
   { src: `${REEL}/reel-spa-shower.mp4`,    poster: '', label: 'Reel · Spa Shower' },
-  { src: `${REEL}/reel-exterior-cta.mp4`,  poster: '', label: 'Reel · Full Property' },
+  { src: `${REEL}/aerial-approach-2026.mp4`, poster: '', label: 'The Approach' },
 ];
 
 export default function VideoFeature() {

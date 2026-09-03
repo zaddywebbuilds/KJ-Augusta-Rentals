@@ -44,7 +44,7 @@ export const accommodations: Accommodation[] = [
     cardSummary:
       'Both levels, every room and the full run of the grounds. Built for families, reunions and groups who want the whole River House to themselves.',
     guests: 16,
-    bedrooms: 3,
+    bedrooms: 4,
     beds: 9,
     bathrooms: 3,
     rating: 5.0,
@@ -58,7 +58,8 @@ export const accommodations: Accommodation[] = [
     sleeping: [
       { room: 'Bedroom 1 — Master Suite', beds: '1 king bed, 1 double futon, 1 single pull-out' },
       { room: 'Bedroom 2 — Downstairs Primary', beds: '1 king bed, 1 airbed' },
-      { room: 'Bedroom 3', beds: '2 double beds' },
+      { room: 'Bedroom 3 — Upstairs', beds: '2 double beds' },
+      { room: 'Bedroom 4 — Downstairs Second', beds: '2 twin beds' },
       { room: 'Living room 1', beds: '2 floor mattresses' },
       { room: 'Living room 2', beds: '2 single beds' },
       { room: 'Sunroom', beds: '1 single pull-out, 1 airbed' },
@@ -74,7 +75,7 @@ export const accommodations: Accommodation[] = [
     sharedSpaces: [],
     highlights: [
       { title: 'The whole property', detail: 'Three acres, both levels, no other guests on site' },
-      { title: 'Sleeps up to 16', detail: 'Nine beds across three bedrooms and shared living spaces' },
+      { title: 'Sleeps up to 16', detail: 'Nine beds across four bedrooms and shared living spaces' },
       { title: 'Under 15 minutes to Augusta National', detail: 'Via KJ\'s back route — no Masters traffic while others wait hours.' },
     ],
     heroPhoto: 'aerial-view',
@@ -174,7 +175,7 @@ export const accommodations: Accommodation[] = [
       { title: 'Right-sized for couples', detail: 'King bedroom on the river, with room for three more' },
       { title: 'Cook for yourself', detail: 'Kitchenette with cooktop, oven, fridge and coffee maker' },
     ],
-    heroPhoto: 'entire-house_07',
+    heroPhoto: 'downstairs-river-house_04',
     photos: g['downstairs-river-house'].photos,
     googleCalendarId: null,
     status: 'live',

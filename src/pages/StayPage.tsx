@@ -39,7 +39,12 @@ export default function StayPage() {
   if (!stay) return <Navigate to="/" replace />;
 
   claimPhoto(stay.heroPhoto);
-  const roomThumbs = pickRoomThumbs(stay.photos, stay.sleeping);
+  // The hero is already the largest image on the page, so a room card that
+  // reaches for it again reads as the listing having only one photo of the room.
+  const roomThumbs = pickRoomThumbs(
+    stay.photos.filter(p => p.id !== stay.heroPhoto),
+    stay.sleeping
+  );
 
   const stats = [
     { icon: Users, label: `Up to ${stay.guests} guests` },
