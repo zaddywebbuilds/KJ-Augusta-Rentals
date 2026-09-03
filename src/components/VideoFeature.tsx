@@ -4,12 +4,23 @@ import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import { videos, videoPosters } from '../data/mediaConfig';
 
+const REEL = '/KJ-Augusta-Rentals/assets/video';
+
 const clips = [
   { src: videos.hero, poster: videoPosters.hero, label: 'The Property' },
   { src: videos.feature, poster: videoPosters.feature, label: 'The River' },
   { src: videos.vertical, poster: videoPosters.vertical, label: 'The Pool & Deck' },
   { src: videos.interiorTour, poster: videoPosters.interiorTour, label: 'Inside the House' },
   { src: videos.aerialWide, poster: videoPosters.aerialWide, label: 'From the Air' },
+  // 8-scene UGC reel (9:16 vertical, 6 sec each)
+  { src: `${REEL}/reel-living-room.mp4`,   poster: '', label: 'Reel · Living Room' },
+  { src: `${REEL}/reel-open-plan.mp4`,     poster: '', label: 'Reel · Great Room' },
+  { src: `${REEL}/reel-master-suite.mp4`,  poster: '', label: 'Reel · Master Suite' },
+  { src: `${REEL}/reel-guest-bedroom.mp4`, poster: '', label: 'Reel · Guest Bedroom' },
+  { src: `${REEL}/reel-kitchen.mp4`,       poster: '', label: 'Reel · Kitchen' },
+  { src: `${REEL}/reel-river-doorway.mp4`, poster: '', label: 'Reel · River Doorway' },
+  { src: `${REEL}/reel-spa-shower.mp4`,    poster: '', label: 'Reel · Spa Shower' },
+  { src: `${REEL}/reel-exterior-cta.mp4`,  poster: '', label: 'Reel · Full Property' },
 ];
 
 export default function VideoFeature() {
