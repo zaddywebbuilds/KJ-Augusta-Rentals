@@ -77,7 +77,7 @@ export const accommodations: Accommodation[] = [
       { title: 'Sleeps up to 16', detail: 'Nine beds across three bedrooms and shared living spaces' },
       { title: 'Under 15 minutes to Augusta National', detail: 'Via KJ\'s back route — no Masters traffic while others wait hours.' },
     ],
-    heroPhoto: g['entire-house'].photos[0].id,
+    heroPhoto: 'aerial-view',
     photos: g['entire-house'].photos,
     googleCalendarId: null,
     status: 'live',
@@ -126,7 +126,7 @@ export const accommodations: Accommodation[] = [
       { title: 'Completely private indoors', detail: 'Separate entrance, own kitchen, own living space' },
       { title: 'Full river access', detail: 'Pool, dock and kayaks, shared only if the lower level is booked' },
     ],
-    heroPhoto: g['upstairs-terrace'].photos[0].id,
+    heroPhoto: 'sunrise-fire-pit',
     photos: g['upstairs-terrace'].photos,
     googleCalendarId: null,
     status: 'live',
@@ -174,13 +174,7 @@ export const accommodations: Accommodation[] = [
       { title: 'Right-sized for couples', detail: 'King bedroom on the river, with room for three more' },
       { title: 'Cook for yourself', detail: 'Kitchenette with cooktop, oven, fridge and coffee maker' },
     ],
-    // KJ: this led with the dock, and she said a guest reading it "wants to
-    // really know, well, what's the downstairs look like" — the dock is shared
-    // ground, not the space being booked. Lead with the living area instead.
-    heroPhoto: (
-      g['downstairs-river-house'].photos.find(p => /living/i.test(p.alt)) ??
-      g['downstairs-river-house'].photos[0]
-    ).id,
+    heroPhoto: 'sunset-river',
     photos: g['downstairs-river-house'].photos,
     googleCalendarId: null,
     status: 'live',
