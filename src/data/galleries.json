@@ -265,6 +265,11 @@
     "category": "river"
    },
    {
+    "id": "happy-hour-deck",
+    "alt": "Happy hour charcuterie board with wine on the upstairs terrace table, overlooking the Savannah River",
+    "category": "river"
+   },
+   {
     "id": "upstairs-terrace_40",
     "alt": "Private swimming pool with spacious deck area, ideal for relaxing, sunbathing, and cooling off on warm Augusta days.",
     "category": "pool"
@@ -387,7 +392,8 @@
     "upstairs-terrace_28",
     "upstairs-terrace_30",
     "upstairs-terrace_37",
-    "upstairs-terrace_38"
+    "upstairs-terrace_38",
+    "happy-hour-deck"
    ],
    "pool": [
     "upstairs-terrace_40",
@@ -427,7 +433,7 @@
     "upstairs-terrace_39"
    ]
   },
-  "count": 29
+  "count": 30
  },
  "downstairs-river-house": {
   "photos": [
@@ -593,6 +599,21 @@
     "category": "river"
    },
    {
+    "id": "aerial-view",
+    "alt": "Aerial view of the River House from across the Savannah River, showing the pool, dock and three private riverfront acres",
+    "category": "river"
+   },
+   {
+    "id": "back-river-view",
+    "alt": "The River House seen from the Savannah River, showing both levels, the covered lower deck and the dock stairs leading to the water",
+    "category": "river"
+   },
+   {
+    "id": "cornhole-by-dock",
+    "alt": "Guests playing cornhole on the riverfront lawn beside the private dock on the Savannah River",
+    "category": "river"
+   },
+   {
     "id": "new-2026_02",
     "alt": "The saltwater pool in front of the two-storey River House, with the Savannah River and Adirondack chairs beyond",
     "category": "pool"
@@ -615,6 +636,21 @@
    {
     "id": "new-2026_07",
     "alt": "The Welcome to The River House sign set among flowering shrubs on the lawn",
+    "category": "outdoor"
+   },
+   {
+    "id": "fire-pit-river",
+    "alt": "Smokeless fire pit on the riverside deck at dusk with Adirondack chairs and an open view across the Savannah River",
+    "category": "outdoor"
+   },
+   {
+    "id": "sunrise-fire-pit",
+    "alt": "Sunrise over the Savannah River from the fire pit deck, with morning mist on the water and Adirondack chairs catching the first light",
+    "category": "outdoor"
+   },
+   {
+    "id": "sunset-river",
+    "alt": "Sunset over the Savannah River from the fire pit deck, with pink clouds reflected on the water and Adirondack chairs in the foreground",
     "category": "outdoor"
    },
    {
@@ -683,7 +719,10 @@
     "new-2026_01",
     "new-2026_06",
     "new-2026_08",
-    "new-2026_10"
+    "new-2026_10",
+    "aerial-view",
+    "back-river-view",
+    "cornhole-by-dock"
    ],
    "pool": [
     "new-2026_02",
@@ -692,7 +731,10 @@
     "new-2026_05"
    ],
    "outdoor": [
-    "new-2026_07"
+    "new-2026_07",
+    "fire-pit-river",
+    "sunrise-fire-pit",
+    "sunset-river"
    ],
    "living": [
     "new-2026_21"
@@ -715,6 +757,6 @@
     "new-2026_16"
    ]
   },
-  "count": 21
+  "count": 27
  }
 }

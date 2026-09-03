@@ -1,4 +1,23 @@
 {
+ "happyfamily": {
+  "width": 1600,
+  "height": 1200,
+  "aspect": 1.3333,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "happyfamily-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "happyfamily-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "happyfamily-1600.webp"
+   }
+  ]
+ },
  "photo_01": {
   "width": 3000,
   "height": 2001,
@@ -1313,6 +1332,25 @@
    }
   ]
  },
+ "WhatsApp Image 2026-09-02 at 11.59.12 PM": {
+  "width": 1600,
+  "height": 1200,
+  "aspect": 1.3333,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "WhatsApp Image 2026-09-02 at 11.59.12 PM-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "WhatsApp Image 2026-09-02 at 11.59.12 PM-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "WhatsApp Image 2026-09-02 at 11.59.12 PM-1600.webp"
+   }
+  ]
+ },
  "downstairs-river-house_01": {
   "width": 2560,
   "height": 1708,
@@ -1330,8 +1368,7 @@
     "w": 1600,
     "file": "downstairs-river-house_01-1600.webp"
    }
-  ],
-  "alt": "Bright and comfortable bedroom with stylish décor, soft bedding, and a TV for relaxing evenings during your stay."
+  ]
  },
  "downstairs-river-house_02": {
   "width": 2560,
@@ -1570,8 +1607,7 @@
     "w": 1600,
     "file": "downstairs-river-house_13-1600.webp"
    }
-  ],
-  "alt": "Covered patio seating area overlooking the water; an ideal spot for morning coffee, evening drinks, and relaxing outdoor conversations."
+  ]
  },
  "downstairs-river-house_14": {
   "width": 2560,
@@ -1630,8 +1666,7 @@
     "w": 1600,
     "file": "downstairs-river-house_16-1600.webp"
    }
-  ],
-  "alt": "Large covered deck with outdoor seating, providing a comfortable shaded space to unwind while enjoying the beautiful waterfront surroundings."
+  ]
  },
  "downstairs-river-house_17": {
   "width": 2560,
@@ -1750,8 +1785,7 @@
     "w": 1600,
     "file": "downstairs-river-house_22-1600.webp"
    }
-  ],
-  "alt": "Sparkling outdoor swimming pool surrounded by lounge chairs - perfect for sunbathing, swimming, and relaxing during your stay."
+  ]
  },
  "downstairs-river-house_23": {
   "width": 2560,
@@ -1770,8 +1804,7 @@
     "w": 1600,
     "file": "downstairs-river-house_23-1600.webp"
    }
-  ],
-  "alt": "Another view of the refreshing private pool area, offering plenty of space to relax and enjoy sunny days outdoors."
+  ]
  },
  "downstairs-river-house_24": {
   "width": 2560,
@@ -1792,6 +1825,21 @@
    }
   ],
   "alt": "Private Riverfront Oasis"
+ },
+ "aab": {
+  "width": 736,
+  "height": 1318,
+  "aspect": 0.5584,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "aab-400.webp"
+   },
+   {
+    "w": 736,
+    "file": "aab-800.webp"
+   }
+  ]
  },
  "entire-house_01": {
   "width": 2560,
@@ -1830,8 +1878,7 @@
     "w": 1600,
     "file": "entire-house_02-1600.webp"
    }
-  ],
-  "alt": "Comfortable living area with cozy seating and TV, perfect for relaxing after a day exploring Augusta."
+  ]
  },
  "entire-house_03": {
   "width": 2560,
@@ -1870,8 +1917,7 @@
     "w": 1600,
     "file": "entire-house_04-1600.webp"
    }
-  ],
-  "alt": "Open living room with comfortable seating and entertainment space for gathering with family and friends."
+  ]
  },
  "entire-house_05": {
   "width": 2560,
@@ -1910,8 +1956,7 @@
     "w": 1600,
     "file": "entire-house_06-1600.webp"
    }
-  ],
-  "alt": "Cozy living area with comfortable seating and TV, offering a relaxing space to unwind after a day out."
+  ]
  },
  "entire-house_07": {
   "width": 2560,
@@ -2130,8 +2175,7 @@
     "w": 1600,
     "file": "entire-house_17-1600.webp"
    }
-  ],
-  "alt": "Spacious bedroom with comfortable bedding and large windows offering beautiful views."
+  ]
  },
  "entire-house_18": {
   "width": 2560,
@@ -2190,8 +2234,7 @@
     "w": 1600,
     "file": "entire-house_20-1600.webp"
    }
-  ],
-  "alt": "Bright bedroom with multiple beds providing comfortable sleeping space for guests."
+  ]
  },
  "entire-house_21": {
   "width": 2560,
@@ -2230,8 +2273,7 @@
     "w": 1600,
     "file": "entire-house_22-1600.webp"
    }
-  ],
-  "alt": "Spacious bedroom with simple décor and comfortable bed designed for a relaxing stay."
+  ]
  },
  "entire-house_23": {
   "width": 2560,
@@ -2250,8 +2292,7 @@
     "w": 1600,
     "file": "entire-house_23-1600.webp"
    }
-  ],
-  "alt": "Large bedroom with cozy beds and natural light creating a relaxing atmosphere."
+  ]
  },
  "entire-house_24": {
   "width": 2560,
@@ -2270,8 +2311,7 @@
     "w": 1600,
     "file": "entire-house_24-1600.webp"
    }
-  ],
-  "alt": "Comfortable bedroom with multiple beds ideal for families or groups."
+  ]
  },
  "entire-house_25": {
   "width": 2560,
@@ -2290,8 +2330,7 @@
     "w": 1600,
     "file": "entire-house_25-1600.webp"
    }
-  ],
-  "alt": "Large bathroom with soaking tub and double vanity for added comfort and convenience."
+  ]
  },
  "entire-house_26": {
   "width": 2560,
@@ -2310,8 +2349,7 @@
     "w": 1600,
     "file": "entire-house_26-1600.webp"
    }
-  ],
-  "alt": "Clean and spacious bathroom with double sinks and plenty of counter space."
+  ]
  },
  "entire-house_27": {
   "width": 2560,
@@ -2350,8 +2388,7 @@
     "w": 1600,
     "file": "entire-house_28-1600.webp"
    }
-  ],
-  "alt": "Clean and modern bathroom with shower and essential amenities for a comfortable stay."
+  ]
  },
  "entire-house_29": {
   "width": 2560,
@@ -2390,8 +2427,7 @@
     "w": 1600,
     "file": "entire-house_30-1600.webp"
    }
-  ],
-  "alt": "Large lawn area by the water perfect for outdoor games, relaxing, and enjoying the open space."
+  ]
  },
  "entire-house_31": {
   "width": 2560,
@@ -2470,8 +2506,7 @@
     "w": 1600,
     "file": "entire-house_34-1600.webp"
    }
-  ],
-  "alt": "Waterfront patio seating with comfortable cushions and peaceful lake views."
+  ]
  },
  "entire-house_35": {
   "width": 2560,
@@ -2530,8 +2565,7 @@
     "w": 1600,
     "file": "entire-house_37-1600.webp"
    }
-  ],
-  "alt": "Covered waterfront lounge area with comfortable seating, ideal for morning coffee or evening conversations."
+  ]
  },
  "entire-house_38": {
   "width": 2560,
@@ -2570,8 +2604,7 @@
     "w": 1600,
     "file": "entire-house_39-1600.webp"
    }
-  ],
-  "alt": "Covered waterfront patio seating area perfect for relaxing and enjoying peaceful lake views."
+  ]
  },
  "entire-house_41": {
   "width": 2560,
@@ -2650,8 +2683,7 @@
     "w": 1600,
     "file": "entire-house_44-1600.webp"
    }
-  ],
-  "alt": "Waterfront home with private swimming pool and beautiful lake views; perfect for relaxing, swimming, and enjoying a peaceful Augusta getaway."
+  ]
  },
  "entire-house_45": {
   "width": 2560,
@@ -2670,8 +2702,7 @@
     "w": 1600,
     "file": "entire-house_45-1600.webp"
    }
-  ],
-  "alt": "Sparkling outdoor pool surrounded by lounge chairs and greenery, ideal for relaxing under the sun during your stay."
+  ]
  },
  "entire-house_46": {
   "width": 2560,
@@ -2690,8 +2721,7 @@
     "w": 1600,
     "file": "entire-house_46-1600.webp"
    }
-  ],
-  "alt": "Another view of the refreshing private pool area with plenty of space to unwind and enjoy warm Georgia days."
+  ]
  },
  "entire-house_48": {
   "width": 2560,
@@ -2750,8 +2780,7 @@
     "w": 1600,
     "file": "entire-house_50-1600.webp"
    }
-  ],
-  "alt": "Another view of the refreshing pool area surrounded by greenery and open outdoor space."
+  ]
  },
  "entire-house_51": {
   "width": 2560,
@@ -2810,8 +2839,7 @@
     "w": 1600,
     "file": "entire-house_53-1600.webp"
    }
-  ],
-  "alt": "Mini golf putting area by the water offering a fun outdoor activity with beautiful lake views."
+  ]
  },
  "entire-house_55": {
   "width": 2560,
@@ -2830,8 +2858,7 @@
     "w": 1600,
     "file": "entire-house_55-1600.webp"
    }
-  ],
-  "alt": "Outdoor bar seating area under the patio, perfect for casual drinks and socializing in the open-air entertainment space."
+  ]
  },
  "entire-house_57": {
   "width": 2560,
@@ -2892,6 +2919,82 @@
    }
   ],
   "alt": "Mini putting green by the water for a fun outdoor activity while enjoying beautiful lake views."
+ },
+ "aerial-view": {
+  "width": 640,
+  "height": 480,
+  "aspect": 1.3333,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "aerial-view-400.webp"
+   },
+   {
+    "w": 640,
+    "file": "aerial-view-800.webp"
+   }
+  ],
+  "alt": "Aerial view of the River House from across the Savannah River, showing the pool, dock and three private riverfront acres"
+ },
+ "back-river-view": {
+  "width": 1600,
+  "height": 1200,
+  "aspect": 1.3333,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "back-river-view-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "back-river-view-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "back-river-view-1600.webp"
+   }
+  ],
+  "alt": "The River House seen from the Savannah River, showing both levels, the covered lower deck and the dock stairs leading to the water"
+ },
+ "cornhole-by-dock": {
+  "width": 1600,
+  "height": 1200,
+  "aspect": 1.3333,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "cornhole-by-dock-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "cornhole-by-dock-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "cornhole-by-dock-1600.webp"
+   }
+  ],
+  "alt": "Guests playing cornhole on the riverfront lawn beside the private dock on the Savannah River"
+ },
+ "fire-pit-river": {
+  "width": 1600,
+  "height": 1200,
+  "aspect": 1.3333,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "fire-pit-river-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "fire-pit-river-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "fire-pit-river-1600.webp"
+   }
+  ],
+  "alt": "Smokeless fire pit on the riverside deck at dusk with Adirondack chairs and an open view across the Savannah River"
  },
  "new-2026_01": {
   "width": 8064,
@@ -3313,6 +3416,66 @@
   ],
   "alt": "The great room, with a sectional beneath the vaulted beamed ceiling, the hanging fireplace and the open kitchen beyond"
  },
+ "sunrise-fire-pit": {
+  "width": 1600,
+  "height": 1200,
+  "aspect": 1.3333,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "sunrise-fire-pit-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "sunrise-fire-pit-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "sunrise-fire-pit-1600.webp"
+   }
+  ],
+  "alt": "Sunrise over the Savannah River from the fire pit deck, with morning mist on the water and Adirondack chairs catching the first light"
+ },
+ "sunset-river": {
+  "width": 1600,
+  "height": 1200,
+  "aspect": 1.3333,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "sunset-river-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "sunset-river-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "sunset-river-1600.webp"
+   }
+  ],
+  "alt": "Sunset over the Savannah River from the fire pit deck, with pink clouds reflected on the water and Adirondack chairs in the foreground"
+ },
+ "happy-hour-deck": {
+  "width": 1600,
+  "height": 1200,
+  "aspect": 1.3333,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "happy-hour-deck-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "happy-hour-deck-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "happy-hour-deck-1600.webp"
+   }
+  ],
+  "alt": "Happy hour charcuterie board with wine on the upstairs terrace table, overlooking the Savannah River"
+ },
  "upstairs-terrace_01": {
   "width": 2560,
   "height": 1704,
@@ -3350,8 +3513,7 @@
     "w": 1600,
     "file": "upstairs-terrace_02-1600.webp"
    }
-  ],
-  "alt": "Spacious lounge area with stylish seating and TV, offering a relaxing space for entertainment and conversation."
+  ]
  },
  "upstairs-terrace_03": {
   "width": 2560,
@@ -3370,8 +3532,7 @@
     "w": 1600,
     "file": "upstairs-terrace_03-1600.webp"
    }
-  ],
-  "alt": "Another view of the open kitchen and living area, creating a welcoming space for gathering and dining."
+  ]
  },
  "upstairs-terrace_04": {
   "width": 2560,
@@ -3490,8 +3651,7 @@
     "w": 1600,
     "file": "upstairs-terrace_09-1600.webp"
    }
-  ],
-  "alt": "Bright kitchen with modern appliances and plenty of counter space for preparing meals."
+  ]
  },
  "upstairs-terrace_10": {
   "width": 2560,
@@ -3510,8 +3670,7 @@
     "w": 1600,
     "file": "upstairs-terrace_10-1600.webp"
    }
-  ],
-  "alt": "Fully equipped kitchen with modern appliances and ample counter space for cooking during your stay."
+  ]
  },
  "upstairs-terrace_11": {
   "width": 2560,
@@ -3570,8 +3729,7 @@
     "w": 1600,
     "file": "upstairs-terrace_13-1600.webp"
    }
-  ],
-  "alt": "Another view of the open space room."
+  ]
  },
  "upstairs-terrace_14": {
   "width": 2560,
@@ -3610,8 +3768,7 @@
     "w": 1600,
     "file": "upstairs-terrace_15-1600.webp"
    }
-  ],
-  "alt": "Large upstairs bedroom with multiple beds and scenic waterfront views."
+  ]
  },
  "upstairs-terrace_16": {
   "width": 2560,
@@ -3630,8 +3787,7 @@
     "w": 1600,
     "file": "upstairs-terrace_16-1600.webp"
    }
-  ],
-  "alt": "Spacious bedroom with comfortable bed and large windows offering relaxing natural light."
+  ]
  },
  "upstairs-terrace_17": {
   "width": 2560,
@@ -3690,8 +3846,7 @@
     "w": 1600,
     "file": "upstairs-terrace_19-1600.webp"
    }
-  ],
-  "alt": "Cozy bedroom with soft bedding and relaxing interior design for a restful night’s sleep."
+  ]
  },
  "upstairs-terrace_20": {
   "width": 2560,
@@ -3710,8 +3865,7 @@
     "w": 1600,
     "file": "upstairs-terrace_20-1600.webp"
    }
-  ],
-  "alt": "Clean bathroom with modern fixtures and bathtub for a comfortable stay."
+  ]
  },
  "upstairs-terrace_21": {
   "width": 2560,
@@ -3750,8 +3904,7 @@
     "w": 1600,
     "file": "upstairs-terrace_22-1600.webp"
    }
-  ],
-  "alt": "Walk in design with modern design."
+  ]
  },
  "upstairs-terrace_23": {
   "width": 2560,
@@ -3930,8 +4083,7 @@
     "w": 1600,
     "file": "upstairs-terrace_31-1600.webp"
    }
-  ],
-  "alt": "Beautiful waterfront deck seating area offering stunning lake views and a peaceful place to relax outdoors."
+  ]
  },
  "upstairs-terrace_32": {
   "width": 2560,
@@ -3990,8 +4142,7 @@
     "w": 1600,
     "file": "upstairs-terrace_34-1600.webp"
    }
-  ],
-  "alt": "Covered waterfront patio with comfortable seating; an ideal place to unwind and enjoy the peaceful surroundings."
+  ]
  },
  "upstairs-terrace_35": {
   "width": 2560,
@@ -4130,8 +4281,7 @@
     "w": 1600,
     "file": "upstairs-terrace_41-1600.webp"
    }
-  ],
-  "alt": "Another view of the refreshing outdoor pool surrounded by lounge chairs - perfect for relaxing and enjoying the sunny weather."
+  ]
  },
  "upstairs-terrace_42": {
   "width": 2560,
@@ -4150,8 +4300,7 @@
     "w": 1600,
     "file": "upstairs-terrace_42-1600.webp"
    }
-  ],
-  "alt": "Inviting swimming pool with plenty of space to lounge and enjoy a refreshing swim during your stay."
+  ]
  },
  "upstairs-terrace_43": {
   "width": 2560,
@@ -4190,260 +4339,6 @@
     "w": 1600,
     "file": "upstairs-terrace_44-1600.webp"
    }
-  ],
-  "alt": "Private Pool and Fire pit w/ RiverFront dock"
- },
- "new-2026_22": {
-  "width": 8064,
-  "height": 4536,
-  "aspect": 1.7778,
-  "srcset": [
-   {
-    "w": 400,
-    "file": "new-2026_22-400.webp"
-   },
-   {
-    "w": 800,
-    "file": "new-2026_22-800.webp"
-   },
-   {
-    "w": 1600,
-    "file": "new-2026_22-1600.webp"
-   }
-  ],
-  "alt": "Aerial view of the River House from across the river, showing the saltwater pool, private dock and Savannah River in one frame"
- },
- "new-2026_23": {
-  "width": 8064,
-  "height": 4536,
-  "aspect": 1.7778,
-  "srcset": [
-   {
-    "w": 400,
-    "file": "new-2026_23-400.webp"
-   },
-   {
-    "w": 800,
-    "file": "new-2026_23-800.webp"
-   },
-   {
-    "w": 1600,
-    "file": "new-2026_23-1600.webp"
-   }
-  ],
-  "alt": "Overhead drone view of the River House on its three riverfront acres, with the saltwater pool and treeline visible from directly above"
- },
- "new-2026_24": {
-  "width": 8064,
-  "height": 4536,
-  "aspect": 1.7778,
-  "srcset": [
-   {
-    "w": 400,
-    "file": "new-2026_24-400.webp"
-   },
-   {
-    "w": 800,
-    "file": "new-2026_24-800.webp"
-   },
-   {
-    "w": 1600,
-    "file": "new-2026_24-1600.webp"
-   }
-  ],
-  "alt": "Aerial front view of the River House showing the private dock, the saltwater pool and the property surrounded by the Savannah River"
- },
- "new-2026_25": {
-  "width": 6000,
-  "height": 4000,
-  "aspect": 1.5,
-  "srcset": [
-   {
-    "w": 400,
-    "file": "new-2026_25-400.webp"
-   },
-   {
-    "w": 800,
-    "file": "new-2026_25-800.webp"
-   },
-   {
-    "w": 1600,
-    "file": "new-2026_25-1600.webp"
-   }
-  ],
-  "alt": "Front exterior of the River House showing both the upstairs level with its balcony and the downstairs level with its covered deck"
- },
- "new-2026_26": {
-  "width": 6000,
-  "height": 4000,
-  "aspect": 1.5,
-  "srcset": [
-   {
-    "w": 400,
-    "file": "new-2026_26-400.webp"
-   },
-   {
-    "w": 800,
-    "file": "new-2026_26-800.webp"
-   },
-   {
-    "w": 1600,
-    "file": "new-2026_26-1600.webp"
-   }
-  ],
-  "alt": "The long covered deck running the full length of the River House, with outdoor seating arranged for views over the lawn and river"
- },
- "new-2026_27": {
-  "width": 6000,
-  "height": 4000,
-  "aspect": 1.5,
-  "srcset": [
-   {
-    "w": 400,
-    "file": "new-2026_27-400.webp"
-   },
-   {
-    "w": 800,
-    "file": "new-2026_27-800.webp"
-   },
-   {
-    "w": 1600,
-    "file": "new-2026_27-1600.webp"
-   }
-  ],
-  "alt": "The saltwater pool in the late afternoon with the River House behind it and the Savannah River stretching out beyond"
- },
- "new-2026_28": {
-  "width": 6000,
-  "height": 4000,
-  "aspect": 1.5,
-  "srcset": [
-   {
-    "w": 400,
-    "file": "new-2026_28-400.webp"
-   },
-   {
-    "w": 800,
-    "file": "new-2026_28-800.webp"
-   },
-   {
-    "w": 1600,
-    "file": "new-2026_28-1600.webp"
-   }
-  ],
-  "alt": "Master bedroom with a king bed, rattan headboard, teal linen drapes and river-facing windows flooding the room with natural light"
- },
- "new-2026_29": {
-  "width": 4128,
-  "height": 2322,
-  "aspect": 1.7778,
-  "srcset": [
-   {
-    "w": 400,
-    "file": "new-2026_29-400.webp"
-   },
-   {
-    "w": 800,
-    "file": "new-2026_29-800.webp"
-   },
-   {
-    "w": 1600,
-    "file": "new-2026_29-1600.webp"
-   }
-  ],
-  "alt": "A largemouth bass freshly caught from the private dock on the Savannah River, resting on the weathered dock planks"
- },
- "new-2026_30": {
-  "width": 6000,
-  "height": 4000,
-  "aspect": 1.5,
-  "srcset": [
-   {
-    "w": 400,
-    "file": "new-2026_30-400.webp"
-   },
-   {
-    "w": 800,
-    "file": "new-2026_30-800.webp"
-   },
-   {
-    "w": 1600,
-    "file": "new-2026_30-1600.webp"
-   }
-  ],
-  "alt": "The driveway approach to the River House with the Welcome to the River House sign set among flowering shrubs at the entrance"
- },
- "downstairs-river-house_25": {
-  "width": 6000,
-  "height": 4000,
-  "aspect": 1.5,
-  "srcset": [
-   {
-    "w": 400,
-    "file": "downstairs-river-house_25-400.webp"
-   },
-   {
-    "w": 800,
-    "file": "downstairs-river-house_25-800.webp"
-   },
-   {
-    "w": 1600,
-    "file": "downstairs-river-house_25-1600.webp"
-   }
-  ],
-  "alt": "Downstairs River House sitting room with a green sofa, side lamp and coffee table — a relaxed lounge area off the main bedroom"
- },
- "downstairs-river-house_26": {
-  "width": 5941,
-  "height": 3961,
-  "aspect": 1.5,
-  "srcset": [
-   {
-    "w": 400,
-    "file": "downstairs-river-house_26-400.webp"
-   },
-   {
-    "w": 800,
-    "file": "downstairs-river-house_26-800.webp"
-   },
-   {
-    "w": 1600,
-    "file": "downstairs-river-house_26-1600.webp"
-   }
-  ],
-  "alt": "Downstairs River House flex room with a daybed, wall-mounted TV and natural light — works as a second sleeping space or media room"
- },
- "new-2026_31": {
-  "width": 3000,
-  "height": 2247,
-  "aspect": 1.335,
-  "srcset": [
-   { "w": 400, "file": "new-2026_31-400.webp" },
-   { "w": 800, "file": "new-2026_31-800.webp" },
-   { "w": 1600, "file": "new-2026_31-1600.webp" }
-  ],
-  "alt": "Aerial view of River House showing the full three-acre property — house, saltwater pool, private dock, lawn and Savannah River frontage"
- },
- "entire-house_56": {
-  "width": 3000,
-  "height": 1686,
-  "aspect": 1.7794,
-  "srcset": [
-   { "w": 400, "file": "entire-house_56-400.webp" },
-   { "w": 800, "file": "entire-house_56-800.webp" },
-   { "w": 1600, "file": "entire-house_56-1600.webp" }
-  ],
-  "alt": "Saltwater pool and River House exterior with Savannah River visible behind — pool chairs, lawn and the full property in one frame"
- },
- "downstairs-river-house_27": {
-  "width": 4000,
-  "height": 3000,
-  "aspect": 1.3333,
-  "srcset": [
-   { "w": 400, "file": "downstairs-river-house_27-400.webp" },
-   { "w": 800, "file": "downstairs-river-house_27-800.webp" },
-   { "w": 1600, "file": "downstairs-river-house_27-1600.webp" }
-  ],
-  "alt": "Private deck off Downstairs River House with lounge chairs overlooking the Savannah River — afternoon light, river views, total seclusion"
+  ]
  }
 }
