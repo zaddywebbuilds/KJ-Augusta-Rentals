@@ -614,6 +614,11 @@
     "category": "river"
    },
    {
+    "id": "happy-family-jet-ski",
+    "alt": "Family enjoying jet skis on the Savannah River in front of the River House, with the dock and riverfront lawn in the background",
+    "category": "river"
+   },
+   {
     "id": "new-2026_02",
     "alt": "The saltwater pool in front of the two-storey River House, with the Savannah River and Adirondack chairs beyond",
     "category": "pool"
@@ -722,7 +727,8 @@
     "new-2026_10",
     "aerial-view",
     "back-river-view",
-    "cornhole-by-dock"
+    "cornhole-by-dock",
+    "happy-family-jet-ski"
    ],
    "pool": [
     "new-2026_02",
@@ -757,6 +763,6 @@
     "new-2026_16"
    ]
   },
-  "count": 27
+  "count": 28
  }
 }

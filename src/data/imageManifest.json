@@ -1,23 +1,4 @@
 {
- "happyfamily": {
-  "width": 1600,
-  "height": 1200,
-  "aspect": 1.3333,
-  "srcset": [
-   {
-    "w": 400,
-    "file": "happyfamily-400.webp"
-   },
-   {
-    "w": 800,
-    "file": "happyfamily-800.webp"
-   },
-   {
-    "w": 1600,
-    "file": "happyfamily-1600.webp"
-   }
-  ]
- },
  "photo_01": {
   "width": 3000,
   "height": 2001,
@@ -1329,25 +1310,6 @@
    {
     "w": 1280,
     "file": "photo_70-1600.webp"
-   }
-  ]
- },
- "WhatsApp Image 2026-09-02 at 11.59.12 PM": {
-  "width": 1600,
-  "height": 1200,
-  "aspect": 1.3333,
-  "srcset": [
-   {
-    "w": 400,
-    "file": "WhatsApp Image 2026-09-02 at 11.59.12 PM-400.webp"
-   },
-   {
-    "w": 800,
-    "file": "WhatsApp Image 2026-09-02 at 11.59.12 PM-800.webp"
-   },
-   {
-    "w": 1600,
-    "file": "WhatsApp Image 2026-09-02 at 11.59.12 PM-1600.webp"
    }
   ]
  },
@@ -2995,6 +2957,26 @@
    }
   ],
   "alt": "Smokeless fire pit on the riverside deck at dusk with Adirondack chairs and an open view across the Savannah River"
+ },
+ "happy-family-jet-ski": {
+  "width": 1600,
+  "height": 1200,
+  "aspect": 1.3333,
+  "srcset": [
+   {
+    "w": 400,
+    "file": "happy-family-jet-ski-400.webp"
+   },
+   {
+    "w": 800,
+    "file": "happy-family-jet-ski-800.webp"
+   },
+   {
+    "w": 1600,
+    "file": "happy-family-jet-ski-1600.webp"
+   }
+  ],
+  "alt": "Family enjoying jet skis on the Savannah River in front of the River House, with the dock and riverfront lawn in the background"
  },
  "new-2026_01": {
   "width": 8064,
