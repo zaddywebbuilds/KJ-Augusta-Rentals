@@ -25,7 +25,7 @@ const amenityGroups = [
   {
     category: 'Outdoors',
     icon: Sun,
-    match: /pool/,
+    match: /fire pit/,
     note: '🌊 Saltwater pool open April – October',
     items: [
       { icon: Sun, label: 'Saltwater pool (seasonal, Apr–Oct)' },
@@ -113,7 +113,7 @@ export default function Amenities() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {groups.map(({ category, icon: Icon, photo, note, items }, groupIdx) => (
+          {groups.map(({ category, icon: Icon, photo, note, video, items }, groupIdx) => (
             <motion.div
               key={category}
               className="bg-linen rounded-sm overflow-hidden border border-champagne/20 hover:shadow-lg transition-shadow duration-300"
