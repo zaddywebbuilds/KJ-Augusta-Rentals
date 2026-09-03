@@ -27,7 +27,7 @@ const showcase = [
   pickPhoto('new-2026', /pool/),
   pickPhoto('new-2026', /master suite/),
   pickPhoto('new-2026', /great room/),
-  pickPhoto('new-2026', /sunset|fire pit/),
+  pickPhoto('new-2026', /sunset/),
 ].filter((p): p is NonNullable<typeof p> => Boolean(p));
 
 export default function Hero() {

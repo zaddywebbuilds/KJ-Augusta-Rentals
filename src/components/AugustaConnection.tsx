@@ -33,15 +33,24 @@ const destinations = [
   },
 ];
 
-// Sourced from the 2026 owner-supplied set, and each caption is tied to a word
-// that has to appear in the photo's own description — see pickCaptioned. KJ
-// flagged the old "approach" shot as out of date since she repainted the deck,
-// so these resolve against new-2026 rather than the older Airbnb scrape.
-const scenes = pickCaptioned('new-2026', [
+const DOCK_VIDEO = '/KJ-Augusta-Rentals/assets/video/dock-fishing.mp4';
+
+// Photo slots: approach (driveway sign) and acres aerial (shows the 3-acre scope).
+// The dock slot is a video — dock-fishing.mp4 — so no photo claim needed there.
+const photoScenes = pickCaptioned('new-2026', [
   { test: /front exterior|driveway|approach/, caption: 'The approach' },
-  { test: /dock/, caption: 'Down to the water' },
-  { test: /lawn|acre/, caption: 'Room to breathe' },
+  { test: /acre/, caption: 'Room to breathe' },
 ]);
+
+type SceneItem =
+  | { type: 'photo'; id: string; alt: string; caption: string }
+  | { type: 'video'; src: string; caption: string };
+
+const sceneItems: SceneItem[] = [
+  { type: 'photo', ...photoScenes[0] },
+  { type: 'video', src: DOCK_VIDEO, caption: 'Down to the water' },
+  { type: 'photo', ...photoScenes[1] },
+];
 
 export default function AugustaConnection() {
   const { ref, inView } = useInView();
@@ -212,22 +221,33 @@ export default function AugustaConnection() {
 
         {/* Scene strip */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
-          {scenes.map(({ id, alt, caption }, i) => (
+          {sceneItems.map((item, i) => (
             <motion.figure
-              key={id}
+              key={item.type === 'photo' ? item.id : item.src}
               className="rounded-sm overflow-hidden bg-linen border border-champagne/20"
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.4 + i * 0.1 }}
             >
-              <Photo
-                id={id}
-                alt={alt}
-                sizes="(max-width: 640px) 100vw, 400px"
-                className="w-full aspect-[4/3] object-contain"
-              />
+              {item.type === 'video' ? (
+                <video
+                  src={item.src}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full aspect-[4/3] object-cover"
+                />
+              ) : (
+                <Photo
+                  id={item.id}
+                  alt={item.alt}
+                  sizes="(max-width: 640px) 100vw, 400px"
+                  className="w-full aspect-[4/3] object-contain"
+                />
+              )}
               <figcaption className="px-4 py-3 border-t border-champagne/20 font-manrope text-[10px] tracking-[0.2em] uppercase text-clay">
-                {caption}
+                {item.caption}
               </figcaption>
             </motion.figure>
           ))}

@@ -57,8 +57,8 @@
     "category": "outdoor"
    },
    {
-    "id": "entire-house_51",
-    "alt": "Lakeside fire pit seating area with Adirondack chairs; perfect for evening conversations and relaxing by the water.",
+    "id": "fire-pit-river",
+    "alt": "Smokeless fire pit on the riverside deck at dusk with Adirondack chairs and an open view across the Savannah River",
     "category": "outdoor"
    },
    {
@@ -194,7 +194,7 @@
     "entire-house_33",
     "entire-house_36",
     "entire-house_38",
-    "entire-house_51",
+    "fire-pit-river",
     "entire-house_58",
     "entire-house_60"
    ],
@@ -295,8 +295,8 @@
     "category": "outdoor"
    },
    {
-    "id": "upstairs-terrace_29",
-    "alt": "Lakeside fire pit seating area with Adirondack chairs; perfect for cozy evenings and relaxing conversations.",
+    "id": "fire-pit-river",
+    "alt": "Smokeless fire pit on the riverside deck at dusk with Adirondack chairs and an open view across the Savannah River",
     "category": "outdoor"
    },
    {
@@ -403,7 +403,7 @@
     "upstairs-terrace_25",
     "upstairs-terrace_26",
     "upstairs-terrace_27",
-    "upstairs-terrace_29",
+    "fire-pit-river",
     "upstairs-terrace_32",
     "upstairs-terrace_35",
     "upstairs-terrace_36"
@@ -478,6 +478,11 @@
     "category": "outdoor"
    },
    {
+    "id": "fire-pit-river",
+    "alt": "Smokeless fire pit on the riverside deck at dusk with Adirondack chairs and an open view across the Savannah River",
+    "category": "outdoor"
+   },
+   {
     "id": "downstairs-river-house_10",
     "alt": "Lakeside seating deck with Adirondack chairs and fire pit; an inviting space to gather, relax, and enjoy stunning waterfront sunsets.",
     "category": "outdoor"
@@ -505,11 +510,6 @@
    {
     "id": "downstairs-river-house_02",
     "alt": "Cozy living area with comfortable seating and warm décor, offering a relaxing space to unwind after a day of exploring.",
-    "category": "living"
-   },
-   {
-    "id": "downstairs-river-house_08",
-    "alt": "Waterfront fire pit lounge with comfortable seating; perfect for evening gatherings, conversations, and enjoying the peaceful lake view.",
     "category": "living"
    },
    {
@@ -552,6 +552,7 @@
    ],
    "outdoor": [
     "downstairs-river-house_07",
+    "fire-pit-river",
     "downstairs-river-house_10",
     "downstairs-river-house_11",
     "downstairs-river-house_14",
@@ -559,8 +560,7 @@
    ],
    "living": [
     "entire-house_07",
-    "downstairs-river-house_02",
-    "downstairs-river-house_08"
+    "downstairs-river-house_02"
    ],
    "bedroom": [
     "downstairs-river-house_04",
