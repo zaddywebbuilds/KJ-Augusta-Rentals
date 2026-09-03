@@ -59,7 +59,6 @@ export const accommodations: Accommodation[] = [
       { room: 'Bedroom 1 — Master Suite', beds: '1 king bed, 1 double futon, 1 single pull-out' },
       { room: 'Bedroom 2 — Downstairs Primary', beds: '1 king bed, 1 airbed' },
       { room: 'Bedroom 3 — Upstairs', beds: '2 double beds' },
-      { room: 'Bedroom 4 — Downstairs Second', beds: '2 twin beds' },
       { room: 'Living room 1', beds: '2 floor mattresses' },
       { room: 'Living room 2', beds: '2 single beds' },
       { room: 'Sunroom', beds: '1 single pull-out, 1 airbed' },

@@ -78,6 +78,10 @@ export function pickPhoto(
 const roomMatchers: { when: RegExp; needs: RegExp; avoid?: RegExp }[] = [
   { when: /master|primary/i, needs: /master|primary/, avoid: /bath|shower|vanity/ },
   { when: /sunroom|sun room/i, needs: /sunroom|sun room/ },
+  // "Living room 2" is a specific room — the one with the two single beds — so
+  // it is matched before the generic rule, which would otherwise hand it
+  // whichever living-room photo happened to come next in the array.
+  { when: /living room 2|second living/i, needs: /second living room/ },
   { when: /living/i, needs: /living/ },
   { when: /upstairs/i, needs: /(?=.*upstairs)(?=.*bedroom)/, avoid: /bath|shower|vanity/ },
   { when: /downstairs/i, needs: /(?=.*downstairs)(?=.*bedroom)/, avoid: /bath|shower|vanity/ },
