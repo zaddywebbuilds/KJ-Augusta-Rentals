@@ -174,7 +174,7 @@ export const accommodations: Accommodation[] = [
       { title: 'Right-sized for couples', detail: 'King bedroom on the river, with room for three more' },
       { title: 'Cook for yourself', detail: 'Kitchenette with cooktop, oven, fridge and coffee maker' },
     ],
-    heroPhoto: 'sunset-river',
+    heroPhoto: 'entire-house_07',
     photos: g['downstairs-river-house'].photos,
     googleCalendarId: null,
     status: 'live',
