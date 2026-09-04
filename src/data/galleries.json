@@ -167,8 +167,58 @@
     "category": "bedroom"
    },
    {
+    "id": "entire-house_17",
+    "alt": "Upstairs master suite — king bed, sitting area and panoramic river-view windows on three sides",
+    "category": "bedroom"
+   },
+   {
+    "id": "entire-house_20",
+    "alt": "Upstairs master suite sitting area opening through to the bedroom beyond, with wall-to-wall river-view windows",
+    "category": "bedroom"
+   },
+   {
+    "id": "entire-house_23",
+    "alt": "Upstairs guest bedroom with two double beds, taupe curtains and panoramic Savannah River views",
+    "category": "bedroom"
+   },
+   {
+    "id": "entire-house_24",
+    "alt": "The upstairs guest bedroom from the opposite angle — both double beds and tree-top views through wrap-around windows",
+    "category": "bedroom"
+   },
+   {
+    "id": "entire-house_22",
+    "alt": "Downstairs bedroom with king bed, private desk workspace and blue curtains",
+    "category": "bedroom"
+   },
+   {
+    "id": "new-2026_20",
+    "alt": "Downstairs second bedroom with two single beds, framed art and freshly painted grey walls",
+    "category": "bedroom"
+   },
+   {
     "id": "entire-house_27",
     "alt": "Walk-in tiled shower with modern design and spacious layout.",
+    "category": "bath"
+   },
+   {
+    "id": "upstairs-terrace_21",
+    "alt": "Upstairs master bathroom with jetted jacuzzi tub, double vanity and separate tiled walk-in shower",
+    "category": "bath"
+   },
+   {
+    "id": "upstairs-terrace_23",
+    "alt": "Upstairs hallway bathroom with walk-in shower, white vanity and cheerful décor",
+    "category": "bath"
+   },
+   {
+    "id": "downstairs-river-house_06",
+    "alt": "Downstairs bathroom with tub-shower combo, palm-tree curtain, black vanity and complimentary toiletries",
+    "category": "bath"
+   },
+   {
+    "id": "new-2026_13",
+    "alt": "Downstairs bathroom showing the tiled tub-shower with palm-tree curtain and fresh towels on the rail",
     "category": "bath"
    },
    {
@@ -234,10 +284,20 @@
     "upstairs-terrace_18",
     "entire-house_18",
     "entire-house_19",
-    "entire-house_21"
+    "entire-house_21",
+    "entire-house_17",
+    "entire-house_20",
+    "entire-house_23",
+    "entire-house_24",
+    "entire-house_22",
+    "new-2026_20"
    ],
    "bath": [
-    "entire-house_27"
+    "entire-house_27",
+    "upstairs-terrace_21",
+    "upstairs-terrace_23",
+    "downstairs-river-house_06",
+    "new-2026_13"
    ],
    "other": [
     "entire-house_13",
@@ -246,7 +306,7 @@
     "entire-house_43"
    ]
   },
-  "count": 37
+  "count": 47
  },
  "upstairs-terrace": {
   "photos": [
