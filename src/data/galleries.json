@@ -32,6 +32,11 @@
     "category": "pool"
    },
    {
+    "id": "entire-house_46",
+    "alt": "Private saltwater pool with fountain jets and sun loungers, with the pool house and lush garden in the background",
+    "category": "pool"
+   },
+   {
     "id": "entire-house_31",
     "alt": "Large waterfront lawn perfect for outdoor games, relaxing, and enjoying the open natural surroundings.",
     "category": "outdoor"
@@ -59,6 +64,11 @@
    {
     "id": "fire-pit-river",
     "alt": "Smokeless fire pit on the riverside deck at dusk with Adirondack chairs and an open view across the Savannah River",
+    "category": "outdoor"
+   },
+   {
+    "id": "entire-house_51",
+    "alt": "Riverfront fire pit deck with Adirondack chairs surrounding the Blue Sky smokeless pit, with open views across the Savannah River",
     "category": "outdoor"
    },
    {
@@ -137,11 +147,6 @@
     "category": "living"
    },
    {
-    "id": "entire-house_07",
-    "alt": "The upstairs sunroom, with a fold-out sofa bed and a wall of windows over the river",
-    "category": "living"
-   },
-   {
     "id": "upstairs-terrace_18",
     "alt": "The upstairs guest bedroom, with two double beds and large river-view windows",
     "category": "bedroom"
@@ -196,7 +201,8 @@
    ],
    "pool": [
     "entire-house_48",
-    "entire-house_49"
+    "entire-house_49",
+    "entire-house_46"
    ],
    "outdoor": [
     "entire-house_31",
@@ -205,6 +211,7 @@
     "entire-house_36",
     "entire-house_38",
     "fire-pit-river",
+    "entire-house_51",
     "entire-house_58",
     "entire-house_60"
    ],
@@ -224,7 +231,6 @@
    ],
    "bedroom": [
     "entire-house_05",
-    "entire-house_07",
     "upstairs-terrace_18",
     "entire-house_18",
     "entire-house_19",
@@ -240,7 +246,7 @@
     "entire-house_43"
    ]
   },
-  "count": 36
+  "count": 37
  },
  "upstairs-terrace": {
   "photos": [
