@@ -68,7 +68,7 @@
    },
    {
     "id": "entire-house_60",
-    "alt": "Mini putting green by the water for a fun outdoor activity while enjoying beautiful lake views.",
+    "alt": "Golf tee-off area by the waterfront for practicing your drive, with scenic river views.",
     "category": "outdoor"
    },
    {
@@ -128,7 +128,12 @@
    },
    {
     "id": "entire-house_05",
-    "alt": "The second living room, with two single beds, navy drapes and French doors onto the patio",
+    "alt": "Downstairs living room with two single beds, navy drapes and French doors onto the private patio",
+    "category": "living"
+   },
+   {
+    "id": "downstairs-river-house_02",
+    "alt": "Downstairs living room in sofa configuration — green velvet sofa, leather armchair and wall-mounted TV; the sofa pulls out to sleep an additional guest",
     "category": "living"
    },
    {
@@ -241,8 +246,8 @@
   "photos": [
    {
     "id": "upstairs-terrace_04",
-    "alt": "Bright upstairs living area with large windows and beautiful water views filling the space with natural light.",
-    "category": "river"
+    "alt": "Upstairs master suite with king bed, large river-view windows and a sitting area overlooking the Savannah River",
+    "category": "bedroom"
    },
    {
     "id": "upstairs-terrace_07",
@@ -296,7 +301,7 @@
    },
    {
     "id": "upstairs-terrace_27",
-    "alt": "Mini golf putting area by the water offering a fun outdoor activity with scenic lake views.",
+    "alt": "Golf tee-off area by the water for practicing your drive, with scenic river views.",
     "category": "outdoor"
    },
    {
@@ -494,7 +499,7 @@
    },
    {
     "id": "downstairs-river-house_11",
-    "alt": "Fun mini golf putting area by the water, offering a unique outdoor activity with scenic lake views for guests to enjoy.",
+    "alt": "Golf tee-off area by the water for practicing your drive, with scenic river views.",
     "category": "outdoor"
    },
    {
