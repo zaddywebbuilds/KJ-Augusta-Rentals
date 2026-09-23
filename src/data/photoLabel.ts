@@ -45,6 +45,9 @@ const SUBJECT_RULES: Rule[] = [
   { match: /sunroom|sun room/, room: 'Sunroom', floor: 'listing' },
   { match: /kitchenette/, room: 'Kitchenette', floor: 'listing' },
   { match: /kitchen/, room: 'Kitchen', floor: 'listing' },
+  // The breakfast nook with the pew bench is where the kids eat; KJ asked for
+  // it by that name, and it has to outrank the generic dining rule.
+  { match: /children.s dining|kids.? dining/, room: "Children's dining", floor: 'listing' },
   { match: /dining|dinner table|breakfast/, room: 'Dining', floor: 'listing' },
   { match: /coffee station|coffee maker|coffee bar/, room: 'Coffee station', floor: 'listing' },
   { match: /living|great room|lounge|family room|sitting area/, room: 'Living room', floor: 'listing' },

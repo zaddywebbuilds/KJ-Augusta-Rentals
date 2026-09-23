@@ -312,8 +312,8 @@
   "photos": [
    {
     "id": "upstairs-terrace_04",
-    "alt": "Upstairs master suite with king bed, large river-view windows and a sitting area overlooking the Savannah River",
-    "category": "bedroom"
+    "alt": "Children's dining nook with a pew bench and farmhouse table by the window, just inside the upstairs entrance",
+    "category": "kitchen"
    },
    {
     "id": "upstairs-terrace_07",
@@ -396,6 +396,11 @@
     "category": "living"
    },
    {
+    "id": "upstairs-terrace_02",
+    "alt": "The great room looking across the sectional to the wall-mounted smart TV, under vaulted beams with the river through the windows",
+    "category": "living"
+   },
+   {
     "id": "upstairs-terrace_06",
     "alt": "Bright sunroom with large windows overlooking the water; perfect for relaxing with beautiful views.",
     "category": "living"
@@ -417,18 +422,13 @@
    },
    {
     "id": "upstairs-terrace_14",
-    "alt": "Spacious bedroom with comfortable beds, soft lighting, and a relaxing layout - perfect for a restful stay with beautiful natural light.",
+    "alt": "Master suite with king bed, double futon and single pull-out chair - every bed in the room, with the en suite beyond",
     "category": "bedroom"
    },
    {
     "id": "upstairs-terrace_18",
-    "alt": "Bedroom with beautiful waterfront view and direct access to the outdoor balcony.",
+    "alt": "Upstairs second bedroom with two double beds, wrap-around windows and panoramic Savannah River views",
     "category": "bedroom"
-   },
-   {
-    "id": "upstairs-terrace_17",
-    "alt": "Master bathroom featuring double vanity and spacious layout for added comfort.",
-    "category": "bath"
    },
    {
     "id": "upstairs-terrace_21",
@@ -463,7 +463,6 @@
   ],
   "byCategory": {
    "river": [
-    "upstairs-terrace_04",
     "upstairs-terrace_07",
     "upstairs-terrace_28",
     "upstairs-terrace_30",
@@ -486,9 +485,11 @@
    ],
    "living": [
     "upstairs-terrace_01",
+    "upstairs-terrace_02",
     "upstairs-terrace_06"
    ],
    "kitchen": [
+    "upstairs-terrace_04",
     "upstairs-terrace_08",
     "upstairs-terrace_12",
     "upstairs-terrace_33"
@@ -498,7 +499,6 @@
     "upstairs-terrace_18"
    ],
    "bath": [
-    "upstairs-terrace_17",
     "upstairs-terrace_21",
     "upstairs-terrace_23"
    ],
