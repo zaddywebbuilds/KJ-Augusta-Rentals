@@ -6,7 +6,7 @@ const DISMISS_KEY = 'kj-activity-popup-dismissed';
 const FIRST_DELAY = 5_000;
 const VISIBLE_MS = 7_000;
 const GAP_MS = 14_000;
-const BASE_IMG = '/KJ-Augusta-Rentals/assets/img';
+const BASE_IMG = '/assets/img';
 
 // Thumbnails come from the current 2026 set rather than the old site's
 // photos, so the toast never shows a room that no longer looks like that.

@@ -9,7 +9,7 @@ import StayVideos, { type VideoClip } from '../components/StayVideos';
 import AvailabilityCalendar from '../components/AvailabilityCalendar';
 import PageMeta from '../components/PageMeta';
 
-const REEL = '/KJ-Augusta-Rentals/assets/video';
+const REEL = '/assets/video';
 const DOCK_VIDEO = `${REEL}/dock-fishing.mp4`;
 
 const REEL_CLIPS: VideoClip[] = [
@@ -26,14 +26,25 @@ const REEL_CLIPS: VideoClip[] = [
 const STAY_CLIPS: Record<string, VideoClip[]> = {
   'entire-river-house': REEL_CLIPS,
   'upstairs-river-house': REEL_CLIPS.slice(0, 7),
-  'downstairs-river-house': [
+  'river-suite': [
     { src: `${REEL}/reel-exterior-cta.mp4`, poster: '', label: 'Full Property' },
     { src: DOCK_VIDEO, poster: '', label: 'On the Dock' },
   ],
 };
 
+// KJ renamed the downstairs listing "River Suite". Links already out in the
+// world — Google, guest messages — still carry the old slug, so forward them to
+// the new page instead of dropping guests on the homepage. Mirrored in
+// scripts/prerender.mjs, which keeps the old URL answering 200.
+const LEGACY_SLUGS: Record<string, string> = {
+  'downstairs-river-house': 'river-suite',
+};
+
 export default function StayPage() {
   const { slug } = useParams<{ slug: string }>();
+  if (slug && LEGACY_SLUGS[slug]) {
+    return <Navigate to={`/stays/${LEGACY_SLUGS[slug]}`} replace />;
+  }
   const stay = slug ? bySlug(slug) : undefined;
 
   if (!stay) return <Navigate to="/" replace />;

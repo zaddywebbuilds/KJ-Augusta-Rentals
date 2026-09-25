@@ -33,7 +33,7 @@ const destinations = [
   },
 ];
 
-const DOCK_VIDEO = '/KJ-Augusta-Rentals/assets/video/dock-fishing.mp4';
+const DOCK_VIDEO = '/assets/video/dock-fishing.mp4';
 
 // The lead slot was the driveway sign, which sells the arrival rather than the
 // stay. KJ asked for the terrace happy hour instead — it lives in the

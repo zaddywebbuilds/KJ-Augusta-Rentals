@@ -13,7 +13,7 @@
 import galleries from './galleries.json';
 import duplicates from './duplicatePhotos.json';
 
-const BASE = '/KJ-Augusta-Rentals/assets';
+const BASE = '/assets';
 
 type GalleryPhoto = { id: string; alt: string; category: string };
 const g = galleries as Record<string, { photos: GalleryPhoto[] }>;

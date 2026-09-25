@@ -4,7 +4,7 @@ import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import { videos, videoPosters } from '../data/mediaConfig';
 
-const REEL = '/KJ-Augusta-Rentals/assets/video';
+const REEL = '/assets/video';
 
 // "The Property" used to replay videos.hero — the same file the page opens
 // with — and "Reel · Full Property" was a third aerial on top of "From the Air".

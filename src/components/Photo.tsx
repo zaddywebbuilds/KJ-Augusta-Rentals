@@ -1,6 +1,6 @@
 import manifest from '../data/imageManifest.json';
 
-const BASE = '/KJ-Augusta-Rentals/assets/img';
+const BASE = '/assets/img';
 
 type Manifest = Record<
   string,
