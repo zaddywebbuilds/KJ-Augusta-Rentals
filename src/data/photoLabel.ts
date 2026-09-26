@@ -73,7 +73,8 @@ const FALLBACK_RULES: Rule[] = [
 /** Which level a whole listing sits on. The entire house spans both, so it proves nothing. */
 const LISTING_FLOOR: Record<string, string | undefined> = {
   'upstairs-terrace': 'Upstairs',
-  'downstairs-river-house': 'Downstairs',
+  // KJ renamed the ground floor "River Suite", so the badge uses the name guests book.
+  'downstairs-river-house': 'River Suite',
   'entire-house': undefined,
   'new-2026': undefined,
 };
@@ -83,7 +84,7 @@ function floorFor(rule: Rule, alt: string, listing: string): string | undefined 
   // The caption outranks the listing: a photo that says "upstairs" is better
   // evidence than the folder it happens to sit in.
   if (/\bupstairs\b|upper level|second floor/.test(alt)) return 'Upstairs';
-  if (/\bdownstairs\b|lower level|ground floor|first floor/.test(alt)) return 'Downstairs';
+  if (/\bdownstairs\b|lower level|ground floor|first floor/.test(alt)) return 'River Suite';
   return rule.floor === 'listing' ? LISTING_FLOOR[listing] : undefined;
 }
 

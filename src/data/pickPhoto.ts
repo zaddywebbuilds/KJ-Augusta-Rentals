@@ -63,7 +63,7 @@ export function pickPhoto(
  * Pairs each sleeping area with a photo of that same room.
  *
  * KJ asked twice for a thumbnail beside every sleeping area, so a guest reading
- * "Bedroom 2 — Downstairs Primary" can see which level it belongs to. Room
+ * "Bedroom 2 — River Suite" can see which level it belongs to. Room
  * labels are free text, so each maps to a word that has to appear in the
  * photo's own description — the same contract pickPhoto enforces. A room with
  * no confident match renders without a thumbnail rather than borrowing another
@@ -85,6 +85,9 @@ const roomMatchers: { when: RegExp; needs: RegExp; avoid?: RegExp }[] = [
   { when: /living/i, needs: /living/ },
   { when: /upstairs/i, needs: /(?=.*upstairs)(?=.*bedroom)/, avoid: /bath|shower|vanity/ },
   { when: /downstairs/i, needs: /(?=.*downstairs)(?=.*bedroom)/, avoid: /bath|shower|vanity/ },
+  // The River Suite is the downstairs king room under its new name; the photo
+  // captions still describe it by level, so match either wording.
+  { when: /river suite/i, needs: /downstairs primary|river suite/, avoid: /bath|shower|vanity/ },
   { when: /bedroom/i, needs: /bedroom/, avoid: /bath|shower|vanity/ },
 ];
 

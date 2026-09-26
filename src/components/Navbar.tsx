@@ -10,6 +10,7 @@ const navLinks = [
   { label: 'Stays', hash: '#stays' },
   { label: 'Amenities', hash: '#amenities' },
   { label: 'Masters', to: '/masters' },
+  { label: 'Events', hash: '#whats-on' },
   { label: 'Reviews', hash: '#reviews' },
   { label: 'Location', hash: '#location' },
 ];

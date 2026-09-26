@@ -4,6 +4,7 @@ import PropertyStats from '../components/PropertyStats';
 import Amenities from '../components/Amenities';
 import VideoFeature from '../components/VideoFeature';
 import AugustaConnection from '../components/AugustaConnection';
+import WhatsOn from '../components/WhatsOn';
 import Reviews from '../components/Reviews';
 import AboutKJ from '../components/AboutKJ';
 import FAQ from '../components/FAQ';
@@ -74,6 +75,7 @@ export default function HomePage() {
       <Amenities />
       <VideoFeature />
       <AugustaConnection />
+      <WhatsOn />
       <Reviews />
       <AboutKJ />
       <FAQ />

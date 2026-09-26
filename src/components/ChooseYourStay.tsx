@@ -43,7 +43,7 @@ export default function ChooseYourStay() {
           </h2>
           <p className="font-manrope text-base text-sage leading-relaxed">
             One riverfront property, three ways to experience it. Take the whole house,
-            the upper level, or Downstairs River House — the river, pool, dock and
+            the upper level, or the River Suite downstairs — the river, pool, dock and
             kayaks come with all of them.
           </p>
         </motion.div>

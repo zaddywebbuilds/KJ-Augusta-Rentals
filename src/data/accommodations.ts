@@ -52,12 +52,12 @@ export const accommodations: Accommodation[] = [
     description: [
       'The complete River House: both levels, every bedroom, and exclusive use of all three riverfront acres. Nothing is shared, because nothing else is booked.',
       'Upstairs opens into a bright, vaulted living space with a fully equipped kitchen, a sunroom of floor-to-ceiling windows facing the water, and glass doors onto the waterfront terrace. The master suite holds a king bed, en suite bath with jetted tub and double-head walk-in shower, and its own panoramic river view.',
-      'Downstairs runs as its own retreat — a second king bedroom on the water, a full kitchenette, a living area, and a garden patio that opens straight onto the lawn and dock.',
+      'Downstairs, the River Suite runs as its own retreat — a second king bedroom on the water, a full kitchenette, a living area, and a garden patio that opens straight onto the lawn and dock.',
       'Outside is the part guests remember: a saltwater pool overlooking the river, six kayaks, a private dock for fishing or paddling, a smokeless fire pit, propane and charcoal grills, an outdoor bar, ping pong, cornhole, and a private golf tee-off area.',
     ],
     sleeping: [
       { room: 'Bedroom 1 — Master Suite', beds: '1 king bed, 1 double futon, 1 single pull-out' },
-      { room: 'Bedroom 2 — Downstairs Primary', beds: '1 king bed, 1 airbed' },
+      { room: 'Bedroom 2 — River Suite', beds: '1 king bed, 1 airbed' },
       { room: 'Bedroom 3 — Upstairs', beds: '2 double beds' },
       { room: 'Living room 1', beds: '2 floor mattresses' },
       { room: 'Living room 2', beds: '2 single beds' },
@@ -109,7 +109,7 @@ export const accommodations: Accommodation[] = [
       { room: 'Sunroom', beds: '1 single pull-out, 1 airbed' },
     ],
     privateSpaces: [
-      'The entire upper level — the downstairs is behind a locked door',
+      'The entire upper level — the River Suite downstairs is behind a locked door',
       'Full kitchen, living room and sunroom',
       'Master suite with en suite bath, jacuzzi tub and double-head shower',
       'Your own waterfront terrace and balcony, private in every configuration',
@@ -124,7 +124,7 @@ export const accommodations: Accommodation[] = [
     highlights: [
       { title: 'The best view on the property', detail: 'Sunroom and terrace face straight down the Savannah River' },
       { title: 'Completely private indoors', detail: 'Separate entrance, own kitchen, own living space' },
-      { title: 'Full river access', detail: 'Pool, dock and kayaks, shared only if the lower level is booked' },
+      { title: 'Full river access', detail: 'Pool, dock and kayaks, shared only if the River Suite is booked' },
     ],
     heroPhoto: 'sunrise-fire-pit',
     photos: g['upstairs-terrace'].photos,
@@ -132,10 +132,10 @@ export const accommodations: Accommodation[] = [
     status: 'live',
   },
   {
-    slug: 'downstairs-river-house',
+    slug: 'river-suite',
     listingId: '1658150118472079882',
     airbnbUrl: 'https://www.airbnb.com/rooms/1658150118472079882',
-    name: 'Downstairs River House',
+    name: 'River Suite',
     tagline: 'Ground-floor living, straight onto the water',
     cardSummary:
       'The ground floor, opening onto its own waterfront patio — a king bedroom facing the river, kitchenette and living area, steps from the pool and dock.',
@@ -146,7 +146,7 @@ export const accommodations: Accommodation[] = [
     rating: 4.43,
     reviewCount: 7,
     description: [
-      'The ground floor of the River House, nestled on three secluded acres with direct river access, a private dock with boat slip, kayaks and the saltwater pool — all minutes from downtown Augusta.',
+      'The River Suite is the ground floor of the River House, nestled on three secluded acres with direct river access, a private dock with boat slip, kayaks and the saltwater pool — all minutes from downtown Augusta.',
       'The master bedroom takes a king bed with panoramic river views, a smart TV and a dedicated workspace. The living room adds a twin bed and a twin pull-out sofa, and the kitchenette carries a double-burner cooktop, Cuisinart oven, microwave, refrigerator and coffee maker, so you can cook properly without going anywhere.',
       'Outside your door is a large waterfront garden patio with unobstructed views and its own seating — a completely private outdoor area that stays yours even when the upstairs is separately booked.',
       'Quiet mornings with water views, afternoons on the river or by the pool, evenings at the fire pit. Ideal for peaceful getaways, outdoor trips and Masters week.',

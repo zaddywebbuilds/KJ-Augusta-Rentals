@@ -39,6 +39,16 @@ const routes = [
   },
 ];
 
+// A renamed stay keeps its old URL answering 200, with the canonical pointing at
+// the new address so search engines move their ranking across rather than
+// dropping it. StayPage forwards visitors; keep the two maps in step.
+const LEGACY_SLUGS = { 'downstairs-river-house': 'river-suite' };
+for (const [from, to] of Object.entries(LEGACY_SLUGS)) {
+  const target = routes.find(r => r.path === `/stays/${to}`);
+  if (!target) throw new Error(`prerender: legacy slug ${from} points at missing stay ${to}`);
+  routes.push({ ...target, path: `/stays/${from}`, canonical: target.path });
+}
+
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
 
 for (const r of routes) {
@@ -50,9 +60,9 @@ for (const r of routes) {
     )
     .replace(
       /(<link rel="canonical" href=")[^"]*(")/,
-      `$1${SITE}${r.path}$2`
+      `$1${SITE}${r.canonical ?? r.path}$2`
     )
-    .replace(/(<meta property="og:url" content=")[^"]*(")/, `$1${SITE}${r.path}$2`)
+    .replace(/(<meta property="og:url" content=")[^"]*(")/, `$1${SITE}${r.canonical ?? r.path}$2`)
     .replace(/(<meta property="og:title" content=")[^"]*(")/, `$1${esc(r.title)}$2`)
     .replace(
       /(<meta property="og:description" content=")[^"]*(")/,
