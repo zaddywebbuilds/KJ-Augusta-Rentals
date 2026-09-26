@@ -6,7 +6,7 @@ import { pickRoomThumbs, claimPhoto } from '../data/pickPhoto';
 import Photo from '../components/Photo';
 import StayGallery from '../components/StayGallery';
 import StayVideos, { type VideoClip } from '../components/StayVideos';
-import AvailabilityCalendar from '../components/AvailabilityCalendar';
+import BookingWidget from '../components/BookingWidget';
 import PageMeta from '../components/PageMeta';
 
 const REEL = '/assets/video';
@@ -233,7 +233,7 @@ export default function StayPage() {
 
           {/* Booking rail */}
           <aside className="lg:sticky lg:top-28 lg:self-start">
-            <AvailabilityCalendar stay={stay} />
+            <BookingWidget stay={stay} />
           </aside>
         </div>
       </section>

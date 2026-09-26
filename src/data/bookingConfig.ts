@@ -1,34 +1,21 @@
-// Direct payment wiring.
-//
-// KJ takes card payments through her own Stripe account (PayPal optional as a
-// second button), instead of losing Airbnb's host fee on every booking. There
-// is no monthly software cost and no backend: a Stripe Payment Link is just a
-// URL, which is why this works on a static build.
-//
-// Flow: guest sends dates through the request form -> KJ confirms against her
-// calendar -> KJ sends the balance link. The deposit button below is the
-// optional shortcut for guests who want to hold dates immediately.
-//
-// SETUP: create the links in Stripe (Payments -> Payment Links), paste the URLs
-// here, and flip `enabled` to true. Money settles into KJ's account directly;
-// nothing routes through us.
-
+// Legacy direct-payment config (used by BookingPanel on the homepage)
 export const directPayment = {
-  /** Leave false until the Stripe account is live and a test charge has been refunded. */
   enabled: false,
-
-  /**
-   * Fixed-amount Stripe Payment Link used to hold dates. Keep this in step with
-   * `depositLabel` below so the button never promises a different number than
-   * the checkout page charges.
-   */
   depositUrl: '',
-  depositLabel: 'Reserve your dates with a $500 deposit',
-
-  /**
-   * Optional PayPal button for guests who would rather not hand over a card.
-   * Card via Stripe stays the default; this is a second option, not a
-   * replacement. Leave empty to hide it.
-   */
+  depositLabel: 'Pay deposit',
   paypalUrl: '',
-} as const;
+};
+
+// Hospitable property UUIDs — one per listing slug
+export const HOSPITABLE_IDS: Record<string, string> = {
+  'entire-river-house':   '9eaa8094-2942-4fa9-9391-babecdca8c20',
+  'upstairs-river-house': '620cdb7f-d17c-4a51-a7e8-619b7685ae63',
+  'river-suite':          'b7f74137-0eae-4d39-b380-e9ec5b0fc580',
+};
+
+// Maximum guests per listing (from Hospitable capacity)
+export const MAX_GUESTS: Record<string, number> = {
+  'entire-river-house':   20,
+  'upstairs-river-house': 12,
+  'river-suite':          8,
+};
