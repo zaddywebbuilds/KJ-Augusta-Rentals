@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
-import { ChevronLeft, ChevronRight, Minus, Plus, Loader2 } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Minus, Plus, Loader2, Phone, Mail } from 'lucide-react';
 import type { Accommodation } from '../data/accommodations';
 import { HOSPITABLE_IDS, MAX_GUESTS } from '../data/bookingConfig';
+import { businessConfig } from '../data/businessConfig';
 
 // ── Date helpers (no external library) ──────────────────────────────────────
 
@@ -148,14 +149,16 @@ export default function BookingWidget({ stay }: { stay: Accommodation }) {
       body: JSON.stringify({ propertyId, checkinDate: checkin, checkoutDate: checkout, adults }),
     })
       .then(r => r.json())
-      .then((data: { data?: QuoteResult; reason_phrase?: string }) => {
+      .then((data: { data?: QuoteResult; reason_phrase?: string; error?: string; status_code?: number }) => {
         if (data.data) {
           setQuote(data.data);
+        } else if (data.error || (data.status_code && ![409, 422].includes(data.status_code))) {
+          setQuoteError('__contact__');
         } else {
           setQuoteError(data.reason_phrase ?? "These dates aren't available. Try different dates.");
         }
       })
-      .catch(err => { if (err.name !== 'AbortError') setQuoteError('Unable to fetch price. Please try again.'); })
+      .catch(err => { if (err.name !== 'AbortError') setQuoteError('__contact__'); })
       .finally(() => setQuoteLoading(false));
   }, [checkin, checkout, adults, propertyId]);
 
@@ -356,8 +359,30 @@ export default function BookingWidget({ stay }: { stay: Accommodation }) {
           </div>
         )}
 
-        {quoteError && !quoteLoading && (
+        {quoteError && !quoteLoading && quoteError !== '__contact__' && (
           <p className="font-manrope text-sm text-red-600 leading-snug">{quoteError}</p>
+        )}
+
+        {quoteError === '__contact__' && !quoteLoading && (
+          <div>
+            <p className="font-manrope text-sm text-sage leading-snug mb-4">
+              Get in touch and we'll confirm these dates and send you a quote — usually within the hour.
+            </p>
+            <a
+              href={`mailto:${businessConfig.contact.email}?subject=Booking enquiry — ${stay.name}&body=Hi%2C%20I'm%20interested%20in%20booking%20${encodeURIComponent(stay.name)}%20from%20${checkin}%20to%20${checkout}%20for%20${adults}%20guest${adults !== 1 ? 's' : ''}.`}
+              className="inline-flex items-center justify-center w-full gap-2 px-6 py-3.5 min-h-[44px] bg-ink text-ivory font-manrope text-xs tracking-widest uppercase font-semibold hover:bg-clay transition-colors rounded-sm mb-3"
+            >
+              <Mail size={14} />
+              Request these dates
+            </a>
+            <a
+              href={`tel:${businessConfig.contact.phoneHref}`}
+              className="inline-flex items-center justify-center w-full gap-2 px-6 py-3 min-h-[44px] border border-ink text-ink font-manrope text-xs tracking-widest uppercase hover:bg-ink hover:text-ivory transition-colors rounded-sm"
+            >
+              <Phone size={14} />
+              {businessConfig.contact.phoneDisplay}
+            </a>
+          </div>
         )}
 
         {quote && !quoteLoading && (
