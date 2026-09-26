@@ -113,7 +113,7 @@ export default function BookingPanel() {
               className="w-full flex items-center justify-center gap-2 px-8 py-3 border border-sage text-sage font-manrope text-sm tracking-widest uppercase hover:border-ink hover:text-ink transition-all duration-300 rounded-sm"
             >
               <Phone size={16} />
-              Call KJ — {businessConfig.contact.phoneDisplay}
+              Call Us — {businessConfig.contact.phoneDisplay}
             </a>
 
             {takesDeposit && (

@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     q: 'Who do I contact if I have a question before or during my stay?',
-    a: `KJ Augusta Rentals is available directly by phone at ${businessConfig.contact.phoneDisplay} or by email at ${businessConfig.contact.email}.`,
+    a: `Home Sweet Luxe is available directly by phone at ${businessConfig.contact.phoneDisplay} or by email at ${businessConfig.contact.email}.`,
   },
 ];
 
@@ -292,7 +292,7 @@ export default function FAQ() {
             className="inline-flex items-center gap-2 px-8 py-4 bg-champagne text-ink font-manrope text-sm tracking-widest uppercase font-semibold hover:bg-clay hover:text-ivory transition-all duration-300 rounded-sm"
           >
             <Phone size={16} />
-            Call KJ to Book
+            Call to Book
           </a>
         </motion.div>
       </div>

@@ -87,7 +87,7 @@ export default function FinalCTA() {
             className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-ivory/50 text-ivory font-manrope text-sm tracking-widest uppercase hover:border-champagne hover:text-champagne transition-all duration-300 rounded-sm"
           >
             <Phone size={16} />
-            Call KJ
+            Call Us
           </a>
         </motion.div>
         <motion.p

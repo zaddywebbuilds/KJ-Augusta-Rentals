@@ -68,7 +68,7 @@ export default function LocationSection() {
             href={`tel:${businessConfig.contact.phoneHref}`}
             className="inline-flex items-center gap-2 px-6 py-3 border border-ink text-ink font-manrope text-sm tracking-widest uppercase hover:bg-ink hover:text-ivory transition-all duration-300 rounded-sm"
           >
-            Questions? Call KJ
+            Questions? Call Us
           </a>
         </motion.div>
       </div>

@@ -105,7 +105,7 @@ export default function Footer() {
                   className="inline-flex items-center gap-2 min-h-[44px] font-manrope text-sm text-ivory/60 hover:text-champagne transition-colors"
                 >
                   <Mail size={12} />
-                  Email KJ
+                  Email Us
                 </a>
               </li>
               <li>

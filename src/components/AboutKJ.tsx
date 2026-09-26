@@ -49,38 +49,35 @@ export default function AboutKJ() {
               Your Host
             </p>
             <h2 className="font-cormorant text-4xl md:text-5xl text-ink leading-tight mb-8">
-              Hosted with genuine Southern hospitality.
+              Every stay feels like home.
             </h2>
             <div className="space-y-4 font-manrope text-base text-sage leading-relaxed mb-8">
               <p>
-                KJ has been welcoming guests to the Savannah River for over a decade.
-                A veteran of military service with deep roots in Augusta, KJ brings
-                a straightforward, generous approach to hosting — the property is
-                well-maintained, the communication is prompt, and your comfort is
-                the priority.
+                We're Samantha and Katrina, owners of Home Sweet Luxe. We created
+                Home Sweet Luxe with one goal in mind: to make every stay feel a
+                little more like home — with all the comfort, style and thoughtful
+                touches of a luxury getaway.
               </p>
               <p>
-                With {businessConfig.trustSignals.yearsHosting} years of hosting and a{' '}
-                {businessConfig.trustSignals.googleRating} rating across{' '}
-                {businessConfig.trustSignals.googleReviewCount} Google reviews, KJ's
-                reputation has been earned stay by stay. Guests consistently highlight
-                the ease of check-in, the responsiveness of the host, and the quality of
-                the property itself.
+                We personally oversee our collection of handpicked vacation homes
+                and take pride in creating spaces where guests can relax, celebrate,
+                explore and make lasting memories. From thoughtfully designed
+                interiors and carefully selected amenities to responsive
+                communication and local recommendations, we're here to make your
+                stay as seamless as possible.
               </p>
               <p>
-                Have a question about the area, the property, or upcoming availability?
-                KJ is available to help.
+                When you book directly with Home Sweet Luxe, you're booking with
+                real hosts who genuinely care about your experience.
               </p>
             </div>
 
             {/* Badges */}
             <div className="flex flex-wrap gap-4 mb-8">
               {[
-                // Both were hard-coded and both were wrong: the badge claimed
-                // 11+ years while the paragraph above it said 18.
                 { icon: Star, label: `${businessConfig.trustSignals.googleRating} on Google` },
                 { icon: Shield, label: `${businessConfig.trustSignals.yearsHosting}+ Years Hosting` },
-                { icon: Home, label: 'Military Veteran' },
+                { icon: Home, label: 'Direct Booking' },
               ].map(({ icon: Icon, label }) => (
                 <div key={label} className="flex items-center gap-2 px-4 py-2 bg-ivory rounded-full border border-champagne/20">
                   <Icon className="text-champagne" size={14} />
@@ -96,7 +93,7 @@ export default function AboutKJ() {
                 className="inline-flex items-center gap-2 px-6 py-3 bg-ink text-ivory font-manrope text-sm tracking-widest uppercase hover:bg-champagne hover:text-ink transition-all duration-300 rounded-sm"
               >
                 <Phone size={16} />
-                Call KJ
+                Call Us
               </a>
               <a
                 href={`mailto:${businessConfig.contact.email}`}

@@ -17,7 +17,7 @@ export default function MobileBookingBar() {
         <a
           href={`tel:${businessConfig.contact.phoneHref}`}
           className="flex items-center justify-center px-5 py-4 text-sage hover:text-champagne transition-colors"
-          aria-label="Call KJ"
+          aria-label="Call Us"
         >
           <Phone size={20} />
         </a>

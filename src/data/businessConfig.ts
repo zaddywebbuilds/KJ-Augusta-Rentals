@@ -3,9 +3,9 @@ export const businessConfig = {
   propertyName: "KJ's River House",
   tagline: "Where the river slows down, your stay begins.",
   contact: {
-    phoneDisplay: "801-349-5711",
-    phoneHref: "+18013495711",
-    email: "KJAugustaRentals@gmail.com"
+    phoneDisplay: "(786) 989-0139",
+    phoneHref: "+17869890139",
+    email: "Support@homesweetluxe.com"
   },
   location: {
     city: "Augusta",
