@@ -109,6 +109,10 @@ export default function BookingWidget({ stay }: { stay: Accommodation }) {
   const [hovered,  setHovered]  = useState<string | null>(null);
   const [adults,   setAdults]   = useState(2);
 
+  // Enquiry contact details (sent with the dates when a guest requests them)
+  const [guestName,  setGuestName]  = useState('');
+  const [guestPhone, setGuestPhone] = useState('');
+
   // Quote state
   const [quote,       setQuote]       = useState<QuoteResult | null>(null);
   const [quoteLoading, setQuoteLoading] = useState(false);
@@ -344,6 +348,32 @@ export default function BookingWidget({ stay }: { stay: Accommodation }) {
     );
   }
 
+  // ── Enquiry mailto ─────────────────────────────────────────────────────────
+
+  function enquiryMailto() {
+    const subject = `Booking enquiry — ${stay.name}`;
+    const lines = [
+      'Hi,',
+      '',
+      `I'd like to request ${stay.name}.`,
+      '',
+      `Check-in:  ${checkin ?? '—'}`,
+      `Check-out: ${checkout ?? '—'}`,
+      `Guests:    ${adults}`,
+      '',
+      `Name:      ${guestName.trim() || '—'}`,
+      `Phone:     ${guestPhone.trim() || '—'}`,
+      '',
+      'Please confirm availability and send me a quote. Thank you!',
+    ];
+    return `mailto:${businessConfig.contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join('\n'))}`;
+  }
+
+  const enquiryInputClass =
+    'w-full px-3 py-2.5 min-h-[44px] border border-champagne/40 rounded-sm bg-ivory font-manrope text-sm text-ink placeholder:text-sage/50 focus:outline-none focus:border-ink transition-colors';
+  const enquiryLabelClass =
+    'block font-manrope text-[10px] tracking-widest uppercase text-sage/60 mb-1';
+
   // ── Quote display ──────────────────────────────────────────────────────────
 
   function renderQuote() {
@@ -368,8 +398,39 @@ export default function BookingWidget({ stay }: { stay: Accommodation }) {
             <p className="font-manrope text-sm text-sage leading-snug mb-4">
               Get in touch and we'll confirm these dates and send you a quote — usually within the hour.
             </p>
+            <div className="space-y-3 mb-4">
+              <div>
+                <label className={enquiryLabelClass} htmlFor="enquiry-name">Your name</label>
+                <input
+                  id="enquiry-name"
+                  type="text"
+                  autoComplete="name"
+                  value={guestName}
+                  onChange={e => setGuestName(e.target.value)}
+                  placeholder="First and last name"
+                  className={enquiryInputClass}
+                />
+              </div>
+              <div>
+                <label className={enquiryLabelClass} htmlFor="enquiry-phone">Phone number</label>
+                <input
+                  id="enquiry-phone"
+                  type="tel"
+                  inputMode="tel"
+                  autoComplete="tel"
+                  value={guestPhone}
+                  onChange={e => setGuestPhone(e.target.value)}
+                  placeholder="(555) 555-5555"
+                  className={enquiryInputClass}
+                />
+                <p className="font-manrope text-[11px] text-sage/60 mt-1 leading-snug">
+                  So we can text or call you back with a booking request.
+                </p>
+              </div>
+            </div>
+
             <a
-              href={`mailto:${businessConfig.contact.email}?subject=Booking enquiry — ${stay.name}&body=Hi%2C%20I'm%20interested%20in%20booking%20${encodeURIComponent(stay.name)}%20from%20${checkin}%20to%20${checkout}%20for%20${adults}%20guest${adults !== 1 ? 's' : ''}.`}
+              href={enquiryMailto()}
               className="inline-flex items-center justify-center w-full gap-2 px-6 py-3.5 min-h-[44px] bg-ink text-ivory font-manrope text-xs tracking-widest uppercase font-semibold hover:bg-clay transition-colors rounded-sm mb-3"
             >
               <Mail size={14} />
@@ -442,8 +503,36 @@ export default function BookingWidget({ stay }: { stay: Accommodation }) {
         <p className="font-manrope text-sm text-sage leading-relaxed mb-5">
           Send us your dates and we'll confirm availability the same day.
         </p>
+        <div className="space-y-3 mb-4">
+          <div>
+            <label className={enquiryLabelClass} htmlFor="enquiry-name-alt">Your name</label>
+            <input
+              id="enquiry-name-alt"
+              type="text"
+              autoComplete="name"
+              value={guestName}
+              onChange={e => setGuestName(e.target.value)}
+              placeholder="First and last name"
+              className={enquiryInputClass}
+            />
+          </div>
+          <div>
+            <label className={enquiryLabelClass} htmlFor="enquiry-phone-alt">Phone number</label>
+            <input
+              id="enquiry-phone-alt"
+              type="tel"
+              inputMode="tel"
+              autoComplete="tel"
+              value={guestPhone}
+              onChange={e => setGuestPhone(e.target.value)}
+              placeholder="(555) 555-5555"
+              className={enquiryInputClass}
+            />
+          </div>
+        </div>
+
         <a
-          href={`mailto:hello@kjaugustarentals.com?subject=Booking enquiry — ${stay.name}`}
+          href={enquiryMailto()}
           className="inline-flex items-center justify-center w-full px-6 py-3.5 min-h-[44px] bg-ink text-ivory font-manrope text-xs tracking-widest uppercase font-semibold hover:bg-clay transition-colors rounded-sm"
         >
           Request these dates
