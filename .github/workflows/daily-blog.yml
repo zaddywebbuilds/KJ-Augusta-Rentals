@@ -30,11 +30,25 @@ jobs:
         run: node scripts/generate-blog-post.mjs
 
       - name: Commit and push
+        id: commit
         run: |
           git config user.name  "KJ Blog Bot"
           git config user.email "bot@kjaugustarentals.com"
           git add public/posts/
           # Only commit if something actually changed
-          git diff --staged --quiet && echo "Nothing to commit" || \
+          if git diff --staged --quiet; then
+            echo "Nothing to commit"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
             git commit -m "feat: auto daily blog post $(date +%Y-%m-%d)"
-          git push
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # GitHub Actions workflows triggered by GITHUB_TOKEN cannot start other
+      # workflows automatically, so we explicitly fire the deploy here.
+      - name: Trigger site deploy
+        if: steps.commit.outputs.changed == 'true'
+        run: gh workflow run deploy.yml --ref main
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
