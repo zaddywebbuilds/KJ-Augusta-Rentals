@@ -13,6 +13,7 @@ const navLinks = [
   { label: 'Events', hash: '#whats-on' },
   { label: 'Reviews', hash: '#reviews' },
   { label: 'Location', hash: '#location' },
+  { label: 'Blog', to: '/blog' },
 ];
 
 export default function Navbar() {

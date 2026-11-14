@@ -1,0 +1,40 @@
+name: Daily Blog Post
+
+on:
+  # 7 AM Eastern = 12:00 UTC (UTC-5 EST / UTC-4 EDT — use 11 for summer)
+  schedule:
+    - cron: '0 12 * * *'
+  # Manual trigger so you can run it on demand from GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to commit + push
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate blog post
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: node scripts/generate-blog-post.mjs
+
+      - name: Commit and push
+        run: |
+          git config user.name  "KJ Blog Bot"
+          git config user.email "bot@kjaugustarentals.com"
+          git add public/posts/
+          # Only commit if something actually changed
+          git diff --staged --quiet && echo "Nothing to commit" || \
+            git commit -m "feat: auto daily blog post $(date +%Y-%m-%d)"
+          git push

@@ -8,6 +8,8 @@ import BookingActivityPopup from './components/BookingActivityPopup';
 import HomePage from './pages/HomePage';
 import StayPage from './pages/StayPage';
 import MastersPage from './pages/MastersPage';
+import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
 
 function ScrollBehaviour() {
   const { pathname, hash } = useLocation();
@@ -39,6 +41,8 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/stays/:slug" element={<StayPage />} />
           <Route path="/masters" element={<MastersPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
       </main>
