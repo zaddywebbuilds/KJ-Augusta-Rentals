@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Calendar, ArrowLeft, ArrowRight, Clock, Home } from 'lucide-react';
+import { Calendar, ArrowLeft, ArrowRight, Clock, Home, Waves, Star } from 'lucide-react';
 import PageMeta from '../components/PageMeta';
 
 interface BlogPost {
@@ -139,6 +139,60 @@ export default function BlogPostPage() {
             transition={{ duration: 0.7, delay: 0.1 }}
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+
+          {/* Mid-article property card — appears after the article body */}
+          <motion.div
+            className="my-10 border border-champagne/40 rounded-sm overflow-hidden bg-ivory"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <div className="bg-ink px-6 py-4 flex items-center gap-3">
+              <Waves size={16} className="text-champagne flex-shrink-0" />
+              <p className="font-manrope text-[10px] tracking-[0.25em] uppercase text-champagne">
+                Where to stay in Augusta
+              </p>
+            </div>
+            <div className="p-6">
+              <h3 className="font-cormorant text-2xl text-ink mb-1 leading-snug">
+                KJ's River House — Private Savannah River Retreat
+              </h3>
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} size={12} className="text-champagne fill-champagne" />
+                ))}
+                <span className="font-manrope text-xs text-sage ml-1.5">4.8 · 24 Google reviews</span>
+              </div>
+              <ul className="space-y-1.5 mb-5">
+                {[
+                  '3 private acres directly on the Savannah River',
+                  'Saltwater pool, 6 kayaks, private dock — all included',
+                  'Entire property is yours — no other guests on site',
+                  'Sleeps up to 16 · 15 min from Augusta National',
+                  'Book direct: no Airbnb fees, you pay the owner',
+                ].map(point => (
+                  <li key={point} className="flex items-start gap-2 font-manrope text-sm text-ink">
+                    <span className="text-champagne mt-0.5 flex-shrink-0">✓</span>
+                    {point}
+                  </li>
+                ))}
+              </ul>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link
+                  to="/stays/entire-river-house"
+                  className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-ink text-ivory font-manrope text-xs tracking-widest uppercase font-semibold hover:bg-clay transition-colors rounded-sm"
+                >
+                  <Home size={13} /> Check Availability
+                </Link>
+                <Link
+                  to="/#stays"
+                  className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 border border-ink text-ink font-manrope text-xs tracking-widest uppercase hover:bg-ink hover:text-ivory transition-colors rounded-sm"
+                >
+                  View All Stays
+                </Link>
+              </div>
+            </div>
+          </motion.div>
 
           {/* Keywords */}
           {post.keywords?.length > 0 && (

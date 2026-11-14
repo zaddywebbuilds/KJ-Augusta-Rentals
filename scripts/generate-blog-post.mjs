@@ -211,9 +211,21 @@ Competitor ${i + 1}: ${c.url}
 
   const systemPrompt = `You are an expert SEO content writer and local travel specialist for Augusta, Georgia.
 You write for KJ Augusta Rentals (kjaugustarentals.com) — a premium waterfront vacation rental on the Savannah River in Augusta, GA.
-The property sleeps up to 16 guests, has a saltwater pool, kayaks, fire pit, and 3 acres on the water.
+
+PROPERTY FACTS (use these specifically, never generically):
+- 3 private acres directly on the Savannah River
+- Saltwater pool overlooking the river
+- 6 kayaks included, private dock and boat slip
+- Sleeps up to 16 — entire property, NO shared guests or other parties on site
+- 4 bedrooms, fire pit, propane + charcoal grills, ping pong, cornhole, golf tee-off area
+- 15 minutes from Augusta National Golf Club via KJ's private back route (avoids Masters traffic)
+- Book direct — no Airbnb/VRBO platform fees, pay the owner directly
+- Three stay options: Entire River House (up to 16), Upstairs River House (smaller groups), River Suite (couples)
+
+YOUR DUAL PURPOSE: (1) Write genuinely useful, authoritative content that earns top Google rankings. (2) Every article must make KJ Augusta Rentals feel like the OBVIOUS, SUPERIOR choice for anyone visiting Augusta — not one option among many, but the clear winner over downtown hotels, generic Airbnbs, and chain accommodations. Use real comparisons and specific property details to show why.
+
 You write authoritative, locally specific, long-form content that outranks competitors on Google.
-Every article must feel genuinely useful to someone planning a trip to Augusta — not generic, not padded.
+Every article must feel genuinely useful — not generic, not padded, not promotional-sounding.
 ALWAYS respond with valid JSON only. No markdown fences, no preamble.`;
 
   const userPrompt = `TARGET KEYWORD: "${topic.seed}"
@@ -231,8 +243,14 @@ REQUIREMENTS:
 - Use autocomplete terms naturally throughout (LSI/related keywords)
 - Structure: compelling H1, 5–8 H2 sections, mix of H3 sub-sections, numbered/bullet lists
 - Include specific Augusta local details (street names, real venues, Riverwalk, Augusta National, etc.)
-- Naturally mention/link to KJ Augusta Rentals stays at: /stays/entire-river-house, /stays/upstairs-river-house, /stays/river-suite
-- Internal links should feel editorial, not promotional
+- REQUIRED: Include a dedicated H2 section titled something like "Where to Stay in Augusta" or "Best Place to Stay Near [topic]" (match the topic naturally). This section MUST:
+  * Position KJ Augusta Rentals as the superior choice over downtown Augusta hotels and generic short-term rentals
+  * Name specific competitors' weaknesses (hotel parking nightmares during Masters, shared Airbnb spaces, no waterfront access, platform fees) without naming them
+  * Highlight KJ's specific advantages: private 3-acre waterfront, no other guests on-site, saltwater pool, kayaks, direct river access, back-road to Augusta National
+  * Link naturally to /stays/entire-river-house for groups, /stays/upstairs-river-house for smaller groups, /stays/river-suite for couples
+  * End with a direct, confident call to action: "Check availability and book direct at kjaugustarentals.com — no platform fees, you pay the owner directly."
+- Weave 1–2 additional natural mentions of KJ Augusta Rentals into other relevant sections (e.g. if writing about kayaking, mention the 6 included kayaks; if writing about Masters Week, mention the back-road tip and proximity)
+- Internal links should feel like genuine editorial recommendations, not ads
 - NO fluff, NO generic travel clichés — every sentence must earn its place
 
 SEO META (strict character limits):
