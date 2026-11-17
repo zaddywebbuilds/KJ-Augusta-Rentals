@@ -1,4 +1,4 @@
-// What's on around the River House, month by month.
+﻿// What's on around the River House, month by month.
 //
 // KJ asked for a calendar of what is happening near the house each month —
 // sport, music, racing and the Masters — so guests can plan a stay around it.
@@ -37,7 +37,9 @@ export type AreaEvent = {
   blurb: string;
   /** Organiser or official listing, so a guest can confirm before booking. */
   url: string;
-  /** A page on this site to send guests to instead, e.g. the Masters page. */
+  /** Local video clip to show on the card. Path relative to public root. */
+  video?: string;
+    /** A page on this site to send guests to instead, e.g. the Masters page. */
   internal?: string;
   featured?: boolean;
 };
@@ -203,5 +205,19 @@ export const areaEvents: AreaEvent[] = [
     blurb:
       'A 10,500-seat arena on the site of the old James Brown Arena, built for major concerts — and bringing ECHL hockey back as the Augusta Lynx for 2027–28.',
     url: 'https://newaugustaarena.com/the-new-augusta-arena/',
+  },
+  {
+    id: 'savannah-river-crew-regattas-2026',
+    name: 'Crew Regattas on the Savannah River',
+    category: 'Sports',
+    start: '2026-11-01',
+    end: '2027-04-30',
+    precision: 'month',
+    dateLabel: 'Oct – Apr',
+    venue: 'Savannah River, Augusta',
+    blurb:
+      'From October through April the river outside the house becomes a training ground and race course for university and club crews. Watching boats launch from the dock at first light is one of the quieter pleasures of a winter stay.',
+    url: 'https://www.discoveraugusta.com/',
+    video: '/assets/videos/regatta-savannah-2026.mp4',
   },
 ];

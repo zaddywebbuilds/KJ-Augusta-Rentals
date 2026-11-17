@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+﻿import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
@@ -112,6 +112,18 @@ function EventCard({ event }: { event: AreaEvent }) {
         {event.venue}
       </p>
       <p className="font-manrope text-[13px] text-ink/75 leading-relaxed mb-4 flex-1">{event.blurb}</p>
+      {event.video && (
+        <div className="rounded-sm overflow-hidden mb-4 -mx-1">
+          <video
+            src={event.video}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full aspect-video object-cover"
+          />
+        </div>
+      )}
       <a
         href={event.url}
         target="_blank"
