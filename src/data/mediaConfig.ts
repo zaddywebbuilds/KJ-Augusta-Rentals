@@ -50,9 +50,9 @@ export const dockImages = byCategory('river');
 export const detailImages = byCategory('bath', 'other');
 
 export const videos = {
-  hero: `${BASE}/videos/aerial-2026.mp4`,
+  hero: `${BASE}/videos/sunrise-river-2026.mp4`,
   /** 960px cut of the hero — a phone gets 1.3 MB instead of 4 MB. */
-  heroMobile: `${BASE}/videos/aerial-2026-mobile.mp4`,
+  heroMobile: `${BASE}/videos/sunrise-river-2026.mp4`,
   feature: `${BASE}/videos/video_02.mp4`,
   vertical: `${BASE}/videos/video_03.mp4`,
   /**
@@ -87,3 +87,4 @@ export const galleryCategories = [
   { label: 'Kitchen', images: byCategory('kitchen') },
   { label: 'Bathrooms', images: byCategory('bath') },
 ].filter(c => c.images.length > 0);
+
