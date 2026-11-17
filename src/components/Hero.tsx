@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 import { videos, videoPosters } from '../data/mediaConfig';
@@ -114,6 +114,9 @@ export default function Hero() {
             transition={{ duration: 1.1, delay: 0.4, ease: 'easeOut' }}
           >
             <div className="relative rounded-sm overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.65)]">
+              <p className="absolute top-0 left-0 right-0 z-10 font-manrope text-[10px] tracking-[0.2em] uppercase text-ivory/80 text-center py-3 px-4 bg-gradient-to-b from-black/50 to-transparent pointer-events-none">
+                What our guests notice first — steam rising off the Savannah at sunrise.
+              </p>
               {/* Phones take the 960px cut (1.3 MB) rather than the desktop
                   one (4 MB). The browser picks before it starts downloading,
                   so the saving is real bandwidth, not just decode work. */}
