@@ -228,7 +228,12 @@ You write authoritative, locally specific, long-form content that outranks compe
 Every article must feel genuinely useful — not generic, not padded, not promotional-sounding.
 ALWAYS respond with valid JSON only. No markdown fences, no preamble.`;
 
-  const userPrompt = `TARGET KEYWORD: "${topic.seed}"
+  const userPrompt = `TODAY'S DATE: ${todayISO()} — the current year is ${new Date().getFullYear()}.
+Never reference a year earlier than this as if it were current. If you mention
+a year at all (titles, "best of" framing, hashtags, upcoming events), it must be
+${new Date().getFullYear()} or later. Prefer evergreen phrasing over a year.
+
+TARGET KEYWORD: "${topic.seed}"
 SEARCH INTENT: ${topic.intent}
 AUTOCOMPLETE SUGGESTIONS (real user searches): ${autocomplete.join(', ')}
 

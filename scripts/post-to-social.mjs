@@ -47,8 +47,14 @@ function buildCaptions(post, url) {
 
   const fb = post.social?.facebook ?? post.excerpt;
 
+  const tail = `\n\nFull guide + book direct, link in bio.\n\n${tags}`;
+  // Instagram rejects captions over 2,200 characters outright.
+  const body = ig.length + tail.length > 2200
+    ? `${ig.slice(0, 2200 - tail.length - 1).trimEnd()}…`
+    : ig;
+
   return {
-    instagram: `${ig}\n\nFull guide + book direct, link in bio.\n\n${tags}`,
+    instagram: body + tail,
     facebook: `${fb}\n\nRead the guide, then book direct and skip the platform fees:\n${url}`,
   };
 }
