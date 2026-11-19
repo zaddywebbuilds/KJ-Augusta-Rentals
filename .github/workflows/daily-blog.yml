@@ -12,6 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write   # needed to commit + push
+      actions:  write   # needed to dispatch deploy.yml below
+
+    # Job level so the social steps can gate on it in their `if` — a step's
+    # own env block is not visible to its own condition.
+    env:
+      FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
 
     steps:
       - name: Checkout repo
@@ -24,17 +30,25 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Install dependencies
+        run: npm ci
+
       - name: Generate blog post
+        id: post
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: node scripts/generate-blog-post.mjs
+
+      - name: Generate social cards
+        if: steps.post.outputs.slug != ''
+        run: node scripts/generate-social-card.mjs "${{ steps.post.outputs.slug }}"
 
       - name: Commit and push
         id: commit
         run: |
           git config user.name  "KJ Blog Bot"
           git config user.email "bot@kjaugustarentals.com"
-          git add public/posts/
+          git add public/posts/ public/social/
           # Only commit if something actually changed
           if git diff --staged --quiet; then
             echo "Nothing to commit"
@@ -52,3 +66,28 @@ jobs:
         run: gh workflow run deploy.yml --ref main
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Instagram will only accept a publicly reachable image URL, so the
+      # card has to be live on the site before we can post it.
+      - name: Wait for social card to go live
+        id: card
+        if: steps.commit.outputs.changed == 'true' && env.FB_PAGE_ID != ''
+        run: |
+          URL="https://kjaugustarentals.com/social/${{ steps.post.outputs.slug }}-ig.jpg"
+          for i in $(seq 1 40); do
+            if [ "$(curl -s -o /dev/null -w '%{http_code}' "$URL")" = "200" ]; then
+              echo "Card live after ${i} checks"
+              echo "live=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            sleep 15
+          done
+          echo "::warning::Card did not go live within 10 minutes — skipping social post"
+          echo "live=false" >> "$GITHUB_OUTPUT"
+
+      - name: Post to Facebook and Instagram
+        if: steps.card.outputs.live == 'true'
+        env:
+          FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: node scripts/post-to-social.mjs "${{ steps.post.outputs.slug }}"

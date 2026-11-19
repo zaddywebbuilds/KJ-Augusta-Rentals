@@ -13,7 +13,7 @@
  * Env:  DEEPSEEK_API_KEY  (required)
  */
 
-import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, appendFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -253,6 +253,13 @@ REQUIREMENTS:
 - Internal links should feel like genuine editorial recommendations, not ads
 - NO fluff, NO generic travel clichés — every sentence must earn its place
 
+SOCIAL CAPTIONS: also write Instagram and Facebook captions for this post.
+- Open with a hook, not the title. No "Check out our new blog post"
+- Carry the same booking intent as the article: name a concrete KJ advantage
+- Instagram: punchier, line breaks between thoughts, no URL
+- Facebook: a little more context, no URL
+- Never use emoji
+
 SEO META (strict character limits):
 - metaTitle: 50–60 characters, keyword-first
 - metaDescription: 145–160 characters, includes keyword + compelling reason to click
@@ -267,6 +274,11 @@ OUTPUT — respond with this exact JSON structure:
   "keywords": ["primary keyword", "secondary keyword 1", "secondary keyword 2", "secondary keyword 3", "secondary keyword 4"],
   "readingMinutes": 7,
   "content": "<h2>First Section</h2><p>Content...</p><h2>Second Section</h2>...",
+  "social": {
+    "instagram": "2-3 short punchy paragraphs for an Instagram caption. Hook first line. Specific Augusta detail, then why KJ's river house beats a hotel. No link (IG kills reach on links) — end before the CTA, the script appends 'link in bio'.",
+    "facebook": "2-3 short paragraphs for a Facebook post. Slightly more informative than Instagram, conversational, ends on a reason to click through. No URL — the script appends it.",
+    "hashtags": ["#augustaga", "#visitaugusta", "#5 to 9 relevant lowercase hashtags mixing location, topic and travel intent"]
+  },
   "schema": {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -349,6 +361,10 @@ async function main() {
   existingIndex.unshift(summary);
   writeFileSync(INDEX, JSON.stringify(existingIndex, null, 2), 'utf8');
   console.log(`📋 Index updated (${existingIndex.length} total posts)`);
+
+  if (process.env.GITHUB_OUTPUT) {
+    appendFileSync(process.env.GITHUB_OUTPUT, `slug=${post.slug}\n`);
+  }
 
   console.log('🎉 Done!');
 }
