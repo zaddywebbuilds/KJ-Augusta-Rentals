@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import { initAnalytics, trackPageView } from './lib/analytics';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import MobileBookingBar from './components/MobileBookingBar';
@@ -28,6 +29,22 @@ function ScrollBehaviour() {
   return null;
 }
 
+function Analytics() {
+  const { pathname, search } = useLocation();
+
+  useEffect(() => { initAnalytics(); }, []);
+
+  useEffect(() => {
+    // Deferred so PageMeta's own effect has set the route title before it is
+    // read. A timeout rather than a frame: rAF never fires in a background
+    // tab, which would silently drop the page view.
+    const id = setTimeout(() => trackPageView(pathname + search), 0);
+    return () => clearTimeout(id);
+  }, [pathname, search]);
+
+  return null;
+}
+
 export default function App() {
   return (
     // overflow-x-clip (not -hidden) contains off-screen entry-animation
@@ -35,6 +52,7 @@ export default function App() {
     // sticky positioning inside the pages.
     <div className="min-h-screen bg-ivory text-ink overflow-x-clip">
       <ScrollBehaviour />
+      <Analytics />
       <Navbar />
       <main>
         <Routes>

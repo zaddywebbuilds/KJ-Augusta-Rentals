@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight, Minus, Plus, Loader2, Phone, Mail } from 'lu
 import type { Accommodation } from '../data/accommodations';
 import { HOSPITABLE_IDS, MAX_GUESTS } from '../data/bookingConfig';
 import { businessConfig } from '../data/businessConfig';
+import { trackEvent } from '../lib/analytics';
 
 // ── Date helpers (no external library) ──────────────────────────────────────
 
@@ -369,6 +370,29 @@ export default function BookingWidget({ stay }: { stay: Accommodation }) {
     return `mailto:${businessConfig.contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join('\n'))}`;
   }
 
+  function trackEnquiry(method: 'email' | 'phone') {
+    trackEvent('generate_lead', {
+      method,
+      stay: stay.slug,
+      checkin: checkin ?? null,
+      checkout: checkout ?? null,
+      guests: adults,
+    });
+  }
+
+  // "Book now" hands off to Hospitable, so this is the last event the site
+  // sees on the path that actually converts.
+  function trackBookNow(total: number) {
+    trackEvent('begin_checkout', {
+      currency: quote?.currency ?? 'USD',
+      value: total,
+      stay: stay.slug,
+      checkin: checkin ?? null,
+      checkout: checkout ?? null,
+      guests: adults,
+    });
+  }
+
   const enquiryInputClass =
     'w-full px-3 py-2.5 min-h-[44px] border border-champagne/40 rounded-sm bg-ivory font-manrope text-sm text-ink placeholder:text-sage/50 focus:outline-none focus:border-ink transition-colors';
   const enquiryLabelClass =
@@ -431,6 +455,7 @@ export default function BookingWidget({ stay }: { stay: Accommodation }) {
 
             <a
               href={enquiryMailto()}
+              onClick={() => trackEnquiry('email')}
               className="inline-flex items-center justify-center w-full gap-2 px-6 py-3.5 min-h-[44px] bg-ink text-ivory font-manrope text-xs tracking-widest uppercase font-semibold hover:bg-clay transition-colors rounded-sm mb-3"
             >
               <Mail size={14} />
@@ -438,6 +463,7 @@ export default function BookingWidget({ stay }: { stay: Accommodation }) {
             </a>
             <a
               href={`tel:${businessConfig.contact.phoneHref}`}
+              onClick={() => trackEnquiry('phone')}
               className="inline-flex items-center justify-center w-full gap-2 px-6 py-3 min-h-[44px] border border-ink text-ink font-manrope text-xs tracking-widest uppercase hover:bg-ink hover:text-ivory transition-colors rounded-sm"
             >
               <Phone size={14} />
@@ -478,6 +504,7 @@ export default function BookingWidget({ stay }: { stay: Accommodation }) {
 
             <a
               href={quote.booking_url}
+              onClick={() => trackBookNow(quote.financials.totals.total.amount)}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-full px-6 py-3.5 min-h-[44px] bg-ink text-ivory font-manrope text-xs tracking-widest uppercase font-semibold hover:bg-clay transition-colors rounded-sm"
@@ -533,6 +560,7 @@ export default function BookingWidget({ stay }: { stay: Accommodation }) {
 
         <a
           href={enquiryMailto()}
+          onClick={() => trackEnquiry('email')}
           className="inline-flex items-center justify-center w-full px-6 py-3.5 min-h-[44px] bg-ink text-ivory font-manrope text-xs tracking-widest uppercase font-semibold hover:bg-clay transition-colors rounded-sm"
         >
           Request these dates
