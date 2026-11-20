@@ -2,7 +2,9 @@
 // Until a real ID is pasted here, every function below is a no-op and the
 // gtag script is never loaded, so an unconfigured deploy sends nothing.
 const PLACEHOLDER = 'G-XXXXXXXXXX';
-const MEASUREMENT_ID = PLACEHOLDER;
+// Typed as string, not inferred: otherwise the literal narrows and the
+// comparison below stops compiling the moment a real ID is pasted in.
+const MEASUREMENT_ID: string = PLACEHOLDER;
 
 // The placeholder is itself a syntactically valid ID, so it has to be ruled
 // out by value — a shape check alone would load gtag against a dead property.

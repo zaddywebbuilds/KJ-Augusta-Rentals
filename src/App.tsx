@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import MobileBookingBar from './components/MobileBookingBar';
 import ReviewPopup from './components/ReviewPopup';
 import BookingActivityPopup from './components/BookingActivityPopup';
+import EmailCapture from './components/EmailCapture';
 import HomePage from './pages/HomePage';
 import StayPage from './pages/StayPage';
 import MastersPage from './pages/MastersPage';
@@ -68,6 +69,7 @@ export default function App() {
       <MobileBookingBar />
       <ReviewPopup />
       <BookingActivityPopup />
+      <EmailCapture />
     </div>
   );
 }
